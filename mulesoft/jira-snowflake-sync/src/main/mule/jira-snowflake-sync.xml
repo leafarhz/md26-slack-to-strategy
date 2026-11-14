@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:http="http://www.mulesoft.org/schema/mule/http"
+      xmlns:db="http://www.mulesoft.org/schema/mule/db"
+      xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="
+        http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+        http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+        http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+        http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+
+    <!--
+      Jira → Snowflake sync
+      Jira Cloud REST (PLAT + IMPL) → DataWeave → Snowflake MD26_DB.JIRA.{EPICS, ISSUES}
+
+      Jira stays the system of record. "Blocked" is derived on every run from live data:
+        - an "is blocked by" link to an issue that is not Done, or
+        - the Flag, on issues that have no blocking link at all.
+      Move PLAT-7 to Done and, on the next run, the go-lives it blocked are no longer blocked.
+
+      Writes go to *_STAGE tables first, then INSERT OVERWRITE swaps them in atomically,
+      so a Data Cloud Zero Copy query never sees a half-synced table.
+    -->
+
+    <configuration-properties doc:name="Config" file="config.properties"/>
+    <configuration-properties doc:name="Local secrets" file="local.properties"/>
+
+    <http:listener-config name="sync-listener-config" doc:name="Sync listener">
+        <http:listener-connection host="0.0.0.0" port="${http.port}"/>
+    </http:listener-config>
+
+    <http:request-config name="jira-request-config" doc:name="Jira Cloud" responseTimeout="60000">
+        <http:request-connection host="${jira.host}" port="443" protocol="HTTPS">
+            <http:authentication>
+                <http:basic-authentication username="${jira.email}" password="${jira.token}" preemptive="true"/>
+            </http:authentication>
+        </http:request-connection>
+    </http:request-config>
+
+    <db:config name="snowflake-db-config" doc:name="Snowflake">
+        <db:generic-connection
+            driverClassName="net.snowflake.client.jdbc.SnowflakeDriver"
+            url="jdbc:snowflake://${snowflake.account}.snowflakecomputing.com/?db=${snowflake.database}&amp;schema=${snowflake.schema}&amp;warehouse=${snowflake.warehouse}&amp;role=${snowflake.role}&amp;user=${snowflake.user}&amp;authenticator=SNOWFLAKE_JWT&amp;private_key_file=${snowflake.privateKeyFile}&amp;JDBC_QUERY_RESULT_FORMAT=JSON&amp;application=MD26_Jira_Sync"/>
+    </db:config>
+
+    <!-- Every minute, so a change made on stage shows up while the audience watches -->
+    <flow name="scheduled-sync-flow" maxConcurrency="1">
+        <scheduler doc:name="Every minute">
+            <scheduling-strategy>
+                <fixed-frequency frequency="${sync.frequencySeconds}" timeUnit="SECONDS"/>
+            </scheduling-strategy>
+        </scheduler>
+        <flow-ref doc:name="Sync" name="sync-subflow"/>
+    </flow>
+
+    <!-- POST /sync: force a run instead of waiting for the scheduler -->
+    <flow name="manual-sync-flow">
+        <http:listener doc:name="POST /sync" config-ref="sync-listener-config" path="/sync" allowedMethods="POST"/>
+        <flow-ref doc:name="Sync" name="sync-subflow"/>
+        <ee:transform doc:name="Summary">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+    status: "OK",
+    issues: sizeOf(vars.rows.issues),
+    epics: sizeOf(vars.rows.epics),
+    blockedIssues: (vars.rows.issues filter ($.STATUS == "Blocked")) map $.ISSUE_KEY,
+    blockedEpics: (vars.rows.epics filter ($.STATUS == "Blocked")) map $.EPIC_KEY
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+    </flow>
+
+    <sub-flow name="sync-subflow">
+        <set-variable doc:name="All issues" variableName="allIssues" value="#[[]]"/>
+        <set-variable doc:name="Page token" variableName="pageToken" value="#[null]"/>
+        <set-variable doc:name="Done paging" variableName="donePaging" value="#[false]"/>
+
+        <!-- Jira's /search/jql pages with nextPageToken; 20 pages × 100 is far more than we need -->
+        <foreach doc:name="Pages" collection="#[(1 to 20) as Array]">
+            <choice doc:name="More pages?">
+                <when expression="#[not vars.donePaging]">
+                    <http:request doc:name="Search PLAT + IMPL" method="POST" config-ref="jira-request-config" path="/rest/api/3/search/jql">
+                        <http:body><![CDATA[#[output application/json
+---
+{
+    jql: p('jira.jql'),
+    maxResults: p('jira.pageSize') as Number,
+    fields: ["summary", "status", "issuetype", "priority", "labels", "parent", "issuelinks",
+             "customfield_10021", "customfield_10015", "duedate", "resolutiondate", "created", "description"],
+    (nextPageToken: vars.pageToken) if (vars.pageToken != null)
+}]]]></http:body>
+                    </http:request>
+                    <set-variable doc:name="Collect" variableName="allIssues" value="#[output application/java --- vars.allIssues ++ (payload.issues default [])]"/>
+                    <set-variable doc:name="Next token" variableName="pageToken" value="#[payload.nextPageToken default null]"/>
+                    <set-variable doc:name="Last page?" variableName="donePaging" value="#[(payload.isLast default false) or vars.pageToken == null]"/>
+                </when>
+            </choice>
+        </foreach>
+
+        <ee:transform doc:name="Jira → EPICS / ISSUES rows">
+            <ee:variables>
+                <ee:set-variable variableName="rows"><![CDATA[%dw 2.0
+output application/java
+import trim from dw::core::Strings
+
+var regions = ["Centro", "Occidente", "Norte", "Sur"]
+
+fun statusOf(f) = f.status.statusCategory.key match {
+    case "done" -> "Done"
+    case "indeterminate" -> "In Progress"
+    else -> "To Do"
+}
+// Plain-text lines of an Atlassian Document Format description
+fun lines(desc) = flatten((desc.content default []) map ((p) -> (p.content default []) map ($.text default "")))
+fun field(desc, prefix) = do {
+    var hit = (lines(desc) filter ($ startsWith prefix))[0]
+    ---
+    if (hit == null) null else trim(hit[sizeOf(prefix) to -1])
+}
+fun blockLinks(f) = (f.issuelinks default []) filter ((l) -> l."type".name == "Blocks")
+// On an issue's own links, "inwardIssue" means: this issue *is blocked by* inwardIssue
+fun activeBlockers(f) = blockLinks(f) filter ((l) -> l.inwardIssue != null
+                                         and l.inwardIssue.fields.status.statusCategory.key != "done")
+fun blocksOthers(f) = blockLinks(f) filter ((l) -> l.outwardIssue != null)
+fun hasBlockedByLink(f) = !isEmpty(blockLinks(f) filter ((l) -> l.inwardIssue != null))
+fun isFlagged(f) = !isEmpty(f.customfield_10021 default [])
+fun customer(f) = ((f.labels default []) filter ($ startsWith "MX-"))[0]
+fun region(f) = ((f.labels default []) filter (regions contains $))[0]
+fun ts(s) = if (isEmpty(s)) null
+            else (((s as DateTime {format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"}) >> "UTC") as String {format: "yyyy-MM-dd HH:mm:ss"})
+
+var issueRows = (vars.allIssues filter ($.fields.issuetype.name != "Epic")) map (i) -> do {
+    var f = i.fields
+    var st = statusOf(f)
+    var active = activeBlockers(f)
+    // A flag counts only when no blocking link exists: links are the source of truth
+    var blocked = st != "Done" and (!isEmpty(active) or (isFlagged(f) and !hasBlockedByLink(f)))
+    var isPlat = i.key startsWith "PLAT-"
+    ---
+    {
+        ISSUE_KEY: i.key,
+        PROJECT: (i.key splitBy "-")[0],
+        EPIC_KEY: f.parent.key default null,
+        CUSTOMER_ID: customer(f),
+        SUMMARY: f.summary,
+        ISSUE_TYPE: f.issuetype.name,
+        PRIORITY: f.priority.name default null,
+        STATUS: if (blocked) "Blocked" else st,
+        IS_BLOCKER: if (isPlat) (st != "Done" and !isEmpty(blocksOthers(f))) else blocked,
+        BLOCKED_BY: if (blocked and !isEmpty(active)) active[0].inwardIssue.key else null,
+        BLOCKED_REASON: if (!blocked) null
+                        else if (!isEmpty(active)) "Bloqueado por " ++ active[0].inwardIssue.key ++ ": " ++ (active[0].inwardIssue.fields.summary default "")
+                        else "Marcado como impedimento en Jira",
+        ASSIGNEE: field(f.description, "Responsable:"),
+        // Jira stamps Created as the API call time; the original open date lives in Start date
+        CREATED_AT: if (isEmpty(f.customfield_10015)) ts(f.created) else (f.customfield_10015 ++ " 00:00:00"),
+        DUE_DATE: f.duedate default null,
+        RESOLVED_AT: ts(f.resolutiondate)
+    }
+}
+
+var blockedEpics = (issueRows filter ($.STATUS == "Blocked" and $.EPIC_KEY != null)) map $.EPIC_KEY
+
+var epicRows = (vars.allIssues filter ($.fields.issuetype.name == "Epic")) map (e) -> do {
+    var f = e.fields
+    var st = statusOf(f)
+    ---
+    {
+        EPIC_KEY: e.key,
+        NAME: f.summary,
+        CUSTOMER_ID: customer(f),
+        ORDER_ID: field(f.description, "Orden ERP:"),
+        REGION: region(f),
+        TARGET_GO_LIVE: f.duedate default null,
+        STATUS: if (st == "Done") "Done" else if (blockedEpics contains e.key) "Blocked" else st
+    }
+}
+---
+{ issues: issueRows, epics: epicRows }]]></ee:set-variable>
+            </ee:variables>
+        </ee:transform>
+
+        <db:delete doc:name="Clear staging (issues)" config-ref="snowflake-db-config">
+            <db:sql>DELETE FROM MD26_DB.JIRA.ISSUES_STAGE</db:sql>
+        </db:delete>
+        <db:delete doc:name="Clear staging (epics)" config-ref="snowflake-db-config">
+            <db:sql>DELETE FROM MD26_DB.JIRA.EPICS_STAGE</db:sql>
+        </db:delete>
+
+        <db:bulk-insert doc:name="Stage issues" config-ref="snowflake-db-config">
+            <db:bulk-input-parameters><![CDATA[#[vars.rows.issues]]]></db:bulk-input-parameters>
+            <db:sql>INSERT INTO MD26_DB.JIRA.ISSUES_STAGE
+                (ISSUE_KEY, PROJECT, EPIC_KEY, CUSTOMER_ID, SUMMARY, ISSUE_TYPE, PRIORITY, STATUS, IS_BLOCKER,
+                 BLOCKED_BY, BLOCKED_REASON, ASSIGNEE, CREATED_AT, DUE_DATE, RESOLVED_AT, LAST_MODIFIED)
+                VALUES
+                (:ISSUE_KEY, :PROJECT, :EPIC_KEY, :CUSTOMER_ID, :SUMMARY, :ISSUE_TYPE, :PRIORITY, :STATUS, :IS_BLOCKER,
+                 :BLOCKED_BY, :BLOCKED_REASON, :ASSIGNEE, :CREATED_AT, :DUE_DATE, :RESOLVED_AT, CURRENT_TIMESTAMP())</db:sql>
+        </db:bulk-insert>
+        <db:bulk-insert doc:name="Stage epics" config-ref="snowflake-db-config">
+            <db:bulk-input-parameters><![CDATA[#[vars.rows.epics]]]></db:bulk-input-parameters>
+            <db:sql>INSERT INTO MD26_DB.JIRA.EPICS_STAGE
+                (EPIC_KEY, NAME, CUSTOMER_ID, ORDER_ID, REGION, TARGET_GO_LIVE, STATUS, LAST_MODIFIED)
+                VALUES
+                (:EPIC_KEY, :NAME, :CUSTOMER_ID, :ORDER_ID, :REGION, :TARGET_GO_LIVE, :STATUS, CURRENT_TIMESTAMP())</db:sql>
+        </db:bulk-insert>
+
+        <db:insert doc:name="Swap in issues" config-ref="snowflake-db-config">
+            <db:sql>INSERT OVERWRITE INTO MD26_DB.JIRA.ISSUES SELECT * FROM MD26_DB.JIRA.ISSUES_STAGE</db:sql>
+        </db:insert>
+        <db:insert doc:name="Swap in epics" config-ref="snowflake-db-config">
+            <db:sql>INSERT OVERWRITE INTO MD26_DB.JIRA.EPICS SELECT * FROM MD26_DB.JIRA.EPICS_STAGE</db:sql>
+        </db:insert>
+
+        <logger doc:name="Synced" level="INFO"
+                message="#['Jira sync: ' ++ (sizeOf(vars.rows.issues) as String) ++ ' issues, ' ++ (sizeOf(vars.rows.epics) as String) ++ ' epics, ' ++ (sizeOf(vars.rows.issues filter ($.STATUS == 'Blocked')) as String) ++ ' blocked']"/>
+    </sub-flow>
+</mule>

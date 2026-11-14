@@ -1,0 +1,6 @@
+# Copy to local.properties (gitignored) and fill in.
+# Jira Cloud: account email + classic API token (id.atlassian.com → Security → API tokens)
+jira.email=you@example.com
+jira.token=YOUR_JIRA_API_TOKEN
+# Absolute path to the unencrypted PKCS#8 private key registered on MD26_MULE_SVC
+snowflake.privateKeyFile=/Users/you/.snowflake/keys/md26_mule_svc.p8

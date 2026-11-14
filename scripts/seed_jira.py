@@ -166,10 +166,12 @@ def main():
         if i["IS_BLOCKER"] != "TRUE" or i["PROJECT"] != "IMPL":
             continue
         if i["BLOCKED_BY"]:
+            # Jira's create-link API is counter-intuitive: inwardIssue gets the *outward*
+            # description. This reads "PLAT-7 blocks IMPL-n" / "IMPL-n is blocked by PLAT-7".
             jira.call("POST", "/rest/api/3/issueLink", {
                 "type": {"name": "Blocks"},
-                "outwardIssue": {"key": i["BLOCKED_BY"]},   # PLAT-7 blocks …
-                "inwardIssue": {"key": i["ISSUE_KEY"]}})    # … IMPL-n is blocked by PLAT-7
+                "inwardIssue": {"key": i["BLOCKED_BY"]},
+                "outwardIssue": {"key": i["ISSUE_KEY"]}})
         if flag_ok:
             try:
                 jira.call("PUT", f"/rest/api/3/issue/{i['ISSUE_KEY']}",
