@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:http="http://www.mulesoft.org/schema/mule/http"
+      xmlns:db="http://www.mulesoft.org/schema/mule/db"
+      xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="
+        http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+        http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+        http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+        http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+
+    <!--
+      DENUE Market Loader
+      INEGI DENUE API → DataWeave → Snowflake (MD26_DB.MARKET.ESTABLISHMENTS)
+
+      MuleSoft is how market data reaches the system of record.
+      Data Cloud then reads it in place through Zero Copy; nothing downstream copies it again.
+
+      Privacy: phone, email, website and legal name (razón social) are dropped in the
+      transform. They can identify individuals and the demo doesn't need them.
+    -->
+
+    <configuration-properties doc:name="Config" file="config.properties"/>
+    <configuration-properties doc:name="Local secrets" file="local.properties"/>
+
+    <http:listener-config name="loader-listener-config" doc:name="Loader listener">
+        <http:listener-connection host="0.0.0.0" port="${http.port}"/>
+    </http:listener-config>
+
+    <http:request-config name="denue-request-config" doc:name="DENUE API" responseTimeout="${denue.timeoutMs}">
+        <http:request-connection host="${denue.host}" port="443" protocol="HTTPS"/>
+    </http:request-config>
+
+    <!-- Key-pair auth as the write-only loader role. No passwords anywhere. -->
+    <db:config name="snowflake-db-config" doc:name="Snowflake">
+        <db:generic-connection
+            driverClassName="net.snowflake.client.jdbc.SnowflakeDriver"
+            url="jdbc:snowflake://${snowflake.account}.snowflakecomputing.com/?db=${snowflake.database}&amp;schema=${snowflake.schema}&amp;warehouse=${snowflake.warehouse}&amp;role=${snowflake.role}&amp;user=${snowflake.user}&amp;authenticator=SNOWFLAKE_JWT&amp;private_key_file=${snowflake.privateKeyFile}&amp;JDBC_QUERY_RESULT_FORMAT=JSON&amp;application=MD26_DENUE_Loader"/>
+    </db:config>
+
+    <!-- One region per state, so the agent can talk about regions. -->
+    <global-property name="states" value='[{"code":"09","name":"Ciudad de México","region":"Centro"},{"code":"14","name":"Jalisco","region":"Occidente"},{"code":"19","name":"Nuevo León","region":"Norte"},{"code":"31","name":"Yucatán","region":"Sur"}]'/>
+    <global-property name="searchTerms" value='["farmacia","restaurante","ferreteria","abarrotes"]'/>
+
+    <!-- POST /load → full refresh of the market data -->
+    <flow name="load-market-flow">
+        <http:listener doc:name="POST /load" config-ref="loader-listener-config" path="/load" allowedMethods="POST"/>
+
+        <set-variable doc:name="States" variableName="states" value="#[read(p('states'), 'application/json')]"/>
+        <set-variable doc:name="Search terms" variableName="searchTerms" value="#[read(p('searchTerms'), 'application/json')]"/>
+        <set-variable doc:name="Batches" variableName="batches" value="#[[]]"/>
+
+        <db:delete doc:name="Clear staging" config-ref="snowflake-db-config">
+            <db:sql>DELETE FROM MD26_DB.MARKET.ESTABLISHMENTS_STAGE</db:sql>
+        </db:delete>
+
+        <foreach doc:name="For each state" collection="#[vars.states]">
+            <set-variable doc:name="State" variableName="state" value="#[payload]"/>
+            <foreach doc:name="For each search term" collection="#[vars.searchTerms]">
+                <set-variable doc:name="Term" variableName="term" value="#[payload]"/>
+                <flow-ref doc:name="Load one batch" name="load-batch-subflow"/>
+            </foreach>
+        </foreach>
+
+        <flow-ref doc:name="Merge into curated table" name="merge-subflow"/>
+
+        <db:select doc:name="Count by region" config-ref="snowflake-db-config">
+            <db:sql>SELECT REGION, STATE_NAME, SEARCH_TERM, COUNT(*) AS ESTABLISHMENTS
+                    FROM MD26_DB.MARKET.ESTABLISHMENTS
+                    GROUP BY REGION, STATE_NAME, SEARCH_TERM
+                    ORDER BY REGION, SEARCH_TERM</db:sql>
+        </db:select>
+
+        <ee:transform doc:name="Summary">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+    status: "OK",
+    source: "INEGI DENUE",
+    target: "MD26_DB.MARKET.ESTABLISHMENTS",
+    stagedRows: sum(vars.batches.rows default [0]),
+    totalEstablishments: sum(payload.ESTABLISHMENTS default [0]),
+    batches: vars.batches,
+    byRegion: payload
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <logger doc:name="Done" level="INFO" message="#['DENUE load complete: ' ++ (payload.totalEstablishments as String) ++ ' establishments']"/>
+    </flow>
+
+    <sub-flow name="load-batch-subflow">
+        <http:request doc:name="GET DENUE BuscarEntidad" method="GET" config-ref="denue-request-config"
+                      path="${denue.basePath}/BuscarEntidad/{term}/{state}/1/{max}/{token}" outputMimeType="application/json">
+            <http:uri-params><![CDATA[#[{
+                term: vars.term,
+                state: vars.state.code,
+                max: p('denue.maxPerQuery'),
+                token: p('denue.token')
+            }]]]></http:uri-params>
+        </http:request>
+
+        <ee:transform doc:name="DENUE → ESTABLISHMENTS row">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/java
+import trim from dw::core::Strings
+fun clean(s) = if (isEmpty(s)) null else trim(s as String)
+fun num(s) = if (isEmpty(s)) null else (s as Number)
+---
+((payload default []) distinctBy $.Id) map (e) -> do {
+    var place = (e.Ubicacion default "") splitBy ","
+    ---
+    {
+        DENUE_ID: e.Id as String,
+        CLEE: clean(e.CLEE),
+        NAME: clean(e.Nombre),
+        // CLEE = 2-digit state + 3-digit municipality + 6-digit SCIAN activity code + ...
+        ACTIVITY_CODE: if (sizeOf(e.CLEE default "") >= 11) (e.CLEE as String)[5 to 10] else null,
+        ACTIVITY_CLASS: clean(e.Clase_actividad),
+        SEARCH_TERM: vars.term,
+        STRATUM: clean(e.Estrato),
+        BUSINESS_TYPE: clean(e.Tipo),
+        STREET: clean((e.Tipo_vialidad default "") ++ " " ++ (e.Calle default "")),
+        EXT_NUMBER: clean(e.Num_Exterior),
+        NEIGHBORHOOD: clean(e.Colonia),
+        POSTAL_CODE: clean(e.CP),
+        LOCALITY: clean(place[0]),
+        MUNICIPALITY: clean(place[1]),
+        STATE_CODE: vars.state.code,
+        STATE_NAME: vars.state.name,
+        REGION: vars.state.region,
+        LATITUDE: num(e.Latitud),
+        LONGITUDE: num(e.Longitud)
+    }
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+
+        <set-variable doc:name="Track batch" variableName="batches"
+                      value="#[vars.batches + { state: vars.state.name, term: vars.term, rows: sizeOf(payload) }]"/>
+
+        <choice doc:name="Any rows?">
+            <when expression="#[sizeOf(payload) > 0]">
+                <db:bulk-insert doc:name="Insert into staging" config-ref="snowflake-db-config">
+                    <db:sql>INSERT INTO MD26_DB.MARKET.ESTABLISHMENTS_STAGE
+                        (DENUE_ID, CLEE, NAME, ACTIVITY_CODE, ACTIVITY_CLASS, SEARCH_TERM, STRATUM, BUSINESS_TYPE,
+                         STREET, EXT_NUMBER, NEIGHBORHOOD, POSTAL_CODE, LOCALITY, MUNICIPALITY,
+                         STATE_CODE, STATE_NAME, REGION, LATITUDE, LONGITUDE)
+                        VALUES
+                        (:DENUE_ID, :CLEE, :NAME, :ACTIVITY_CODE, :ACTIVITY_CLASS, :SEARCH_TERM, :STRATUM, :BUSINESS_TYPE,
+                         :STREET, :EXT_NUMBER, :NEIGHBORHOOD, :POSTAL_CODE, :LOCALITY, :MUNICIPALITY,
+                         :STATE_CODE, :STATE_NAME, :REGION, :LATITUDE, :LONGITUDE)</db:sql>
+                </db:bulk-insert>
+            </when>
+        </choice>
+        <logger doc:name="Batch loaded" level="INFO" message="#['Staged ' ++ (vars.batches[-1].rows as String) ++ ' × ' ++ vars.term ++ ' in ' ++ vars.state.name]"/>
+    </sub-flow>
+
+    <!-- Snowflake doesn't enforce primary keys, so dedupe and upsert explicitly. Re-runs are safe. -->
+    <sub-flow name="merge-subflow">
+        <db:update doc:name="MERGE staging → ESTABLISHMENTS" config-ref="snowflake-db-config">
+            <db:sql><![CDATA[
+MERGE INTO MD26_DB.MARKET.ESTABLISHMENTS t
+USING (
+    SELECT * FROM MD26_DB.MARKET.ESTABLISHMENTS_STAGE
+    QUALIFY ROW_NUMBER() OVER (PARTITION BY DENUE_ID ORDER BY SEARCH_TERM) = 1
+) s
+ON t.DENUE_ID = s.DENUE_ID
+WHEN MATCHED THEN UPDATE SET
+    CLEE = s.CLEE, NAME = s.NAME, ACTIVITY_CODE = s.ACTIVITY_CODE, ACTIVITY_CLASS = s.ACTIVITY_CLASS,
+    SEARCH_TERM = s.SEARCH_TERM, STRATUM = s.STRATUM, BUSINESS_TYPE = s.BUSINESS_TYPE,
+    STREET = s.STREET, EXT_NUMBER = s.EXT_NUMBER, NEIGHBORHOOD = s.NEIGHBORHOOD, POSTAL_CODE = s.POSTAL_CODE,
+    LOCALITY = s.LOCALITY, MUNICIPALITY = s.MUNICIPALITY, STATE_CODE = s.STATE_CODE, STATE_NAME = s.STATE_NAME,
+    REGION = s.REGION, LATITUDE = s.LATITUDE, LONGITUDE = s.LONGITUDE,
+    LOADED_AT = CURRENT_TIMESTAMP(), LAST_MODIFIED = CURRENT_TIMESTAMP()
+WHEN NOT MATCHED THEN INSERT
+    (DENUE_ID, CLEE, NAME, ACTIVITY_CODE, ACTIVITY_CLASS, SEARCH_TERM, STRATUM, BUSINESS_TYPE,
+     STREET, EXT_NUMBER, NEIGHBORHOOD, POSTAL_CODE, LOCALITY, MUNICIPALITY,
+     STATE_CODE, STATE_NAME, REGION, LATITUDE, LONGITUDE, LOADED_AT, LAST_MODIFIED)
+VALUES
+    (s.DENUE_ID, s.CLEE, s.NAME, s.ACTIVITY_CODE, s.ACTIVITY_CLASS, s.SEARCH_TERM, s.STRATUM, s.BUSINESS_TYPE,
+     s.STREET, s.EXT_NUMBER, s.NEIGHBORHOOD, s.POSTAL_CODE, s.LOCALITY, s.MUNICIPALITY,
+     s.STATE_CODE, s.STATE_NAME, s.REGION, s.LATITUDE, s.LONGITUDE, CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP())
+]]></db:sql>
+        </db:update>
+    </sub-flow>
+</mule>

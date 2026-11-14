@@ -1,0 +1,5 @@
+# Copy to local.properties (gitignored) and fill in.
+# DENUE token: free, request at https://www.inegi.org.mx/app/api/denue/v1/tokenVerify.aspx
+denue.token=YOUR_DENUE_TOKEN
+# Absolute path to the unencrypted PKCS#8 private key registered on MD26_MULE_SVC
+snowflake.privateKeyFile=/Users/you/.snowflake/keys/md26_mule_svc.p8
