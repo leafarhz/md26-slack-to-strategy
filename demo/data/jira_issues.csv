@@ -1,0 +1,451 @@
+ISSUE_KEY,PROJECT,EPIC_KEY,CUSTOMER_ID,SUMMARY,ISSUE_TYPE,PRIORITY,STATUS,IS_BLOCKER,BLOCKED_BY,BLOCKED_REASON,ASSIGNEE,CREATED_AT,DUE_DATE,RESOLVED_AT
+PLAT-1,PLAT,,,Actualizar dependencias del servicio de inventario,Task,Low,Done,FALSE,,,Ana Ruiz,2026-11-03 10:00:00,,2026-11-06 17:00:00
+PLAT-2,PLAT,,,Reporte de ventas por hora tarda más de 10 s,Bug,Medium,Done,FALSE,,,Valeria Gil,2026-09-28 10:00:00,,2026-10-17 17:00:00
+PLAT-3,PLAT,,,Soporte para lector de códigos QR de pago,Story,Medium,In Progress,FALSE,,,Luis Pérez,2026-09-11 10:00:00,,
+PLAT-4,PLAT,,,Impresora térmica 58mm corta el ticket,Bug,Medium,Done,FALSE,,,Carla Vega,2026-09-06 10:00:00,,2026-09-12 17:00:00
+PLAT-5,PLAT,,,Migrar colas de sincronización offline,Task,Medium,In Progress,FALSE,,,Luis Pérez,2026-08-01 10:00:00,,
+PLAT-6,PLAT,,,Exportación de corte de caja a Excel,Story,Low,To Do,FALSE,,,Diego Mora,2026-08-27 10:00:00,,
+PLAT-7,PLAT,,,Timbrado CFDI 4.0 falla con la nueva versión del API del PAC,Bug,Highest,In Progress,TRUE,,,Luis Pérez,2026-10-14 10:00:00,,
+PLAT-8,PLAT,,,Modo oscuro en terminal,Story,Low,To Do,FALSE,,,Paola Ríos,2026-09-17 10:00:00,,
+PLAT-9,PLAT,,,Alertas de stock bajo por sucursal,Story,Medium,To Do,FALSE,,,Valeria Gil,2026-08-06 10:00:00,,
+PLAT-10,PLAT,,,Error intermitente al sincronizar catálogo grande,Bug,High,In Progress,FALSE,,,Ana Ruiz,2026-10-27 10:00:00,,
+IMPL-2,IMPL,IMPL-1,MX-000085,Configurar catálogo de productos · Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),Task,Medium,Done,FALSE,,,Carla Vega,2026-08-21 09:00:00,2026-09-22,2026-10-04 18:00:00
+IMPL-3,IMPL,IMPL-1,MX-000085,Instalar hardware (terminal e impresora) · Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),Task,Medium,Done,FALSE,,,Diego Mora,2026-08-21 09:00:00,2026-09-25,2026-10-04 18:00:00
+IMPL-4,IMPL,IMPL-1,MX-000085,Configurar facturación CFDI 4.0 · Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),Task,Medium,Done,FALSE,,,Iván Soto,2026-08-21 09:00:00,2026-09-28,2026-10-04 18:00:00
+IMPL-5,IMPL,IMPL-1,MX-000085,Capacitación al personal · Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),Task,Medium,Done,FALSE,,,Carla Vega,2026-08-21 09:00:00,2026-10-01,2026-10-04 18:00:00
+IMPL-6,IMPL,IMPL-1,MX-000085,Go-live en tienda · Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),Task,Medium,Done,FALSE,,,Luis Pérez,2026-08-21 09:00:00,2026-10-04,2026-10-04 18:00:00
+IMPL-8,IMPL,IMPL-7,MX-000042,Configurar catálogo de productos · Abarrotes Los Arcos (Cuchilla Pantitlán),Task,Medium,Done,FALSE,,,Hugo Peña,2026-08-22 09:00:00,2026-09-25,2026-10-07 18:00:00
+IMPL-9,IMPL,IMPL-7,MX-000042,Instalar hardware (terminal e impresora) · Abarrotes Los Arcos (Cuchilla Pantitlán),Task,Medium,Done,FALSE,,,Jorge Lara,2026-08-22 09:00:00,2026-09-28,2026-10-07 18:00:00
+IMPL-10,IMPL,IMPL-7,MX-000042,Configurar impuestos y tickets · Abarrotes Los Arcos (Cuchilla Pantitlán),Task,Medium,Done,FALSE,,,Hugo Peña,2026-08-22 09:00:00,2026-10-01,2026-10-07 18:00:00
+IMPL-11,IMPL,IMPL-7,MX-000042,Capacitación al personal · Abarrotes Los Arcos (Cuchilla Pantitlán),Task,Medium,Done,FALSE,,,Paola Ríos,2026-08-22 09:00:00,2026-10-04,2026-10-07 18:00:00
+IMPL-12,IMPL,IMPL-7,MX-000042,Go-live en tienda · Abarrotes Los Arcos (Cuchilla Pantitlán),Task,Medium,Done,FALSE,,,Luis Pérez,2026-08-22 09:00:00,2026-10-07,2026-10-07 18:00:00
+IMPL-14,IMPL,IMPL-13,MX-000012,Configurar catálogo de productos · Cocina Santa Ana (Juárez),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-08-29 09:00:00,2026-09-28,2026-10-10 18:00:00
+IMPL-15,IMPL,IMPL-13,MX-000012,Instalar hardware (terminal e impresora) · Cocina Santa Ana (Juárez),Task,Medium,Done,FALSE,,,Luis Pérez,2026-08-29 09:00:00,2026-10-01,2026-10-10 18:00:00
+IMPL-16,IMPL,IMPL-13,MX-000012,Configurar facturación CFDI 4.0 · Cocina Santa Ana (Juárez),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-08-29 09:00:00,2026-10-04,2026-10-10 18:00:00
+IMPL-17,IMPL,IMPL-13,MX-000012,Capacitación al personal · Cocina Santa Ana (Juárez),Task,Medium,Done,FALSE,,,Luis Pérez,2026-08-29 09:00:00,2026-10-07,2026-10-10 18:00:00
+IMPL-18,IMPL,IMPL-13,MX-000012,Go-live en tienda · Cocina Santa Ana (Juárez),Task,Medium,Done,FALSE,,,Hugo Peña,2026-08-29 09:00:00,2026-10-10,2026-10-10 18:00:00
+IMPL-20,IMPL,IMPL-19,MX-000065,Configurar catálogo de productos · Tlapalería El Mirador (Centro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-08-31 09:00:00,2026-10-05,2026-10-17 18:00:00
+IMPL-21,IMPL,IMPL-19,MX-000065,Instalar hardware (terminal e impresora) · Tlapalería El Mirador (Centro),Task,Medium,Done,FALSE,,,Valeria Gil,2026-08-31 09:00:00,2026-10-08,2026-10-17 18:00:00
+IMPL-22,IMPL,IMPL-19,MX-000065,Configurar facturación CFDI 4.0 · Tlapalería El Mirador (Centro),Task,Medium,Done,FALSE,,,Valeria Gil,2026-08-31 09:00:00,2026-10-11,2026-10-17 18:00:00
+IMPL-23,IMPL,IMPL-19,MX-000065,Capacitación al personal · Tlapalería El Mirador (Centro),Task,Medium,Done,FALSE,,,Valeria Gil,2026-08-31 09:00:00,2026-10-14,2026-10-17 18:00:00
+IMPL-24,IMPL,IMPL-19,MX-000065,Go-live en tienda · Tlapalería El Mirador (Centro),Task,Medium,Done,FALSE,,,Paola Ríos,2026-08-31 09:00:00,2026-10-17,2026-10-17 18:00:00
+IMPL-26,IMPL,IMPL-25,MX-000142,Configurar catálogo de productos · Materiales La Palma (Centro),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-05 09:00:00,2026-10-01,2026-10-13 18:00:00
+IMPL-27,IMPL,IMPL-25,MX-000142,Instalar hardware (terminal e impresora) · Materiales La Palma (Centro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-05 09:00:00,2026-10-04,2026-10-13 18:00:00
+IMPL-28,IMPL,IMPL-25,MX-000142,Configurar facturación CFDI 4.0 · Materiales La Palma (Centro),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-05 09:00:00,2026-10-07,2026-10-13 18:00:00
+IMPL-29,IMPL,IMPL-25,MX-000142,Capacitación al personal · Materiales La Palma (Centro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-05 09:00:00,2026-10-10,2026-10-13 18:00:00
+IMPL-30,IMPL,IMPL-25,MX-000142,Go-live en tienda · Materiales La Palma (Centro),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-05 09:00:00,2026-10-13,2026-10-13 18:00:00
+IMPL-32,IMPL,IMPL-31,MX-000027,Configurar catálogo de productos · Materiales El Pozo (San Salvador Cuauhtenco),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-06 09:00:00,2026-09-29,2026-10-11 18:00:00
+IMPL-33,IMPL,IMPL-31,MX-000027,Instalar hardware (terminal e impresora) · Materiales El Pozo (San Salvador Cuauhtenco),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-06 09:00:00,2026-10-02,2026-10-11 18:00:00
+IMPL-34,IMPL,IMPL-31,MX-000027,Configurar impuestos y tickets · Materiales El Pozo (San Salvador Cuauhtenco),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-06 09:00:00,2026-10-05,2026-10-11 18:00:00
+IMPL-35,IMPL,IMPL-31,MX-000027,Capacitación al personal · Materiales El Pozo (San Salvador Cuauhtenco),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-06 09:00:00,2026-10-08,2026-10-11 18:00:00
+IMPL-36,IMPL,IMPL-31,MX-000027,Go-live en tienda · Materiales El Pozo (San Salvador Cuauhtenco),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-06 09:00:00,2026-10-11,2026-10-11 18:00:00
+IMPL-38,IMPL,IMPL-37,MX-000090,Configurar catálogo de productos · Fonda Santa Ana (Valle Del Infonavit),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-06 09:00:00,2026-09-22,2026-10-04 18:00:00
+IMPL-39,IMPL,IMPL-37,MX-000090,Instalar hardware (terminal e impresora) · Fonda Santa Ana (Valle Del Infonavit),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-06 09:00:00,2026-09-25,2026-10-04 18:00:00
+IMPL-40,IMPL,IMPL-37,MX-000090,Configurar facturación CFDI 4.0 · Fonda Santa Ana (Valle Del Infonavit),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-06 09:00:00,2026-09-28,2026-10-04 18:00:00
+IMPL-41,IMPL,IMPL-37,MX-000090,Capacitación al personal · Fonda Santa Ana (Valle Del Infonavit),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-06 09:00:00,2026-10-01,2026-10-04 18:00:00
+IMPL-42,IMPL,IMPL-37,MX-000090,Go-live en tienda · Fonda Santa Ana (Valle Del Infonavit),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-06 09:00:00,2026-10-04,2026-10-04 18:00:00
+IMPL-44,IMPL,IMPL-43,MX-000097,Configurar catálogo de productos · Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-07 09:00:00,2026-09-26,2026-10-08 18:00:00
+IMPL-45,IMPL,IMPL-43,MX-000097,Instalar hardware (terminal e impresora) · Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-07 09:00:00,2026-09-29,2026-10-08 18:00:00
+IMPL-46,IMPL,IMPL-43,MX-000097,Configurar impuestos y tickets · Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-07 09:00:00,2026-10-02,2026-10-08 18:00:00
+IMPL-47,IMPL,IMPL-43,MX-000097,Capacitación al personal · Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-07 09:00:00,2026-10-05,2026-10-08 18:00:00
+IMPL-48,IMPL,IMPL-43,MX-000097,Go-live en tienda · Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-07 09:00:00,2026-10-08,2026-10-08 18:00:00
+IMPL-50,IMPL,IMPL-49,MX-000120,Configurar catálogo de productos · Farmacia El Puente (Los Heroes),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-09 09:00:00,2026-10-13,2026-10-25 18:00:00
+IMPL-51,IMPL,IMPL-49,MX-000120,Instalar hardware (terminal e impresora) · Farmacia El Puente (Los Heroes),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-09 09:00:00,2026-10-16,2026-10-25 18:00:00
+IMPL-52,IMPL,IMPL-49,MX-000120,Configurar facturación CFDI 4.0 · Farmacia El Puente (Los Heroes),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Ana Ruiz,2026-09-09 09:00:00,2026-10-19,
+IMPL-53,IMPL,IMPL-49,MX-000120,Capacitación al personal · Farmacia El Puente (Los Heroes),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-09 09:00:00,2026-10-22,
+IMPL-54,IMPL,IMPL-49,MX-000120,Go-live en tienda · Farmacia El Puente (Los Heroes),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-09-09 09:00:00,2026-10-25,
+IMPL-56,IMPL,IMPL-55,MX-000005,Configurar catálogo de productos · Botica El Ahorro (Los Reyes),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-10 09:00:00,2026-09-24,2026-10-06 18:00:00
+IMPL-57,IMPL,IMPL-55,MX-000005,Instalar hardware (terminal e impresora) · Botica El Ahorro (Los Reyes),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-10 09:00:00,2026-09-27,2026-10-06 18:00:00
+IMPL-58,IMPL,IMPL-55,MX-000005,Configurar facturación CFDI 4.0 · Botica El Ahorro (Los Reyes),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-10 09:00:00,2026-09-30,2026-10-06 18:00:00
+IMPL-59,IMPL,IMPL-55,MX-000005,Capacitación al personal · Botica El Ahorro (Los Reyes),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-10 09:00:00,2026-10-03,2026-10-06 18:00:00
+IMPL-60,IMPL,IMPL-55,MX-000005,Go-live en tienda · Botica El Ahorro (Los Reyes),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-10 09:00:00,2026-10-06,2026-10-06 18:00:00
+IMPL-62,IMPL,IMPL-61,MX-000114,Configurar catálogo de productos · Miscelánea El Roble (El Obispo),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-11 09:00:00,2026-10-15,2026-10-27 18:00:00
+IMPL-63,IMPL,IMPL-61,MX-000114,Instalar hardware (terminal e impresora) · Miscelánea El Roble (El Obispo),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-11 09:00:00,2026-10-18,2026-10-27 18:00:00
+IMPL-64,IMPL,IMPL-61,MX-000114,Configurar facturación CFDI 4.0 · Miscelánea El Roble (El Obispo),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-11 09:00:00,2026-10-21,2026-10-27 18:00:00
+IMPL-65,IMPL,IMPL-61,MX-000114,Capacitación al personal · Miscelánea El Roble (El Obispo),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-11 09:00:00,2026-10-24,2026-10-27 18:00:00
+IMPL-66,IMPL,IMPL-61,MX-000114,Go-live en tienda · Miscelánea El Roble (El Obispo),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-11 09:00:00,2026-10-27,2026-10-27 18:00:00
+IMPL-68,IMPL,IMPL-67,MX-000126,Configurar catálogo de productos · Farmacia El Faro (Brisas),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-11 09:00:00,2026-10-13,2026-10-25 18:00:00
+IMPL-69,IMPL,IMPL-67,MX-000126,Instalar hardware (terminal e impresora) · Farmacia El Faro (Brisas),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-11 09:00:00,2026-10-16,2026-10-25 18:00:00
+IMPL-70,IMPL,IMPL-67,MX-000126,Configurar facturación CFDI 4.0 · Farmacia El Faro (Brisas),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Iván Soto,2026-09-11 09:00:00,2026-10-19,
+IMPL-71,IMPL,IMPL-67,MX-000126,Capacitación al personal · Farmacia El Faro (Brisas),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-09-11 09:00:00,2026-10-22,
+IMPL-72,IMPL,IMPL-67,MX-000126,Go-live en tienda · Farmacia El Faro (Brisas),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-09-11 09:00:00,2026-10-25,
+IMPL-74,IMPL,IMPL-73,MX-000044,Configurar catálogo de productos · Botica La Loma (Arboledas Ii),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-12 09:00:00,2026-10-12,2026-10-24 18:00:00
+IMPL-75,IMPL,IMPL-73,MX-000044,Instalar hardware (terminal e impresora) · Botica La Loma (Arboledas Ii),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-12 09:00:00,2026-10-15,2026-10-24 18:00:00
+IMPL-76,IMPL,IMPL-73,MX-000044,Configurar facturación CFDI 4.0 · Botica La Loma (Arboledas Ii),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-12 09:00:00,2026-10-18,2026-10-24 18:00:00
+IMPL-77,IMPL,IMPL-73,MX-000044,Capacitación al personal · Botica La Loma (Arboledas Ii),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-12 09:00:00,2026-10-21,2026-10-24 18:00:00
+IMPL-78,IMPL,IMPL-73,MX-000044,Go-live en tienda · Botica La Loma (Arboledas Ii),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-12 09:00:00,2026-10-24,2026-10-24 18:00:00
+IMPL-80,IMPL,IMPL-79,MX-000123,Configurar catálogo de productos · Botica El Sol (Bojorquez),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-13 09:00:00,2026-10-08,2026-10-20 18:00:00
+IMPL-81,IMPL,IMPL-79,MX-000123,Instalar hardware (terminal e impresora) · Botica El Sol (Bojorquez),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-13 09:00:00,2026-10-11,2026-10-20 18:00:00
+IMPL-82,IMPL,IMPL-79,MX-000123,Configurar facturación CFDI 4.0 · Botica El Sol (Bojorquez),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Iván Soto,2026-09-13 09:00:00,2026-10-14,
+IMPL-83,IMPL,IMPL-79,MX-000123,Capacitación al personal · Botica El Sol (Bojorquez),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-13 09:00:00,2026-10-17,
+IMPL-84,IMPL,IMPL-79,MX-000123,Go-live en tienda · Botica El Sol (Bojorquez),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-13 09:00:00,2026-10-20,
+IMPL-86,IMPL,IMPL-85,MX-000147,Configurar catálogo de productos · Tienda Las Torres (Sascab),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-13 09:00:00,2026-09-26,2026-10-08 18:00:00
+IMPL-87,IMPL,IMPL-85,MX-000147,Instalar hardware (terminal e impresora) · Tienda Las Torres (Sascab),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-13 09:00:00,2026-09-29,2026-10-08 18:00:00
+IMPL-88,IMPL,IMPL-85,MX-000147,Configurar impuestos y tickets · Tienda Las Torres (Sascab),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-13 09:00:00,2026-10-02,2026-10-08 18:00:00
+IMPL-89,IMPL,IMPL-85,MX-000147,Capacitación al personal · Tienda Las Torres (Sascab),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-13 09:00:00,2026-10-05,2026-10-08 18:00:00
+IMPL-90,IMPL,IMPL-85,MX-000147,Go-live en tienda · Tienda Las Torres (Sascab),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-13 09:00:00,2026-10-08,2026-10-08 18:00:00
+IMPL-92,IMPL,IMPL-91,MX-000036,Configurar catálogo de productos · Abarrotes Las Torres (Santiago Acahualtepec),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-15 09:00:00,2026-10-03,2026-10-15 18:00:00
+IMPL-93,IMPL,IMPL-91,MX-000036,Instalar hardware (terminal e impresora) · Abarrotes Las Torres (Santiago Acahualtepec),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-15 09:00:00,2026-10-06,2026-10-15 18:00:00
+IMPL-94,IMPL,IMPL-91,MX-000036,Configurar facturación CFDI 4.0 · Abarrotes Las Torres (Santiago Acahualtepec),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-15 09:00:00,2026-10-09,2026-10-15 18:00:00
+IMPL-95,IMPL,IMPL-91,MX-000036,Capacitación al personal · Abarrotes Las Torres (Santiago Acahualtepec),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-15 09:00:00,2026-10-12,2026-10-15 18:00:00
+IMPL-96,IMPL,IMPL-91,MX-000036,Go-live en tienda · Abarrotes Las Torres (Santiago Acahualtepec),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-15 09:00:00,2026-10-15,2026-10-15 18:00:00
+IMPL-98,IMPL,IMPL-97,MX-000052,Configurar catálogo de productos · Cocina La Loma (Americana),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-15 09:00:00,2026-09-28,2026-10-10 18:00:00
+IMPL-99,IMPL,IMPL-97,MX-000052,Instalar hardware (terminal e impresora) · Cocina La Loma (Americana),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-15 09:00:00,2026-10-01,2026-10-10 18:00:00
+IMPL-100,IMPL,IMPL-97,MX-000052,Configurar facturación CFDI 4.0 · Cocina La Loma (Americana),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-15 09:00:00,2026-10-04,2026-10-10 18:00:00
+IMPL-101,IMPL,IMPL-97,MX-000052,Capacitación al personal · Cocina La Loma (Americana),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-15 09:00:00,2026-10-07,2026-10-10 18:00:00
+IMPL-102,IMPL,IMPL-97,MX-000052,Go-live en tienda · Cocina La Loma (Americana),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-15 09:00:00,2026-10-10,2026-10-10 18:00:00
+IMPL-104,IMPL,IMPL-103,MX-000072,Configurar catálogo de productos · Miscelánea La Ceiba (El Pitillal Centro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-15 09:00:00,2026-09-29,2026-10-11 18:00:00
+IMPL-105,IMPL,IMPL-103,MX-000072,Instalar hardware (terminal e impresora) · Miscelánea La Ceiba (El Pitillal Centro),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-15 09:00:00,2026-10-02,2026-10-11 18:00:00
+IMPL-106,IMPL,IMPL-103,MX-000072,Configurar impuestos y tickets · Miscelánea La Ceiba (El Pitillal Centro),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-15 09:00:00,2026-10-05,2026-10-11 18:00:00
+IMPL-107,IMPL,IMPL-103,MX-000072,Capacitación al personal · Miscelánea La Ceiba (El Pitillal Centro),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-15 09:00:00,2026-10-08,2026-10-11 18:00:00
+IMPL-108,IMPL,IMPL-103,MX-000072,Go-live en tienda · Miscelánea La Ceiba (El Pitillal Centro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-15 09:00:00,2026-10-11,2026-10-11 18:00:00
+IMPL-110,IMPL,IMPL-109,MX-000019,Configurar catálogo de productos · Antojitos Santa Ana (San Lorenzo Tezonco),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-16 09:00:00,2026-10-19,2026-10-31 18:00:00
+IMPL-111,IMPL,IMPL-109,MX-000019,Instalar hardware (terminal e impresora) · Antojitos Santa Ana (San Lorenzo Tezonco),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-16 09:00:00,2026-10-22,2026-10-31 18:00:00
+IMPL-112,IMPL,IMPL-109,MX-000019,Configurar impuestos y tickets · Antojitos Santa Ana (San Lorenzo Tezonco),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-16 09:00:00,2026-10-25,2026-10-31 18:00:00
+IMPL-113,IMPL,IMPL-109,MX-000019,Capacitación al personal · Antojitos Santa Ana (San Lorenzo Tezonco),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-16 09:00:00,2026-10-28,2026-10-31 18:00:00
+IMPL-114,IMPL,IMPL-109,MX-000019,Go-live en tienda · Antojitos Santa Ana (San Lorenzo Tezonco),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-16 09:00:00,2026-10-31,2026-10-31 18:00:00
+IMPL-116,IMPL,IMPL-115,MX-000127,Configurar catálogo de productos · Farmacia San Marcos (Zona Industrial),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-16 09:00:00,2026-09-23,2026-10-05 18:00:00
+IMPL-117,IMPL,IMPL-115,MX-000127,Instalar hardware (terminal e impresora) · Farmacia San Marcos (Zona Industrial),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-16 09:00:00,2026-09-26,2026-10-05 18:00:00
+IMPL-118,IMPL,IMPL-115,MX-000127,Configurar impuestos y tickets · Farmacia San Marcos (Zona Industrial),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-16 09:00:00,2026-09-29,2026-10-05 18:00:00
+IMPL-119,IMPL,IMPL-115,MX-000127,Capacitación al personal · Farmacia San Marcos (Zona Industrial),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-16 09:00:00,2026-10-02,2026-10-05 18:00:00
+IMPL-120,IMPL,IMPL-115,MX-000127,Go-live en tienda · Farmacia San Marcos (Zona Industrial),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-16 09:00:00,2026-10-05,2026-10-05 18:00:00
+IMPL-122,IMPL,IMPL-121,MX-000059,Configurar catálogo de productos · Cocina El Puente (Oblatos),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-17 09:00:00,2026-10-04,2026-10-16 18:00:00
+IMPL-123,IMPL,IMPL-121,MX-000059,Instalar hardware (terminal e impresora) · Cocina El Puente (Oblatos),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-17 09:00:00,2026-10-07,2026-10-16 18:00:00
+IMPL-124,IMPL,IMPL-121,MX-000059,Configurar facturación CFDI 4.0 · Cocina El Puente (Oblatos),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-17 09:00:00,2026-10-10,2026-10-16 18:00:00
+IMPL-125,IMPL,IMPL-121,MX-000059,Capacitación al personal · Cocina El Puente (Oblatos),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-17 09:00:00,2026-10-13,2026-10-16 18:00:00
+IMPL-126,IMPL,IMPL-121,MX-000059,Go-live en tienda · Cocina El Puente (Oblatos),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-17 09:00:00,2026-10-16,2026-10-16 18:00:00
+IMPL-128,IMPL,IMPL-127,MX-000103,Configurar catálogo de productos · Ferretería La Huerta (Revolución),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-17 09:00:00,2026-10-21,2026-11-02 18:00:00
+IMPL-129,IMPL,IMPL-127,MX-000103,Instalar hardware (terminal e impresora) · Ferretería La Huerta (Revolución),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-17 09:00:00,2026-10-24,2026-11-02 18:00:00
+IMPL-130,IMPL,IMPL-127,MX-000103,Configurar impuestos y tickets · Ferretería La Huerta (Revolución),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-17 09:00:00,2026-10-27,2026-11-02 18:00:00
+IMPL-131,IMPL,IMPL-127,MX-000103,Capacitación al personal · Ferretería La Huerta (Revolución),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-17 09:00:00,2026-10-30,2026-11-02 18:00:00
+IMPL-132,IMPL,IMPL-127,MX-000103,Go-live en tienda · Ferretería La Huerta (Revolución),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-17 09:00:00,2026-11-02,2026-11-02 18:00:00
+IMPL-134,IMPL,IMPL-133,MX-000020,Configurar catálogo de productos · Fonda La Cruz (Miguel Hidalgo),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-18 09:00:00,2026-10-12,2026-10-24 18:00:00
+IMPL-135,IMPL,IMPL-133,MX-000020,Instalar hardware (terminal e impresora) · Fonda La Cruz (Miguel Hidalgo),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-18 09:00:00,2026-10-15,2026-10-24 18:00:00
+IMPL-136,IMPL,IMPL-133,MX-000020,Configurar impuestos y tickets · Fonda La Cruz (Miguel Hidalgo),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-18 09:00:00,2026-10-18,2026-10-24 18:00:00
+IMPL-137,IMPL,IMPL-133,MX-000020,Capacitación al personal · Fonda La Cruz (Miguel Hidalgo),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-18 09:00:00,2026-10-21,2026-10-24 18:00:00
+IMPL-138,IMPL,IMPL-133,MX-000020,Go-live en tienda · Fonda La Cruz (Miguel Hidalgo),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-18 09:00:00,2026-10-24,2026-10-24 18:00:00
+IMPL-140,IMPL,IMPL-139,MX-000099,Configurar catálogo de productos · Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-18 09:00:00,2026-10-18,2026-10-30 18:00:00
+IMPL-141,IMPL,IMPL-139,MX-000099,Instalar hardware (terminal e impresora) · Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-18 09:00:00,2026-10-21,2026-10-30 18:00:00
+IMPL-142,IMPL,IMPL-139,MX-000099,Configurar facturación CFDI 4.0 · Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-18 09:00:00,2026-10-24,2026-10-30 18:00:00
+IMPL-143,IMPL,IMPL-139,MX-000099,Capacitación al personal · Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-18 09:00:00,2026-10-27,2026-10-30 18:00:00
+IMPL-144,IMPL,IMPL-139,MX-000099,Go-live en tienda · Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-18 09:00:00,2026-10-30,2026-10-30 18:00:00
+IMPL-146,IMPL,IMPL-145,MX-000138,Configurar catálogo de productos · Restaurante La Pitaya (Emiliano Zapata Oriente),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-18 09:00:00,2026-09-21,2026-10-03 18:00:00
+IMPL-147,IMPL,IMPL-145,MX-000138,Instalar hardware (terminal e impresora) · Restaurante La Pitaya (Emiliano Zapata Oriente),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-18 09:00:00,2026-09-24,2026-10-03 18:00:00
+IMPL-148,IMPL,IMPL-145,MX-000138,Configurar facturación CFDI 4.0 · Restaurante La Pitaya (Emiliano Zapata Oriente),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-18 09:00:00,2026-09-27,2026-10-03 18:00:00
+IMPL-149,IMPL,IMPL-145,MX-000138,Capacitación al personal · Restaurante La Pitaya (Emiliano Zapata Oriente),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-18 09:00:00,2026-09-30,2026-10-03 18:00:00
+IMPL-150,IMPL,IMPL-145,MX-000138,Go-live en tienda · Restaurante La Pitaya (Emiliano Zapata Oriente),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-18 09:00:00,2026-10-03,2026-10-03 18:00:00
+IMPL-152,IMPL,IMPL-151,MX-000089,Configurar catálogo de productos · Antojitos Los Álamos (Centro De Salinas Victoria),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-19 09:00:00,2026-10-07,2026-10-19 18:00:00
+IMPL-153,IMPL,IMPL-151,MX-000089,Instalar hardware (terminal e impresora) · Antojitos Los Álamos (Centro De Salinas Victoria),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-19 09:00:00,2026-10-10,2026-10-19 18:00:00
+IMPL-154,IMPL,IMPL-151,MX-000089,Configurar impuestos y tickets · Antojitos Los Álamos (Centro De Salinas Victoria),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-19 09:00:00,2026-10-13,2026-10-19 18:00:00
+IMPL-155,IMPL,IMPL-151,MX-000089,Capacitación al personal · Antojitos Los Álamos (Centro De Salinas Victoria),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-19 09:00:00,2026-10-16,2026-10-19 18:00:00
+IMPL-156,IMPL,IMPL-151,MX-000089,Go-live en tienda · Antojitos Los Álamos (Centro De Salinas Victoria),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-19 09:00:00,2026-10-19,2026-10-19 18:00:00
+IMPL-158,IMPL,IMPL-157,MX-000117,Configurar catálogo de productos · Farmacia Las Torres (Gran San Pedro Cholul),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-20 09:00:00,2026-10-24,2026-11-05 18:00:00
+IMPL-159,IMPL,IMPL-157,MX-000117,Instalar hardware (terminal e impresora) · Farmacia Las Torres (Gran San Pedro Cholul),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-20 09:00:00,2026-10-27,2026-11-05 18:00:00
+IMPL-160,IMPL,IMPL-157,MX-000117,Configurar facturación CFDI 4.0 · Farmacia Las Torres (Gran San Pedro Cholul),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Carla Vega,2026-09-20 09:00:00,2026-10-30,
+IMPL-161,IMPL,IMPL-157,MX-000117,Capacitación al personal · Farmacia Las Torres (Gran San Pedro Cholul),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-09-20 09:00:00,2026-11-02,
+IMPL-162,IMPL,IMPL-157,MX-000117,Go-live en tienda · Farmacia Las Torres (Gran San Pedro Cholul),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-09-20 09:00:00,2026-11-05,
+IMPL-164,IMPL,IMPL-163,MX-000121,Configurar catálogo de productos · Farmacia La Fuente (Los Almendros),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-20 09:00:00,2026-09-29,2026-10-11 18:00:00
+IMPL-165,IMPL,IMPL-163,MX-000121,Instalar hardware (terminal e impresora) · Farmacia La Fuente (Los Almendros),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-20 09:00:00,2026-10-02,2026-10-11 18:00:00
+IMPL-166,IMPL,IMPL-163,MX-000121,Configurar facturación CFDI 4.0 · Farmacia La Fuente (Los Almendros),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-20 09:00:00,2026-10-05,2026-10-11 18:00:00
+IMPL-167,IMPL,IMPL-163,MX-000121,Capacitación al personal · Farmacia La Fuente (Los Almendros),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-20 09:00:00,2026-10-08,2026-10-11 18:00:00
+IMPL-168,IMPL,IMPL-163,MX-000121,Go-live en tienda · Farmacia La Fuente (Los Almendros),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-20 09:00:00,2026-10-11,2026-10-11 18:00:00
+IMPL-170,IMPL,IMPL-169,MX-000067,Configurar catálogo de productos · Materiales Del Parque (San Sebastian El Grande),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-21 09:00:00,2026-10-10,2026-10-22 18:00:00
+IMPL-171,IMPL,IMPL-169,MX-000067,Instalar hardware (terminal e impresora) · Materiales Del Parque (San Sebastian El Grande),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-21 09:00:00,2026-10-13,2026-10-22 18:00:00
+IMPL-172,IMPL,IMPL-169,MX-000067,Configurar impuestos y tickets · Materiales Del Parque (San Sebastian El Grande),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-21 09:00:00,2026-10-16,2026-10-22 18:00:00
+IMPL-173,IMPL,IMPL-169,MX-000067,Capacitación al personal · Materiales Del Parque (San Sebastian El Grande),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-21 09:00:00,2026-10-19,2026-10-22 18:00:00
+IMPL-174,IMPL,IMPL-169,MX-000067,Go-live en tienda · Materiales Del Parque (San Sebastian El Grande),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-21 09:00:00,2026-10-22,2026-10-22 18:00:00
+IMPL-176,IMPL,IMPL-175,MX-000047,Configurar catálogo de productos · Farmacia Del Parque (Centro),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-21 09:00:00,2026-10-17,2026-10-29 18:00:00
+IMPL-177,IMPL,IMPL-175,MX-000047,Instalar hardware (terminal e impresora) · Farmacia Del Parque (Centro),Task,High,Blocked,TRUE,,Terminal en tránsito con el proveedor de hardware,Paola Ríos,2026-09-21 09:00:00,2026-10-20,
+IMPL-178,IMPL,IMPL-175,MX-000047,Configurar impuestos y tickets · Farmacia Del Parque (Centro),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-09-21 09:00:00,2026-10-23,
+IMPL-179,IMPL,IMPL-175,MX-000047,Capacitación al personal · Farmacia Del Parque (Centro),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-09-21 09:00:00,2026-10-26,
+IMPL-180,IMPL,IMPL-175,MX-000047,Go-live en tienda · Farmacia Del Parque (Centro),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-09-21 09:00:00,2026-10-29,
+IMPL-182,IMPL,IMPL-181,MX-000110,Configurar catálogo de productos · Miscelánea La Joya (Privada La Castaña),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-21 09:00:00,2026-10-26,2026-11-07 18:00:00
+IMPL-183,IMPL,IMPL-181,MX-000110,Instalar hardware (terminal e impresora) · Miscelánea La Joya (Privada La Castaña),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-21 09:00:00,2026-10-29,2026-11-07 18:00:00
+IMPL-184,IMPL,IMPL-181,MX-000110,Configurar facturación CFDI 4.0 · Miscelánea La Joya (Privada La Castaña),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-21 09:00:00,2026-11-01,2026-11-07 18:00:00
+IMPL-185,IMPL,IMPL-181,MX-000110,Capacitación al personal · Miscelánea La Joya (Privada La Castaña),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-21 09:00:00,2026-11-04,2026-11-07 18:00:00
+IMPL-186,IMPL,IMPL-181,MX-000110,Go-live en tienda · Miscelánea La Joya (Privada La Castaña),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-21 09:00:00,2026-11-07,2026-11-07 18:00:00
+IMPL-188,IMPL,IMPL-187,MX-000023,Configurar catálogo de productos · Materiales La Luna (San Miguel Topilejo),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-22 09:00:00,2026-10-06,2026-10-18 18:00:00
+IMPL-189,IMPL,IMPL-187,MX-000023,Instalar hardware (terminal e impresora) · Materiales La Luna (San Miguel Topilejo),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-22 09:00:00,2026-10-09,2026-10-18 18:00:00
+IMPL-190,IMPL,IMPL-187,MX-000023,Configurar facturación CFDI 4.0 · Materiales La Luna (San Miguel Topilejo),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-22 09:00:00,2026-10-12,2026-10-18 18:00:00
+IMPL-191,IMPL,IMPL-187,MX-000023,Capacitación al personal · Materiales La Luna (San Miguel Topilejo),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-22 09:00:00,2026-10-15,2026-10-18 18:00:00
+IMPL-192,IMPL,IMPL-187,MX-000023,Go-live en tienda · Materiales La Luna (San Miguel Topilejo),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-22 09:00:00,2026-10-18,2026-10-18 18:00:00
+IMPL-194,IMPL,IMPL-193,MX-000078,Configurar catálogo de productos · Abarrotes San Marcos (Centro),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-22 09:00:00,2026-10-27,2026-11-08 18:00:00
+IMPL-195,IMPL,IMPL-193,MX-000078,Instalar hardware (terminal e impresora) · Abarrotes San Marcos (Centro),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-22 09:00:00,2026-10-30,2026-11-08 18:00:00
+IMPL-196,IMPL,IMPL-193,MX-000078,Configurar impuestos y tickets · Abarrotes San Marcos (Centro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-22 09:00:00,2026-11-02,2026-11-08 18:00:00
+IMPL-197,IMPL,IMPL-193,MX-000078,Capacitación al personal · Abarrotes San Marcos (Centro),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-22 09:00:00,2026-11-05,2026-11-08 18:00:00
+IMPL-198,IMPL,IMPL-193,MX-000078,Go-live en tienda · Abarrotes San Marcos (Centro),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-22 09:00:00,2026-11-08,2026-11-08 18:00:00
+IMPL-200,IMPL,IMPL-199,MX-000021,Configurar catálogo de productos · Restaurante Del Parque (Industrial),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-23 09:00:00,2026-10-19,2026-10-31 18:00:00
+IMPL-201,IMPL,IMPL-199,MX-000021,Instalar hardware (terminal e impresora) · Restaurante Del Parque (Industrial),Task,High,Blocked,TRUE,,Terminal en tránsito con el proveedor de hardware,Iván Soto,2026-09-23 09:00:00,2026-10-22,
+IMPL-202,IMPL,IMPL-199,MX-000021,Configurar impuestos y tickets · Restaurante Del Parque (Industrial),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-09-23 09:00:00,2026-10-25,
+IMPL-203,IMPL,IMPL-199,MX-000021,Capacitación al personal · Restaurante Del Parque (Industrial),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-23 09:00:00,2026-10-28,
+IMPL-204,IMPL,IMPL-199,MX-000021,Go-live en tienda · Restaurante Del Parque (Industrial),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-09-23 09:00:00,2026-10-31,
+IMPL-206,IMPL,IMPL-205,MX-000058,Configurar catálogo de productos · Cocina Los Álamos (Los Fresnos),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-23 09:00:00,2026-10-07,2026-10-19 18:00:00
+IMPL-207,IMPL,IMPL-205,MX-000058,Instalar hardware (terminal e impresora) · Cocina Los Álamos (Los Fresnos),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-23 09:00:00,2026-10-10,2026-10-19 18:00:00
+IMPL-208,IMPL,IMPL-205,MX-000058,Configurar impuestos y tickets · Cocina Los Álamos (Los Fresnos),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-23 09:00:00,2026-10-13,2026-10-19 18:00:00
+IMPL-209,IMPL,IMPL-205,MX-000058,Capacitación al personal · Cocina Los Álamos (Los Fresnos),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-23 09:00:00,2026-10-16,2026-10-19 18:00:00
+IMPL-210,IMPL,IMPL-205,MX-000058,Go-live en tienda · Cocina Los Álamos (Los Fresnos),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-23 09:00:00,2026-10-19,2026-10-19 18:00:00
+IMPL-212,IMPL,IMPL-211,MX-000136,Configurar catálogo de productos · Taquería Santa Ana (Las Americas),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-23 09:00:00,2026-10-19,2026-10-31 18:00:00
+IMPL-213,IMPL,IMPL-211,MX-000136,Instalar hardware (terminal e impresora) · Taquería Santa Ana (Las Americas),Task,High,Blocked,TRUE,,Terminal en tránsito con el proveedor de hardware,Carla Vega,2026-09-23 09:00:00,2026-10-22,
+IMPL-214,IMPL,IMPL-211,MX-000136,Configurar impuestos y tickets · Taquería Santa Ana (Las Americas),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-23 09:00:00,2026-10-25,
+IMPL-215,IMPL,IMPL-211,MX-000136,Capacitación al personal · Taquería Santa Ana (Las Americas),Task,Medium,To Do,FALSE,,,Carla Vega,2026-09-23 09:00:00,2026-10-28,
+IMPL-216,IMPL,IMPL-211,MX-000136,Go-live en tienda · Taquería Santa Ana (Las Americas),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-09-23 09:00:00,2026-10-31,
+IMPL-218,IMPL,IMPL-217,MX-000010,Configurar catálogo de productos · Farmacia Santa Ana (Nueva Santa María),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-24 09:00:00,2026-10-22,2026-11-03 18:00:00
+IMPL-219,IMPL,IMPL-217,MX-000010,Instalar hardware (terminal e impresora) · Farmacia Santa Ana (Nueva Santa María),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-24 09:00:00,2026-10-25,2026-11-03 18:00:00
+IMPL-220,IMPL,IMPL-217,MX-000010,Configurar facturación CFDI 4.0 · Farmacia Santa Ana (Nueva Santa María),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-24 09:00:00,2026-10-28,2026-11-03 18:00:00
+IMPL-221,IMPL,IMPL-217,MX-000010,Capacitación al personal · Farmacia Santa Ana (Nueva Santa María),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-24 09:00:00,2026-10-31,2026-11-03 18:00:00
+IMPL-222,IMPL,IMPL-217,MX-000010,Go-live en tienda · Farmacia Santa Ana (Nueva Santa María),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-24 09:00:00,2026-11-03,2026-11-03 18:00:00
+IMPL-224,IMPL,IMPL-223,MX-000140,Configurar catálogo de productos · Antojitos El Ahorro (Gran Santa Fe),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-24 09:00:00,2026-10-29,2026-11-10 18:00:00
+IMPL-225,IMPL,IMPL-223,MX-000140,Instalar hardware (terminal e impresora) · Antojitos El Ahorro (Gran Santa Fe),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-24 09:00:00,2026-11-01,2026-11-10 18:00:00
+IMPL-226,IMPL,IMPL-223,MX-000140,Configurar facturación CFDI 4.0 · Antojitos El Ahorro (Gran Santa Fe),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Hugo Peña,2026-09-24 09:00:00,2026-11-04,
+IMPL-227,IMPL,IMPL-223,MX-000140,Capacitación al personal · Antojitos El Ahorro (Gran Santa Fe),Task,Medium,To Do,FALSE,,,Iván Soto,2026-09-24 09:00:00,2026-11-07,
+IMPL-228,IMPL,IMPL-223,MX-000140,Go-live en tienda · Antojitos El Ahorro (Gran Santa Fe),Task,Medium,To Do,FALSE,,,Carla Vega,2026-09-24 09:00:00,2026-11-10,
+IMPL-230,IMPL,IMPL-229,MX-000128,Configurar catálogo de productos · Botica La Fuente (Fidel Velazquez),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-24 09:00:00,2026-10-29,2026-11-10 18:00:00
+IMPL-231,IMPL,IMPL-229,MX-000128,Instalar hardware (terminal e impresora) · Botica La Fuente (Fidel Velazquez),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-24 09:00:00,2026-11-01,2026-11-10 18:00:00
+IMPL-232,IMPL,IMPL-229,MX-000128,Configurar facturación CFDI 4.0 · Botica La Fuente (Fidel Velazquez),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Paola Ríos,2026-09-24 09:00:00,2026-11-04,
+IMPL-233,IMPL,IMPL-229,MX-000128,Capacitación al personal · Botica La Fuente (Fidel Velazquez),Task,Medium,To Do,FALSE,,,Carla Vega,2026-09-24 09:00:00,2026-11-07,
+IMPL-234,IMPL,IMPL-229,MX-000128,Go-live en tienda · Botica La Fuente (Fidel Velazquez),Task,Medium,To Do,FALSE,,,Carla Vega,2026-09-24 09:00:00,2026-11-10,
+IMPL-236,IMPL,IMPL-235,MX-000133,Configurar catálogo de productos · Antojitos La Loma (Santa María),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-24 09:00:00,2026-10-01,2026-10-13 18:00:00
+IMPL-237,IMPL,IMPL-235,MX-000133,Instalar hardware (terminal e impresora) · Antojitos La Loma (Santa María),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-24 09:00:00,2026-10-04,2026-10-13 18:00:00
+IMPL-238,IMPL,IMPL-235,MX-000133,Configurar impuestos y tickets · Antojitos La Loma (Santa María),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-24 09:00:00,2026-10-07,2026-10-13 18:00:00
+IMPL-239,IMPL,IMPL-235,MX-000133,Capacitación al personal · Antojitos La Loma (Santa María),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-24 09:00:00,2026-10-10,2026-10-13 18:00:00
+IMPL-240,IMPL,IMPL-235,MX-000133,Go-live en tienda · Antojitos La Loma (Santa María),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-24 09:00:00,2026-10-13,2026-10-13 18:00:00
+IMPL-242,IMPL,IMPL-241,MX-000003,Configurar catálogo de productos · Botica La Palma (Molino De Rosas),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-25 09:00:00,2026-10-28,2026-11-09 18:00:00
+IMPL-243,IMPL,IMPL-241,MX-000003,Instalar hardware (terminal e impresora) · Botica La Palma (Molino De Rosas),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-25 09:00:00,2026-10-31,2026-11-09 18:00:00
+IMPL-244,IMPL,IMPL-241,MX-000003,Configurar impuestos y tickets · Botica La Palma (Molino De Rosas),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-25 09:00:00,2026-11-03,2026-11-09 18:00:00
+IMPL-245,IMPL,IMPL-241,MX-000003,Capacitación al personal · Botica La Palma (Molino De Rosas),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-25 09:00:00,2026-11-06,2026-11-09 18:00:00
+IMPL-246,IMPL,IMPL-241,MX-000003,Go-live en tienda · Botica La Palma (Molino De Rosas),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-25 09:00:00,2026-11-09,2026-11-09 18:00:00
+IMPL-248,IMPL,IMPL-247,MX-000092,Configurar catálogo de productos · Taquería Del Centro (San Francisco),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-25 09:00:00,2026-10-13,2026-10-25 18:00:00
+IMPL-249,IMPL,IMPL-247,MX-000092,Instalar hardware (terminal e impresora) · Taquería Del Centro (San Francisco),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-25 09:00:00,2026-10-16,2026-10-25 18:00:00
+IMPL-250,IMPL,IMPL-247,MX-000092,Configurar impuestos y tickets · Taquería Del Centro (San Francisco),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-25 09:00:00,2026-10-19,2026-10-25 18:00:00
+IMPL-251,IMPL,IMPL-247,MX-000092,Capacitación al personal · Taquería Del Centro (San Francisco),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-25 09:00:00,2026-10-22,2026-10-25 18:00:00
+IMPL-252,IMPL,IMPL-247,MX-000092,Go-live en tienda · Taquería Del Centro (San Francisco),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-25 09:00:00,2026-10-25,2026-10-25 18:00:00
+IMPL-254,IMPL,IMPL-253,MX-000102,Configurar catálogo de productos · Tlapalería El Olivo (Paseo De San Isidro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-25 09:00:00,2026-10-28,2026-11-09 18:00:00
+IMPL-255,IMPL,IMPL-253,MX-000102,Instalar hardware (terminal e impresora) · Tlapalería El Olivo (Paseo De San Isidro),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-25 09:00:00,2026-10-31,2026-11-09 18:00:00
+IMPL-256,IMPL,IMPL-253,MX-000102,Configurar facturación CFDI 4.0 · Tlapalería El Olivo (Paseo De San Isidro),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-25 09:00:00,2026-11-03,2026-11-09 18:00:00
+IMPL-257,IMPL,IMPL-253,MX-000102,Capacitación al personal · Tlapalería El Olivo (Paseo De San Isidro),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-25 09:00:00,2026-11-06,2026-11-09 18:00:00
+IMPL-258,IMPL,IMPL-253,MX-000102,Go-live en tienda · Tlapalería El Olivo (Paseo De San Isidro),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-25 09:00:00,2026-11-09,2026-11-09 18:00:00
+IMPL-260,IMPL,IMPL-259,MX-000061,Configurar catálogo de productos · Ferretería La Ermita (Guayabitos),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-26 09:00:00,2026-10-29,2026-11-10 18:00:00
+IMPL-261,IMPL,IMPL-259,MX-000061,Instalar hardware (terminal e impresora) · Ferretería La Ermita (Guayabitos),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-26 09:00:00,2026-11-01,2026-11-10 18:00:00
+IMPL-262,IMPL,IMPL-259,MX-000061,Configurar facturación CFDI 4.0 · Ferretería La Ermita (Guayabitos),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-26 09:00:00,2026-11-04,2026-11-10 18:00:00
+IMPL-263,IMPL,IMPL-259,MX-000061,Capacitación al personal · Ferretería La Ermita (Guayabitos),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-26 09:00:00,2026-11-07,2026-11-10 18:00:00
+IMPL-264,IMPL,IMPL-259,MX-000061,Go-live en tienda · Ferretería La Ermita (Guayabitos),Task,Medium,Done,FALSE,,,Paola Ríos,2026-09-26 09:00:00,2026-11-10,2026-11-10 18:00:00
+IMPL-266,IMPL,IMPL-265,MX-000074,Configurar catálogo de productos · Miscelánea La Gloria (Los Abedules),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-26 09:00:00,2026-10-22,2026-11-03 18:00:00
+IMPL-267,IMPL,IMPL-265,MX-000074,Instalar hardware (terminal e impresora) · Miscelánea La Gloria (Los Abedules),Task,High,Blocked,TRUE,,Terminal en tránsito con el proveedor de hardware,Carla Vega,2026-09-26 09:00:00,2026-10-25,
+IMPL-268,IMPL,IMPL-265,MX-000074,Configurar impuestos y tickets · Miscelánea La Gloria (Los Abedules),Task,Medium,To Do,FALSE,,,Carla Vega,2026-09-26 09:00:00,2026-10-28,
+IMPL-269,IMPL,IMPL-265,MX-000074,Capacitación al personal · Miscelánea La Gloria (Los Abedules),Task,Medium,To Do,FALSE,,,Iván Soto,2026-09-26 09:00:00,2026-10-31,
+IMPL-270,IMPL,IMPL-265,MX-000074,Go-live en tienda · Miscelánea La Gloria (Los Abedules),Task,Medium,To Do,FALSE,,,Carla Vega,2026-09-26 09:00:00,2026-11-03,
+IMPL-272,IMPL,IMPL-271,MX-000104,Configurar catálogo de productos · Tlapalería El Pozo (Centro De Galeana),Task,Medium,Done,FALSE,,,Jorge Lara,2026-09-27 09:00:00,2026-10-23,2026-11-04 18:00:00
+IMPL-273,IMPL,IMPL-271,MX-000104,Instalar hardware (terminal e impresora) · Tlapalería El Pozo (Centro De Galeana),Task,High,Blocked,TRUE,,Terminal en tránsito con el proveedor de hardware,Luis Pérez,2026-09-27 09:00:00,2026-10-26,
+IMPL-274,IMPL,IMPL-271,MX-000104,Configurar impuestos y tickets · Tlapalería El Pozo (Centro De Galeana),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-09-27 09:00:00,2026-10-29,
+IMPL-275,IMPL,IMPL-271,MX-000104,Capacitación al personal · Tlapalería El Pozo (Centro De Galeana),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-09-27 09:00:00,2026-11-01,
+IMPL-276,IMPL,IMPL-271,MX-000104,Go-live en tienda · Tlapalería El Pozo (Centro De Galeana),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-27 09:00:00,2026-11-04,
+IMPL-278,IMPL,IMPL-277,MX-000131,Configurar catálogo de productos · Taquería El Puente (Libertad),Task,Medium,Done,FALSE,,,Valeria Gil,2026-09-27 09:00:00,2026-10-13,2026-10-25 18:00:00
+IMPL-279,IMPL,IMPL-277,MX-000131,Instalar hardware (terminal e impresora) · Taquería El Puente (Libertad),Task,Medium,Done,FALSE,,,Carla Vega,2026-09-27 09:00:00,2026-10-16,2026-10-25 18:00:00
+IMPL-280,IMPL,IMPL-277,MX-000131,Configurar facturación CFDI 4.0 · Taquería El Puente (Libertad),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Iván Soto,2026-09-27 09:00:00,2026-10-19,
+IMPL-281,IMPL,IMPL-277,MX-000131,Capacitación al personal · Taquería El Puente (Libertad),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-09-27 09:00:00,2026-10-22,
+IMPL-282,IMPL,IMPL-277,MX-000131,Go-live en tienda · Taquería El Puente (Libertad),Task,Medium,To Do,FALSE,,,Iván Soto,2026-09-27 09:00:00,2026-10-25,
+IMPL-284,IMPL,IMPL-283,MX-000006,Configurar catálogo de productos · Farmacia El Olivo (San Bartolo Atepehuacan),Task,Medium,Done,FALSE,,,Iván Soto,2026-09-29 09:00:00,2026-10-25,2026-11-06 18:00:00
+IMPL-285,IMPL,IMPL-283,MX-000006,Instalar hardware (terminal e impresora) · Farmacia El Olivo (San Bartolo Atepehuacan),Task,High,Blocked,TRUE,,El cliente pidió reprogramar la instalación,Carla Vega,2026-09-29 09:00:00,2026-10-28,
+IMPL-286,IMPL,IMPL-283,MX-000006,Configurar impuestos y tickets · Farmacia El Olivo (San Bartolo Atepehuacan),Task,Medium,To Do,FALSE,,,Diego Mora,2026-09-29 09:00:00,2026-10-31,
+IMPL-287,IMPL,IMPL-283,MX-000006,Capacitación al personal · Farmacia El Olivo (San Bartolo Atepehuacan),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-09-29 09:00:00,2026-11-03,
+IMPL-288,IMPL,IMPL-283,MX-000006,Go-live en tienda · Farmacia El Olivo (San Bartolo Atepehuacan),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-09-29 09:00:00,2026-11-06,
+IMPL-290,IMPL,IMPL-289,MX-000107,Configurar catálogo de productos · Abarrotes La Huerta (Cerro De Las Mitras),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-30 09:00:00,2026-10-30,2026-11-11 18:00:00
+IMPL-291,IMPL,IMPL-289,MX-000107,Instalar hardware (terminal e impresora) · Abarrotes La Huerta (Cerro De Las Mitras),Task,Medium,Done,FALSE,,,Diego Mora,2026-09-30 09:00:00,2026-11-02,2026-11-11 18:00:00
+IMPL-292,IMPL,IMPL-289,MX-000107,Configurar facturación CFDI 4.0 · Abarrotes La Huerta (Cerro De Las Mitras),Task,Medium,Done,FALSE,,,Sofía Cano,2026-09-30 09:00:00,2026-11-05,2026-11-11 18:00:00
+IMPL-293,IMPL,IMPL-289,MX-000107,Capacitación al personal · Abarrotes La Huerta (Cerro De Las Mitras),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-09-30 09:00:00,2026-11-08,2026-11-11 18:00:00
+IMPL-294,IMPL,IMPL-289,MX-000107,Go-live en tienda · Abarrotes La Huerta (Cerro De Las Mitras),Task,Medium,Done,FALSE,,,Luis Pérez,2026-09-30 09:00:00,2026-11-11,2026-11-11 18:00:00
+IMPL-296,IMPL,IMPL-295,MX-000112,Configurar catálogo de productos · Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),Task,Medium,Done,FALSE,,,Hugo Peña,2026-09-30 09:00:00,2026-10-26,2026-11-07 18:00:00
+IMPL-297,IMPL,IMPL-295,MX-000112,Instalar hardware (terminal e impresora) · Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),Task,High,Blocked,TRUE,,Terminal en tránsito con el proveedor de hardware,Iván Soto,2026-09-30 09:00:00,2026-10-29,
+IMPL-298,IMPL,IMPL-295,MX-000112,Configurar impuestos y tickets · Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-09-30 09:00:00,2026-11-01,
+IMPL-299,IMPL,IMPL-295,MX-000112,Capacitación al personal · Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-09-30 09:00:00,2026-11-04,
+IMPL-300,IMPL,IMPL-295,MX-000112,Go-live en tienda · Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-09-30 09:00:00,2026-11-07,
+IMPL-302,IMPL,IMPL-301,MX-000134,Configurar catálogo de productos · Taquería La Luna (Ciudad Caucel),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-10-02 09:00:00,2026-10-19,2026-10-31 18:00:00
+IMPL-303,IMPL,IMPL-301,MX-000134,Instalar hardware (terminal e impresora) · Taquería La Luna (Ciudad Caucel),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-02 09:00:00,2026-10-22,2026-10-31 18:00:00
+IMPL-304,IMPL,IMPL-301,MX-000134,Configurar facturación CFDI 4.0 · Taquería La Luna (Ciudad Caucel),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Jorge Lara,2026-10-02 09:00:00,2026-10-25,
+IMPL-305,IMPL,IMPL-301,MX-000134,Capacitación al personal · Taquería La Luna (Ciudad Caucel),Task,Medium,To Do,FALSE,,,Iván Soto,2026-10-02 09:00:00,2026-10-28,
+IMPL-306,IMPL,IMPL-301,MX-000134,Go-live en tienda · Taquería La Luna (Ciudad Caucel),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-02 09:00:00,2026-10-31,
+IMPL-308,IMPL,IMPL-307,MX-000071,Configurar catálogo de productos · Tienda Los Álamos (Mariano Otero),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-10-03 09:00:00,2026-10-27,2026-11-08 18:00:00
+IMPL-309,IMPL,IMPL-307,MX-000071,Instalar hardware (terminal e impresora) · Tienda Los Álamos (Mariano Otero),Task,Medium,Done,FALSE,,,Jorge Lara,2026-10-03 09:00:00,2026-10-30,2026-11-08 18:00:00
+IMPL-310,IMPL,IMPL-307,MX-000071,Configurar impuestos y tickets · Tienda Los Álamos (Mariano Otero),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-03 09:00:00,2026-11-02,2026-11-08 18:00:00
+IMPL-311,IMPL,IMPL-307,MX-000071,Capacitación al personal · Tienda Los Álamos (Mariano Otero),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-10-03 09:00:00,2026-11-05,2026-11-08 18:00:00
+IMPL-312,IMPL,IMPL-307,MX-000071,Go-live en tienda · Tienda Los Álamos (Mariano Otero),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-03 09:00:00,2026-11-08,2026-11-08 18:00:00
+IMPL-314,IMPL,IMPL-313,MX-000094,Configurar catálogo de productos · Taquería Santa Ana (Real Anáhuac),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-03 09:00:00,2026-10-16,2026-10-28 18:00:00
+IMPL-315,IMPL,IMPL-313,MX-000094,Instalar hardware (terminal e impresora) · Taquería Santa Ana (Real Anáhuac),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-03 09:00:00,2026-10-19,2026-10-28 18:00:00
+IMPL-316,IMPL,IMPL-313,MX-000094,Configurar facturación CFDI 4.0 · Taquería Santa Ana (Real Anáhuac),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-03 09:00:00,2026-10-22,2026-10-28 18:00:00
+IMPL-317,IMPL,IMPL-313,MX-000094,Capacitación al personal · Taquería Santa Ana (Real Anáhuac),Task,Medium,Done,FALSE,,,Jorge Lara,2026-10-03 09:00:00,2026-10-25,2026-10-28 18:00:00
+IMPL-318,IMPL,IMPL-313,MX-000094,Go-live en tienda · Taquería Santa Ana (Real Anáhuac),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-03 09:00:00,2026-10-28,2026-10-28 18:00:00
+IMPL-320,IMPL,IMPL-319,MX-000145,Configurar catálogo de productos · Abarrotes La Palma (Guadalupana),Task,Medium,Done,FALSE,,,Jorge Lara,2026-10-05 09:00:00,2026-11-10,2026-11-14 18:00:00
+IMPL-321,IMPL,IMPL-319,MX-000145,Instalar hardware (terminal e impresora) · Abarrotes La Palma (Guadalupana),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-05 09:00:00,2026-11-13,2026-11-14 18:00:00
+IMPL-322,IMPL,IMPL-319,MX-000145,Configurar impuestos y tickets · Abarrotes La Palma (Guadalupana),Task,Medium,In Progress,FALSE,,,Hugo Peña,2026-10-05 09:00:00,2026-11-16,
+IMPL-323,IMPL,IMPL-319,MX-000145,Capacitación al personal · Abarrotes La Palma (Guadalupana),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-05 09:00:00,2026-11-19,
+IMPL-324,IMPL,IMPL-319,MX-000145,Go-live en tienda · Abarrotes La Palma (Guadalupana),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-10-05 09:00:00,2026-11-22,
+IMPL-326,IMPL,IMPL-325,MX-000063,Configurar catálogo de productos · Materiales La Nueva (Las Juntas),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-07 09:00:00,2026-11-06,2026-11-14 18:00:00
+IMPL-327,IMPL,IMPL-325,MX-000063,Instalar hardware (terminal e impresora) · Materiales La Nueva (Las Juntas),Task,Medium,Done,FALSE,,,Paola Ríos,2026-10-07 09:00:00,2026-11-09,2026-11-14 18:00:00
+IMPL-328,IMPL,IMPL-325,MX-000063,Configurar facturación CFDI 4.0 · Materiales La Nueva (Las Juntas),Task,Medium,In Progress,FALSE,,,Hugo Peña,2026-10-07 09:00:00,2026-11-12,
+IMPL-329,IMPL,IMPL-325,MX-000063,Capacitación al personal · Materiales La Nueva (Las Juntas),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-10-07 09:00:00,2026-11-15,
+IMPL-330,IMPL,IMPL-325,MX-000063,Go-live en tienda · Materiales La Nueva (Las Juntas),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-10-07 09:00:00,2026-11-18,
+IMPL-332,IMPL,IMPL-331,MX-000022,Configurar catálogo de productos · Antojitos El Roble (San Jerónimo Lídice),Task,Medium,Done,FALSE,,,Hugo Peña,2026-10-08 09:00:00,2026-11-08,2026-11-14 18:00:00
+IMPL-333,IMPL,IMPL-331,MX-000022,Instalar hardware (terminal e impresora) · Antojitos El Roble (San Jerónimo Lídice),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-08 09:00:00,2026-11-11,2026-11-14 18:00:00
+IMPL-334,IMPL,IMPL-331,MX-000022,Configurar impuestos y tickets · Antojitos El Roble (San Jerónimo Lídice),Task,Medium,In Progress,FALSE,,,Carla Vega,2026-10-08 09:00:00,2026-11-14,
+IMPL-335,IMPL,IMPL-331,MX-000022,Capacitación al personal · Antojitos El Roble (San Jerónimo Lídice),Task,Medium,To Do,FALSE,,,Diego Mora,2026-10-08 09:00:00,2026-11-17,
+IMPL-336,IMPL,IMPL-331,MX-000022,Go-live en tienda · Antojitos El Roble (San Jerónimo Lídice),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-10-08 09:00:00,2026-11-20,
+IMPL-338,IMPL,IMPL-337,MX-000122,Configurar catálogo de productos · Farmacia La Esperanza (San Jose Tecoh),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-09 09:00:00,2026-10-28,2026-11-09 18:00:00
+IMPL-339,IMPL,IMPL-337,MX-000122,Instalar hardware (terminal e impresora) · Farmacia La Esperanza (San Jose Tecoh),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-09 09:00:00,2026-10-31,2026-11-09 18:00:00
+IMPL-340,IMPL,IMPL-337,MX-000122,Configurar facturación CFDI 4.0 · Farmacia La Esperanza (San Jose Tecoh),Task,High,Blocked,TRUE,PLAT-7,No se puede timbrar la factura de prueba. Depende de PLAT-7.,Iván Soto,2026-10-09 09:00:00,2026-11-03,
+IMPL-341,IMPL,IMPL-337,MX-000122,Capacitación al personal · Farmacia La Esperanza (San Jose Tecoh),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-10-09 09:00:00,2026-11-06,
+IMPL-342,IMPL,IMPL-337,MX-000122,Go-live en tienda · Farmacia La Esperanza (San Jose Tecoh),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-09 09:00:00,2026-11-09,
+IMPL-344,IMPL,IMPL-343,MX-000030,Configurar catálogo de productos · Ferretería La Esperanza (Centro),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-10 09:00:00,2026-11-04,2026-11-14 18:00:00
+IMPL-345,IMPL,IMPL-343,MX-000030,Instalar hardware (terminal e impresora) · Ferretería La Esperanza (Centro),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-10 09:00:00,2026-11-07,2026-11-14 18:00:00
+IMPL-346,IMPL,IMPL-343,MX-000030,Configurar facturación CFDI 4.0 · Ferretería La Esperanza (Centro),Task,Medium,In Progress,FALSE,,,Diego Mora,2026-10-10 09:00:00,2026-11-10,
+IMPL-347,IMPL,IMPL-343,MX-000030,Capacitación al personal · Ferretería La Esperanza (Centro),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-10 09:00:00,2026-11-13,
+IMPL-348,IMPL,IMPL-343,MX-000030,Go-live en tienda · Ferretería La Esperanza (Centro),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-10 09:00:00,2026-11-16,
+IMPL-350,IMPL,IMPL-349,MX-000080,Configurar catálogo de productos · Farmacia La Ceiba (Zona Residencial Chipinque),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-12 09:00:00,2026-10-26,2026-11-07 18:00:00
+IMPL-351,IMPL,IMPL-349,MX-000080,Instalar hardware (terminal e impresora) · Farmacia La Ceiba (Zona Residencial Chipinque),Task,Medium,Done,FALSE,,,Jorge Lara,2026-10-12 09:00:00,2026-10-29,2026-11-07 18:00:00
+IMPL-352,IMPL,IMPL-349,MX-000080,Configurar impuestos y tickets · Farmacia La Ceiba (Zona Residencial Chipinque),Task,Medium,Done,FALSE,,,Hugo Peña,2026-10-12 09:00:00,2026-11-01,2026-11-07 18:00:00
+IMPL-353,IMPL,IMPL-349,MX-000080,Capacitación al personal · Farmacia La Ceiba (Zona Residencial Chipinque),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-12 09:00:00,2026-11-04,2026-11-07 18:00:00
+IMPL-354,IMPL,IMPL-349,MX-000080,Go-live en tienda · Farmacia La Ceiba (Zona Residencial Chipinque),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-12 09:00:00,2026-11-07,2026-11-07 18:00:00
+IMPL-356,IMPL,IMPL-355,MX-000037,Configurar catálogo de productos · Abarrotes Santa Rosa (Valle De Luces),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-13 09:00:00,2026-11-16,2026-11-14 18:00:00
+IMPL-357,IMPL,IMPL-355,MX-000037,Instalar hardware (terminal e impresora) · Abarrotes Santa Rosa (Valle De Luces),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-13 09:00:00,2026-11-19,2026-11-14 18:00:00
+IMPL-358,IMPL,IMPL-355,MX-000037,Configurar impuestos y tickets · Abarrotes Santa Rosa (Valle De Luces),Task,Medium,In Progress,FALSE,,,Diego Mora,2026-10-13 09:00:00,2026-11-22,
+IMPL-359,IMPL,IMPL-355,MX-000037,Capacitación al personal · Abarrotes Santa Rosa (Valle De Luces),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-10-13 09:00:00,2026-11-25,
+IMPL-360,IMPL,IMPL-355,MX-000037,Go-live en tienda · Abarrotes Santa Rosa (Valle De Luces),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-10-13 09:00:00,2026-11-28,
+IMPL-362,IMPL,IMPL-361,MX-000028,Configurar catálogo de productos · Ferretería Los Álamos (Ajusco),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-13 09:00:00,2026-11-09,2026-11-14 18:00:00
+IMPL-363,IMPL,IMPL-361,MX-000028,Instalar hardware (terminal e impresora) · Ferretería Los Álamos (Ajusco),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-13 09:00:00,2026-11-12,2026-11-14 18:00:00
+IMPL-364,IMPL,IMPL-361,MX-000028,Configurar facturación CFDI 4.0 · Ferretería Los Álamos (Ajusco),Task,Medium,In Progress,FALSE,,,Iván Soto,2026-10-13 09:00:00,2026-11-15,
+IMPL-365,IMPL,IMPL-361,MX-000028,Capacitación al personal · Ferretería Los Álamos (Ajusco),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-13 09:00:00,2026-11-18,
+IMPL-366,IMPL,IMPL-361,MX-000028,Go-live en tienda · Ferretería Los Álamos (Ajusco),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-10-13 09:00:00,2026-11-21,
+IMPL-368,IMPL,IMPL-367,MX-000113,Configurar catálogo de productos · Tienda La Nueva (Buena Vista),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-13 09:00:00,2026-11-09,2026-11-14 18:00:00
+IMPL-369,IMPL,IMPL-367,MX-000113,Instalar hardware (terminal e impresora) · Tienda La Nueva (Buena Vista),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-13 09:00:00,2026-11-12,2026-11-14 18:00:00
+IMPL-370,IMPL,IMPL-367,MX-000113,Configurar facturación CFDI 4.0 · Tienda La Nueva (Buena Vista),Task,Medium,In Progress,FALSE,,,Sofía Cano,2026-10-13 09:00:00,2026-11-15,
+IMPL-371,IMPL,IMPL-367,MX-000113,Capacitación al personal · Tienda La Nueva (Buena Vista),Task,Medium,To Do,FALSE,,,Diego Mora,2026-10-13 09:00:00,2026-11-18,
+IMPL-372,IMPL,IMPL-367,MX-000113,Go-live en tienda · Tienda La Nueva (Buena Vista),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-13 09:00:00,2026-11-21,
+IMPL-374,IMPL,IMPL-373,MX-000087,Configurar catálogo de productos · Farmacia El Ahorro (Contry),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-13 09:00:00,2026-10-31,2026-11-12 18:00:00
+IMPL-375,IMPL,IMPL-373,MX-000087,Instalar hardware (terminal e impresora) · Farmacia El Ahorro (Contry),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-13 09:00:00,2026-11-03,2026-11-12 18:00:00
+IMPL-376,IMPL,IMPL-373,MX-000087,Configurar facturación CFDI 4.0 · Farmacia El Ahorro (Contry),Task,Medium,Done,FALSE,,,Jorge Lara,2026-10-13 09:00:00,2026-11-06,2026-11-12 18:00:00
+IMPL-377,IMPL,IMPL-373,MX-000087,Capacitación al personal · Farmacia El Ahorro (Contry),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-13 09:00:00,2026-11-09,2026-11-12 18:00:00
+IMPL-378,IMPL,IMPL-373,MX-000087,Go-live en tienda · Farmacia El Ahorro (Contry),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-13 09:00:00,2026-11-12,2026-11-12 18:00:00
+IMPL-380,IMPL,IMPL-379,MX-000018,Configurar catálogo de productos · Taquería Del Parque (Insurgentes Mixcoac),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-14 09:00:00,2026-11-17,2026-11-14 18:00:00
+IMPL-381,IMPL,IMPL-379,MX-000018,Instalar hardware (terminal e impresora) · Taquería Del Parque (Insurgentes Mixcoac),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-14 09:00:00,2026-11-20,2026-11-14 18:00:00
+IMPL-382,IMPL,IMPL-379,MX-000018,Configurar impuestos y tickets · Taquería Del Parque (Insurgentes Mixcoac),Task,Medium,In Progress,FALSE,,,Luis Pérez,2026-10-14 09:00:00,2026-11-23,
+IMPL-383,IMPL,IMPL-379,MX-000018,Capacitación al personal · Taquería Del Parque (Insurgentes Mixcoac),Task,Medium,To Do,FALSE,,,Diego Mora,2026-10-14 09:00:00,2026-11-26,
+IMPL-384,IMPL,IMPL-379,MX-000018,Go-live en tienda · Taquería Del Parque (Insurgentes Mixcoac),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-10-14 09:00:00,2026-11-29,
+IMPL-386,IMPL,IMPL-385,MX-000007,Configurar catálogo de productos · Botica La Fuente (Santa Cecilia),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-15 09:00:00,2026-10-31,2026-11-12 18:00:00
+IMPL-387,IMPL,IMPL-385,MX-000007,Instalar hardware (terminal e impresora) · Botica La Fuente (Santa Cecilia),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-15 09:00:00,2026-11-03,2026-11-12 18:00:00
+IMPL-388,IMPL,IMPL-385,MX-000007,Configurar facturación CFDI 4.0 · Botica La Fuente (Santa Cecilia),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-15 09:00:00,2026-11-06,2026-11-12 18:00:00
+IMPL-389,IMPL,IMPL-385,MX-000007,Capacitación al personal · Botica La Fuente (Santa Cecilia),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-10-15 09:00:00,2026-11-09,2026-11-12 18:00:00
+IMPL-390,IMPL,IMPL-385,MX-000007,Go-live en tienda · Botica La Fuente (Santa Cecilia),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-15 09:00:00,2026-11-12,2026-11-12 18:00:00
+IMPL-392,IMPL,IMPL-391,MX-000141,Configurar catálogo de productos · Tlapalería Del Centro (Benito Juárez),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-17 09:00:00,2026-11-19,2026-11-14 18:00:00
+IMPL-393,IMPL,IMPL-391,MX-000141,Instalar hardware (terminal e impresora) · Tlapalería Del Centro (Benito Juárez),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-10-17 09:00:00,2026-11-22,2026-11-14 18:00:00
+IMPL-394,IMPL,IMPL-391,MX-000141,Configurar impuestos y tickets · Tlapalería Del Centro (Benito Juárez),Task,Medium,In Progress,FALSE,,,Hugo Peña,2026-10-17 09:00:00,2026-11-25,
+IMPL-395,IMPL,IMPL-391,MX-000141,Capacitación al personal · Tlapalería Del Centro (Benito Juárez),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-10-17 09:00:00,2026-11-28,
+IMPL-396,IMPL,IMPL-391,MX-000141,Go-live en tienda · Tlapalería Del Centro (Benito Juárez),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-10-17 09:00:00,2026-12-01,
+IMPL-398,IMPL,IMPL-397,MX-000132,Configurar catálogo de productos · Antojitos La Gloria (Leandro Valle),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-17 09:00:00,2026-09-27,2026-10-09 18:00:00
+IMPL-399,IMPL,IMPL-397,MX-000132,Instalar hardware (terminal e impresora) · Antojitos La Gloria (Leandro Valle),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-17 09:00:00,2026-09-30,2026-10-09 18:00:00
+IMPL-400,IMPL,IMPL-397,MX-000132,Configurar impuestos y tickets · Antojitos La Gloria (Leandro Valle),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-17 09:00:00,2026-10-03,2026-10-09 18:00:00
+IMPL-401,IMPL,IMPL-397,MX-000132,Capacitación al personal · Antojitos La Gloria (Leandro Valle),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-17 09:00:00,2026-10-06,2026-10-09 18:00:00
+IMPL-402,IMPL,IMPL-397,MX-000132,Go-live en tienda · Antojitos La Gloria (Leandro Valle),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-17 09:00:00,2026-10-09,2026-10-09 18:00:00
+IMPL-404,IMPL,IMPL-403,MX-000064,Configurar catálogo de productos · Ferretería El Faro (Nuevo Fuerte),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-19 09:00:00,2026-11-16,2026-11-14 18:00:00
+IMPL-405,IMPL,IMPL-403,MX-000064,Instalar hardware (terminal e impresora) · Ferretería El Faro (Nuevo Fuerte),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-19 09:00:00,2026-11-19,2026-11-14 18:00:00
+IMPL-406,IMPL,IMPL-403,MX-000064,Configurar impuestos y tickets · Ferretería El Faro (Nuevo Fuerte),Task,Medium,In Progress,FALSE,,,Diego Mora,2026-10-19 09:00:00,2026-11-22,
+IMPL-407,IMPL,IMPL-403,MX-000064,Capacitación al personal · Ferretería El Faro (Nuevo Fuerte),Task,Medium,To Do,FALSE,,,Diego Mora,2026-10-19 09:00:00,2026-11-25,
+IMPL-408,IMPL,IMPL-403,MX-000064,Go-live en tienda · Ferretería El Faro (Nuevo Fuerte),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-19 09:00:00,2026-11-28,
+IMPL-410,IMPL,IMPL-409,MX-000073,Configurar catálogo de productos · Tienda La Ermita (Talpita),Task,Medium,Done,FALSE,,,Hugo Peña,2026-10-20 09:00:00,2026-11-18,2026-11-14 18:00:00
+IMPL-411,IMPL,IMPL-409,MX-000073,Instalar hardware (terminal e impresora) · Tienda La Ermita (Talpita),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-20 09:00:00,2026-11-21,2026-11-14 18:00:00
+IMPL-412,IMPL,IMPL-409,MX-000073,Configurar facturación CFDI 4.0 · Tienda La Ermita (Talpita),Task,Medium,In Progress,FALSE,,,Carla Vega,2026-10-20 09:00:00,2026-11-24,
+IMPL-413,IMPL,IMPL-409,MX-000073,Capacitación al personal · Tienda La Ermita (Talpita),Task,Medium,To Do,FALSE,,,Diego Mora,2026-10-20 09:00:00,2026-11-27,
+IMPL-414,IMPL,IMPL-409,MX-000073,Go-live en tienda · Tienda La Ermita (Talpita),Task,Medium,To Do,FALSE,,,Carla Vega,2026-10-20 09:00:00,2026-11-30,
+IMPL-416,IMPL,IMPL-415,MX-000040,Configurar catálogo de productos · Miscelánea El Jardín (Tierra Unida),Task,Medium,Done,FALSE,,,Luis Pérez,2026-10-22 09:00:00,2026-11-14,2026-11-14 18:00:00
+IMPL-417,IMPL,IMPL-415,MX-000040,Instalar hardware (terminal e impresora) · Miscelánea El Jardín (Tierra Unida),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-22 09:00:00,2026-11-17,2026-11-14 18:00:00
+IMPL-418,IMPL,IMPL-415,MX-000040,Configurar impuestos y tickets · Miscelánea El Jardín (Tierra Unida),Task,Medium,In Progress,FALSE,,,Hugo Peña,2026-10-22 09:00:00,2026-11-20,
+IMPL-419,IMPL,IMPL-415,MX-000040,Capacitación al personal · Miscelánea El Jardín (Tierra Unida),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-22 09:00:00,2026-11-23,
+IMPL-420,IMPL,IMPL-415,MX-000040,Go-live en tienda · Miscelánea El Jardín (Tierra Unida),Task,Medium,To Do,FALSE,,,Iván Soto,2026-10-22 09:00:00,2026-11-26,
+IMPL-422,IMPL,IMPL-421,MX-000111,Configurar catálogo de productos · Tienda La Joya (Valle Del Roble Sector Olmo),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-22 09:00:00,2026-11-26,2026-11-14 18:00:00
+IMPL-423,IMPL,IMPL-421,MX-000111,Instalar hardware (terminal e impresora) · Tienda La Joya (Valle Del Roble Sector Olmo),Task,Medium,Done,FALSE,,,Valeria Gil,2026-10-22 09:00:00,2026-11-29,2026-11-14 18:00:00
+IMPL-424,IMPL,IMPL-421,MX-000111,Configurar impuestos y tickets · Tienda La Joya (Valle Del Roble Sector Olmo),Task,Medium,In Progress,FALSE,,,Luis Pérez,2026-10-22 09:00:00,2026-12-02,
+IMPL-425,IMPL,IMPL-421,MX-000111,Capacitación al personal · Tienda La Joya (Valle Del Roble Sector Olmo),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-22 09:00:00,2026-12-05,
+IMPL-426,IMPL,IMPL-421,MX-000111,Go-live en tienda · Tienda La Joya (Valle Del Roble Sector Olmo),Task,Medium,To Do,FALSE,,,Carla Vega,2026-10-22 09:00:00,2026-12-08,
+IMPL-428,IMPL,IMPL-427,MX-000129,Configurar catálogo de productos · Farmacia La Palma (Ciudad Caucel),Task,Medium,Done,FALSE,,,Paola Ríos,2026-10-24 09:00:00,2026-11-20,2026-11-14 18:00:00
+IMPL-429,IMPL,IMPL-427,MX-000129,Instalar hardware (terminal e impresora) · Farmacia La Palma (Ciudad Caucel),Task,Medium,Done,FALSE,,,Paola Ríos,2026-10-24 09:00:00,2026-11-23,2026-11-14 18:00:00
+IMPL-430,IMPL,IMPL-427,MX-000129,Configurar impuestos y tickets · Farmacia La Palma (Ciudad Caucel),Task,Medium,In Progress,FALSE,,,Sofía Cano,2026-10-24 09:00:00,2026-11-26,
+IMPL-431,IMPL,IMPL-427,MX-000129,Capacitación al personal · Farmacia La Palma (Ciudad Caucel),Task,Medium,To Do,FALSE,,,Iván Soto,2026-10-24 09:00:00,2026-11-29,
+IMPL-432,IMPL,IMPL-427,MX-000129,Go-live en tienda · Farmacia La Palma (Ciudad Caucel),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-24 09:00:00,2026-12-02,
+IMPL-434,IMPL,IMPL-433,MX-000033,Configurar catálogo de productos · Tienda La Nueva (Pedregal De Santo Domingo),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-25 09:00:00,2026-11-12,2026-11-14 18:00:00
+IMPL-435,IMPL,IMPL-433,MX-000033,Instalar hardware (terminal e impresora) · Tienda La Nueva (Pedregal De Santo Domingo),Task,Medium,Done,FALSE,,,Jorge Lara,2026-10-25 09:00:00,2026-11-15,2026-11-14 18:00:00
+IMPL-436,IMPL,IMPL-433,MX-000033,Configurar impuestos y tickets · Tienda La Nueva (Pedregal De Santo Domingo),Task,Medium,In Progress,FALSE,,,Sofía Cano,2026-10-25 09:00:00,2026-11-18,
+IMPL-437,IMPL,IMPL-433,MX-000033,Capacitación al personal · Tienda La Nueva (Pedregal De Santo Domingo),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-10-25 09:00:00,2026-11-21,
+IMPL-438,IMPL,IMPL-433,MX-000033,Go-live en tienda · Tienda La Nueva (Pedregal De Santo Domingo),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-10-25 09:00:00,2026-11-24,
+IMPL-440,IMPL,IMPL-439,MX-000056,Configurar catálogo de productos · Fonda El Ahorro (Centro),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-28 09:00:00,2026-11-27,2026-11-14 18:00:00
+IMPL-441,IMPL,IMPL-439,MX-000056,Instalar hardware (terminal e impresora) · Fonda El Ahorro (Centro),Task,Medium,Done,FALSE,,,Paola Ríos,2026-10-28 09:00:00,2026-11-30,2026-11-14 18:00:00
+IMPL-442,IMPL,IMPL-439,MX-000056,Configurar facturación CFDI 4.0 · Fonda El Ahorro (Centro),Task,Medium,In Progress,FALSE,,,Jorge Lara,2026-10-28 09:00:00,2026-12-03,
+IMPL-443,IMPL,IMPL-439,MX-000056,Capacitación al personal · Fonda El Ahorro (Centro),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-28 09:00:00,2026-12-06,
+IMPL-444,IMPL,IMPL-439,MX-000056,Go-live en tienda · Fonda El Ahorro (Centro),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-10-28 09:00:00,2026-12-09,
+IMPL-446,IMPL,IMPL-445,MX-000054,Configurar catálogo de productos · Cocina La Nueva (San Marcos),Task,Medium,Done,FALSE,,,Paola Ríos,2026-10-28 09:00:00,2026-11-10,2026-11-14 18:00:00
+IMPL-447,IMPL,IMPL-445,MX-000054,Instalar hardware (terminal e impresora) · Cocina La Nueva (San Marcos),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-28 09:00:00,2026-11-13,2026-11-14 18:00:00
+IMPL-448,IMPL,IMPL-445,MX-000054,Configurar impuestos y tickets · Cocina La Nueva (San Marcos),Task,Medium,In Progress,FALSE,,,Paola Ríos,2026-10-28 09:00:00,2026-11-16,
+IMPL-449,IMPL,IMPL-445,MX-000054,Capacitación al personal · Cocina La Nueva (San Marcos),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-10-28 09:00:00,2026-11-19,
+IMPL-450,IMPL,IMPL-445,MX-000054,Go-live en tienda · Cocina La Nueva (San Marcos),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-28 09:00:00,2026-11-22,
+IMPL-452,IMPL,IMPL-451,MX-000050,Configurar catálogo de productos · Farmacia El Jardín (Chapultepec),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-29 09:00:00,2026-11-15,2026-11-14 18:00:00
+IMPL-453,IMPL,IMPL-451,MX-000050,Instalar hardware (terminal e impresora) · Farmacia El Jardín (Chapultepec),Task,Medium,Done,FALSE,,,Diego Mora,2026-10-29 09:00:00,2026-11-18,2026-11-14 18:00:00
+IMPL-454,IMPL,IMPL-451,MX-000050,Configurar facturación CFDI 4.0 · Farmacia El Jardín (Chapultepec),Task,Medium,In Progress,FALSE,,,Jorge Lara,2026-10-29 09:00:00,2026-11-21,
+IMPL-455,IMPL,IMPL-451,MX-000050,Capacitación al personal · Farmacia El Jardín (Chapultepec),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-10-29 09:00:00,2026-11-24,
+IMPL-456,IMPL,IMPL-451,MX-000050,Go-live en tienda · Farmacia El Jardín (Chapultepec),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-10-29 09:00:00,2026-11-27,
+IMPL-458,IMPL,IMPL-457,MX-000088,Configurar catálogo de productos · Restaurante Del Centro (El Lechugal),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-29 09:00:00,2026-11-19,2026-11-14 18:00:00
+IMPL-459,IMPL,IMPL-457,MX-000088,Instalar hardware (terminal e impresora) · Restaurante Del Centro (El Lechugal),Task,Medium,Done,FALSE,,,Iván Soto,2026-10-29 09:00:00,2026-11-22,2026-11-14 18:00:00
+IMPL-460,IMPL,IMPL-457,MX-000088,Configurar impuestos y tickets · Restaurante Del Centro (El Lechugal),Task,Medium,In Progress,FALSE,,,Luis Pérez,2026-10-29 09:00:00,2026-11-25,
+IMPL-461,IMPL,IMPL-457,MX-000088,Capacitación al personal · Restaurante Del Centro (El Lechugal),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-10-29 09:00:00,2026-11-28,
+IMPL-462,IMPL,IMPL-457,MX-000088,Go-live en tienda · Restaurante Del Centro (El Lechugal),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-29 09:00:00,2026-12-01,
+IMPL-464,IMPL,IMPL-463,MX-000048,Configurar catálogo de productos · Farmacia La Esperanza (Lomas De Polanco),Task,Medium,Done,FALSE,,,Sofía Cano,2026-10-30 09:00:00,2026-11-16,2026-11-14 18:00:00
+IMPL-465,IMPL,IMPL-463,MX-000048,Instalar hardware (terminal e impresora) · Farmacia La Esperanza (Lomas De Polanco),Task,Medium,Done,FALSE,,,Carla Vega,2026-10-30 09:00:00,2026-11-19,2026-11-14 18:00:00
+IMPL-466,IMPL,IMPL-463,MX-000048,Configurar impuestos y tickets · Farmacia La Esperanza (Lomas De Polanco),Task,Medium,In Progress,FALSE,,,Paola Ríos,2026-10-30 09:00:00,2026-11-22,
+IMPL-467,IMPL,IMPL-463,MX-000048,Capacitación al personal · Farmacia La Esperanza (Lomas De Polanco),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-10-30 09:00:00,2026-11-25,
+IMPL-468,IMPL,IMPL-463,MX-000048,Go-live en tienda · Farmacia La Esperanza (Lomas De Polanco),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-10-30 09:00:00,2026-11-28,
+IMPL-470,IMPL,IMPL-469,MX-000016,Configurar catálogo de productos · Fonda La Huerta (San Angel),Task,Medium,Done,FALSE,,,Valeria Gil,2026-11-01 09:00:00,2026-11-29,2026-11-14 18:00:00
+IMPL-471,IMPL,IMPL-469,MX-000016,Instalar hardware (terminal e impresora) · Fonda La Huerta (San Angel),Task,Medium,Done,FALSE,,,Paola Ríos,2026-11-01 09:00:00,2026-12-02,2026-11-14 18:00:00
+IMPL-472,IMPL,IMPL-469,MX-000016,Configurar impuestos y tickets · Fonda La Huerta (San Angel),Task,Medium,In Progress,FALSE,,,Ana Ruiz,2026-11-01 09:00:00,2026-12-05,
+IMPL-473,IMPL,IMPL-469,MX-000016,Capacitación al personal · Fonda La Huerta (San Angel),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-11-01 09:00:00,2026-12-08,
+IMPL-474,IMPL,IMPL-469,MX-000016,Go-live en tienda · Fonda La Huerta (San Angel),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-11-01 09:00:00,2026-12-11,
+IMPL-476,IMPL,IMPL-475,MX-000009,Configurar catálogo de productos · Botica San Marcos (Cuauhtémoc),Task,Medium,Done,FALSE,,,Luis Pérez,2026-11-01 09:00:00,2026-11-28,2026-11-14 18:00:00
+IMPL-477,IMPL,IMPL-475,MX-000009,Instalar hardware (terminal e impresora) · Botica San Marcos (Cuauhtémoc),Task,Medium,Done,FALSE,,,Carla Vega,2026-11-01 09:00:00,2026-12-01,2026-11-14 18:00:00
+IMPL-478,IMPL,IMPL-475,MX-000009,Configurar facturación CFDI 4.0 · Botica San Marcos (Cuauhtémoc),Task,Medium,In Progress,FALSE,,,Diego Mora,2026-11-01 09:00:00,2026-12-04,
+IMPL-479,IMPL,IMPL-475,MX-000009,Capacitación al personal · Botica San Marcos (Cuauhtémoc),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-11-01 09:00:00,2026-12-07,
+IMPL-480,IMPL,IMPL-475,MX-000009,Go-live en tienda · Botica San Marcos (Cuauhtémoc),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-11-01 09:00:00,2026-12-10,
+IMPL-482,IMPL,IMPL-481,MX-000051,Configurar catálogo de productos · Farmacia La Ceiba (Analco),Task,Medium,Done,FALSE,,,Ana Ruiz,2026-11-01 09:00:00,2026-11-28,2026-11-14 18:00:00
+IMPL-483,IMPL,IMPL-481,MX-000051,Instalar hardware (terminal e impresora) · Farmacia La Ceiba (Analco),Task,Medium,Done,FALSE,,,Iván Soto,2026-11-01 09:00:00,2026-12-01,2026-11-14 18:00:00
+IMPL-484,IMPL,IMPL-481,MX-000051,Configurar impuestos y tickets · Farmacia La Ceiba (Analco),Task,Medium,In Progress,FALSE,,,Luis Pérez,2026-11-01 09:00:00,2026-12-04,
+IMPL-485,IMPL,IMPL-481,MX-000051,Capacitación al personal · Farmacia La Ceiba (Analco),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-11-01 09:00:00,2026-12-07,
+IMPL-486,IMPL,IMPL-481,MX-000051,Go-live en tienda · Farmacia La Ceiba (Analco),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-11-01 09:00:00,2026-12-10,
+IMPL-488,IMPL,IMPL-487,MX-000068,Configurar catálogo de productos · Tlapalería La Esperanza (San Andres),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-11-01 09:00:00,2026-12-05,
+IMPL-489,IMPL,IMPL-487,MX-000068,Instalar hardware (terminal e impresora) · Tlapalería La Esperanza (San Andres),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-11-01 09:00:00,2026-12-08,
+IMPL-490,IMPL,IMPL-487,MX-000068,Configurar impuestos y tickets · Tlapalería La Esperanza (San Andres),Task,Medium,To Do,FALSE,,,Jorge Lara,2026-11-01 09:00:00,2026-12-11,
+IMPL-491,IMPL,IMPL-487,MX-000068,Capacitación al personal · Tlapalería La Esperanza (San Andres),Task,Medium,To Do,FALSE,,,Iván Soto,2026-11-01 09:00:00,2026-12-14,
+IMPL-492,IMPL,IMPL-487,MX-000068,Go-live en tienda · Tlapalería La Esperanza (San Andres),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-11-01 09:00:00,2026-12-17,
+IMPL-494,IMPL,IMPL-493,MX-000011,Configurar catálogo de productos · Taquería La Esperanza (Pro Hogar),Task,Medium,Done,FALSE,,,Sofía Cano,2026-11-02 09:00:00,2026-11-24,2026-11-14 18:00:00
+IMPL-495,IMPL,IMPL-493,MX-000011,Instalar hardware (terminal e impresora) · Taquería La Esperanza (Pro Hogar),Task,Medium,Done,FALSE,,,Diego Mora,2026-11-02 09:00:00,2026-11-27,2026-11-14 18:00:00
+IMPL-496,IMPL,IMPL-493,MX-000011,Configurar impuestos y tickets · Taquería La Esperanza (Pro Hogar),Task,Medium,In Progress,FALSE,,,Valeria Gil,2026-11-02 09:00:00,2026-11-30,
+IMPL-497,IMPL,IMPL-493,MX-000011,Capacitación al personal · Taquería La Esperanza (Pro Hogar),Task,Medium,To Do,FALSE,,,Carla Vega,2026-11-02 09:00:00,2026-12-03,
+IMPL-498,IMPL,IMPL-493,MX-000011,Go-live en tienda · Taquería La Esperanza (Pro Hogar),Task,Medium,To Do,FALSE,,,Carla Vega,2026-11-02 09:00:00,2026-12-06,
+IMPL-500,IMPL,IMPL-499,MX-000079,Configurar catálogo de productos · Botica El Jardín (Palmiras Residencial),Task,Medium,Done,FALSE,,,Carla Vega,2026-11-03 09:00:00,2026-11-22,2026-11-14 18:00:00
+IMPL-501,IMPL,IMPL-499,MX-000079,Instalar hardware (terminal e impresora) · Botica El Jardín (Palmiras Residencial),Task,Medium,Done,FALSE,,,Diego Mora,2026-11-03 09:00:00,2026-11-25,2026-11-14 18:00:00
+IMPL-502,IMPL,IMPL-499,MX-000079,Configurar impuestos y tickets · Botica El Jardín (Palmiras Residencial),Task,Medium,In Progress,FALSE,,,Ana Ruiz,2026-11-03 09:00:00,2026-11-28,
+IMPL-503,IMPL,IMPL-499,MX-000079,Capacitación al personal · Botica El Jardín (Palmiras Residencial),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-11-03 09:00:00,2026-12-01,
+IMPL-504,IMPL,IMPL-499,MX-000079,Go-live en tienda · Botica El Jardín (Palmiras Residencial),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-11-03 09:00:00,2026-12-04,
+IMPL-506,IMPL,IMPL-505,MX-000004,Configurar catálogo de productos · Botica La Cruz (Pedregal De San Nicolás Tercera Sección),Task,Medium,Done,FALSE,,,Paola Ríos,2026-11-05 09:00:00,2026-11-28,2026-11-14 18:00:00
+IMPL-507,IMPL,IMPL-505,MX-000004,Instalar hardware (terminal e impresora) · Botica La Cruz (Pedregal De San Nicolás Tercera Sección),Task,Medium,Done,FALSE,,,Jorge Lara,2026-11-05 09:00:00,2026-12-01,2026-11-14 18:00:00
+IMPL-508,IMPL,IMPL-505,MX-000004,Configurar facturación CFDI 4.0 · Botica La Cruz (Pedregal De San Nicolás Tercera Sección),Task,Medium,In Progress,FALSE,,,Valeria Gil,2026-11-05 09:00:00,2026-12-04,
+IMPL-509,IMPL,IMPL-505,MX-000004,Capacitación al personal · Botica La Cruz (Pedregal De San Nicolás Tercera Sección),Task,Medium,To Do,FALSE,,,Hugo Peña,2026-11-05 09:00:00,2026-12-07,
+IMPL-510,IMPL,IMPL-505,MX-000004,Go-live en tienda · Botica La Cruz (Pedregal De San Nicolás Tercera Sección),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-11-05 09:00:00,2026-12-10,
+IMPL-512,IMPL,IMPL-511,MX-000124,Configurar catálogo de productos · Botica El Mirador (Leandro Valle),Task,Medium,Done,FALSE,,,Carla Vega,2026-11-06 09:00:00,2026-11-17,2026-11-14 18:00:00
+IMPL-513,IMPL,IMPL-511,MX-000124,Instalar hardware (terminal e impresora) · Botica El Mirador (Leandro Valle),Task,Medium,Done,FALSE,,,Hugo Peña,2026-11-06 09:00:00,2026-11-20,2026-11-14 18:00:00
+IMPL-514,IMPL,IMPL-511,MX-000124,Configurar impuestos y tickets · Botica El Mirador (Leandro Valle),Task,Medium,In Progress,FALSE,,,Carla Vega,2026-11-06 09:00:00,2026-11-23,
+IMPL-515,IMPL,IMPL-511,MX-000124,Capacitación al personal · Botica El Mirador (Leandro Valle),Task,Medium,To Do,FALSE,,,Sofía Cano,2026-11-06 09:00:00,2026-11-26,
+IMPL-516,IMPL,IMPL-511,MX-000124,Go-live en tienda · Botica El Mirador (Leandro Valle),Task,Medium,To Do,FALSE,,,Diego Mora,2026-11-06 09:00:00,2026-11-29,
+IMPL-518,IMPL,IMPL-517,MX-000001,Configurar catálogo de productos · Botica La Loma (Moderna),Task,Medium,To Do,FALSE,,,Diego Mora,2026-11-09 09:00:00,2026-12-06,
+IMPL-519,IMPL,IMPL-517,MX-000001,Instalar hardware (terminal e impresora) · Botica La Loma (Moderna),Task,Medium,To Do,FALSE,,,Carla Vega,2026-11-09 09:00:00,2026-12-09,
+IMPL-520,IMPL,IMPL-517,MX-000001,Configurar facturación CFDI 4.0 · Botica La Loma (Moderna),Task,Medium,To Do,FALSE,,,Valeria Gil,2026-11-09 09:00:00,2026-12-12,
+IMPL-521,IMPL,IMPL-517,MX-000001,Capacitación al personal · Botica La Loma (Moderna),Task,Medium,To Do,FALSE,,,Diego Mora,2026-11-09 09:00:00,2026-12-15,
+IMPL-522,IMPL,IMPL-517,MX-000001,Go-live en tienda · Botica La Loma (Moderna),Task,Medium,To Do,FALSE,,,Ana Ruiz,2026-11-09 09:00:00,2026-12-18,
+IMPL-524,IMPL,IMPL-523,MX-000083,Configurar catálogo de productos · Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),Task,Medium,Done,FALSE,,,Jorge Lara,2026-11-15 09:00:00,2026-11-30,2026-11-14 18:00:00
+IMPL-525,IMPL,IMPL-523,MX-000083,Instalar hardware (terminal e impresora) · Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),Task,Medium,Done,FALSE,,,Hugo Peña,2026-11-15 09:00:00,2026-12-03,2026-11-14 18:00:00
+IMPL-526,IMPL,IMPL-523,MX-000083,Configurar facturación CFDI 4.0 · Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),Task,Medium,In Progress,FALSE,,,Ana Ruiz,2026-11-15 09:00:00,2026-12-06,
+IMPL-527,IMPL,IMPL-523,MX-000083,Capacitación al personal · Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),Task,Medium,To Do,FALSE,,,Paola Ríos,2026-11-15 09:00:00,2026-12-09,
+IMPL-528,IMPL,IMPL-523,MX-000083,Go-live en tienda · Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),Task,Medium,To Do,FALSE,,,Luis Pérez,2026-11-15 09:00:00,2026-12-12,

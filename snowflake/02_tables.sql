@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS MD26_DB.ERP.SALES_ORDERS (
   STATUS           VARCHAR(20)   NOT NULL,              -- Booked | Fulfilled | Delayed | Cancelled
   PROMISED_DATE    DATE,
   DELIVERED_DATE   DATE,
-  PROJECT_KEY      VARCHAR(20),                         -- Jira implementation project
+  EPIC_KEY         VARCHAR(20),                         -- Jira go-live epic (IMPL-n)
   LAST_MODIFIED    TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
 );
 
@@ -67,25 +67,29 @@ CREATE TABLE IF NOT EXISTS MD26_DB.ERP.QUARTERLY_TARGETS (
 
 -- ───────────────────────────── JIRA ─────────────────────────────
 
-CREATE TABLE IF NOT EXISTS MD26_DB.JIRA.PROJECTS (
-  PROJECT_KEY      VARCHAR(20)   NOT NULL PRIMARY KEY,  -- IMPL-123
+-- One Epic per customer go-live in the IMPL project.
+CREATE TABLE IF NOT EXISTS MD26_DB.JIRA.EPICS (
+  EPIC_KEY         VARCHAR(20)   NOT NULL PRIMARY KEY,  -- IMPL-12
   NAME             VARCHAR(255)  NOT NULL,
   CUSTOMER_ID      VARCHAR(20)   NOT NULL,
   ORDER_ID         VARCHAR(20),
+  REGION           VARCHAR(20),
   TARGET_GO_LIVE   DATE,
-  STATUS           VARCHAR(20),                         -- Planning | In Progress | At Risk | Live
+  STATUS           VARCHAR(20),                         -- To Do | In Progress | Blocked | Done
   LAST_MODIFIED    TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
 );
 
 CREATE TABLE IF NOT EXISTS MD26_DB.JIRA.ISSUES (
-  ISSUE_KEY        VARCHAR(20)   NOT NULL PRIMARY KEY,  -- IMPL-123-7
-  PROJECT_KEY      VARCHAR(20)   NOT NULL,
-  CUSTOMER_ID      VARCHAR(20)   NOT NULL,
+  ISSUE_KEY        VARCHAR(20)   NOT NULL PRIMARY KEY,  -- IMPL-57, PLAT-42
+  PROJECT          VARCHAR(10)   NOT NULL,              -- IMPL | PLAT
+  EPIC_KEY         VARCHAR(20),                         -- parent epic (IMPL only)
+  CUSTOMER_ID      VARCHAR(20),                         -- null for platform issues
   SUMMARY          VARCHAR(500)  NOT NULL,
   ISSUE_TYPE       VARCHAR(20),                         -- Task | Bug | Story
   PRIORITY         VARCHAR(20),                         -- Highest | High | Medium | Low
   STATUS           VARCHAR(20),                         -- To Do | In Progress | Blocked | Done
   IS_BLOCKER       BOOLEAN       DEFAULT FALSE,
+  BLOCKED_BY       VARCHAR(20),                         -- issue key of the blocker, e.g. PLAT-42
   BLOCKED_REASON   VARCHAR(500),
   ASSIGNEE         VARCHAR(100),                        -- fictional
   CREATED_AT       TIMESTAMP_NTZ,

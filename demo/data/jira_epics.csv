@@ -1,0 +1,89 @@
+EPIC_KEY,NAME,CUSTOMER_ID,ORDER_ID,REGION,TARGET_GO_LIVE,STATUS
+IMPL-1,Go-live Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),MX-000085,SO-2026-00179,Norte,2026-10-04,Done
+IMPL-7,Go-live Abarrotes Los Arcos (Cuchilla Pantitlán),MX-000042,SO-2026-00056,Centro,2026-10-07,Done
+IMPL-13,Go-live Cocina Santa Ana (Juárez),MX-000012,SO-2026-00059,Centro,2026-10-10,Done
+IMPL-19,Go-live Tlapalería El Mirador (Centro),MX-000065,SO-2026-00105,Occidente,2026-10-17,Done
+IMPL-25,Go-live Materiales La Palma (Centro),MX-000142,SO-2026-00225,Sur,2026-10-13,Done
+IMPL-31,Go-live Materiales El Pozo (San Salvador Cuauhtenco),MX-000027,SO-2026-00045,Centro,2026-10-11,Done
+IMPL-37,Go-live Fonda Santa Ana (Valle Del Infonavit),MX-000090,SO-2026-00183,Norte,2026-10-04,Done
+IMPL-43,Go-live Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),MX-000097,SO-2026-00171,Norte,2026-10-08,Done
+IMPL-49,Go-live Farmacia El Puente (Los Heroes),MX-000120,SO-2026-00222,Sur,2026-10-25,Blocked
+IMPL-55,Go-live Botica El Ahorro (Los Reyes),MX-000005,SO-2026-00067,Centro,2026-10-06,Done
+IMPL-61,Go-live Miscelánea El Roble (El Obispo),MX-000114,SO-2026-00168,Norte,2026-10-27,Done
+IMPL-67,Go-live Farmacia El Faro (Brisas),MX-000126,SO-2026-00227,Sur,2026-10-25,Blocked
+IMPL-73,Go-live Botica La Loma (Arboledas Ii),MX-000044,SO-2026-00117,Occidente,2026-10-24,Done
+IMPL-79,Go-live Botica El Sol (Bojorquez),MX-000123,SO-2026-00226,Sur,2026-10-20,Blocked
+IMPL-85,Go-live Tienda Las Torres (Sascab),MX-000147,SO-2026-00239,Sur,2026-10-08,Done
+IMPL-91,Go-live Abarrotes Las Torres (Santiago Acahualtepec),MX-000036,SO-2026-00052,Centro,2026-10-15,Done
+IMPL-97,Go-live Cocina La Loma (Americana),MX-000052,SO-2026-00107,Occidente,2026-10-10,Done
+IMPL-103,Go-live Miscelánea La Ceiba (El Pitillal Centro),MX-000072,SO-2026-00111,Occidente,2026-10-11,Done
+IMPL-109,Go-live Antojitos Santa Ana (San Lorenzo Tezonco),MX-000019,SO-2026-00051,Centro,2026-10-31,Done
+IMPL-115,Go-live Farmacia San Marcos (Zona Industrial),MX-000127,SO-2026-00235,Sur,2026-10-05,Done
+IMPL-121,Go-live Cocina El Puente (Oblatos),MX-000059,SO-2026-00124,Occidente,2026-10-16,Done
+IMPL-127,Go-live Ferretería La Huerta (Revolución),MX-000103,SO-2026-00166,Norte,2026-11-02,Done
+IMPL-133,Go-live Fonda La Cruz (Miguel Hidalgo),MX-000020,SO-2026-00057,Centro,2026-10-24,Done
+IMPL-139,Go-live Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),MX-000099,SO-2026-00164,Norte,2026-10-30,Done
+IMPL-145,Go-live Restaurante La Pitaya (Emiliano Zapata Oriente),MX-000138,SO-2026-00241,Sur,2026-10-03,Done
+IMPL-151,Go-live Antojitos Los Álamos (Centro De Salinas Victoria),MX-000089,SO-2026-00177,Norte,2026-10-19,Done
+IMPL-157,Go-live Farmacia Las Torres (Gran San Pedro Cholul),MX-000117,SO-2026-00232,Sur,2026-11-05,Blocked
+IMPL-163,Go-live Farmacia La Fuente (Los Almendros),MX-000121,SO-2026-00236,Sur,2026-10-11,Done
+IMPL-169,Go-live Materiales Del Parque (San Sebastian El Grande),MX-000067,SO-2026-00116,Occidente,2026-10-22,Done
+IMPL-175,Go-live Farmacia Del Parque (Centro),MX-000047,SO-2026-00119,Occidente,2026-10-29,Blocked
+IMPL-181,Go-live Miscelánea La Joya (Privada La Castaña),MX-000110,SO-2026-00180,Norte,2026-11-07,Done
+IMPL-187,Go-live Materiales La Luna (San Miguel Topilejo),MX-000023,SO-2026-00044,Centro,2026-10-18,Done
+IMPL-193,Go-live Abarrotes San Marcos (Centro),MX-000078,SO-2026-00120,Occidente,2026-11-08,Done
+IMPL-199,Go-live Restaurante Del Parque (Industrial),MX-000021,SO-2026-00049,Centro,2026-10-31,Blocked
+IMPL-205,Go-live Cocina Los Álamos (Los Fresnos),MX-000058,SO-2026-00110,Occidente,2026-10-19,Done
+IMPL-211,Go-live Taquería Santa Ana (Las Americas),MX-000136,SO-2026-00237,Sur,2026-10-31,Blocked
+IMPL-217,Go-live Farmacia Santa Ana (Nueva Santa María),MX-000010,SO-2026-00066,Centro,2026-11-03,Done
+IMPL-223,Go-live Antojitos El Ahorro (Gran Santa Fe),MX-000140,SO-2026-00223,Sur,2026-11-10,Blocked
+IMPL-229,Go-live Botica La Fuente (Fidel Velazquez),MX-000128,SO-2026-00229,Sur,2026-11-10,Blocked
+IMPL-235,Go-live Antojitos La Loma (Santa María),MX-000133,SO-2026-00240,Sur,2026-10-13,Done
+IMPL-241,Go-live Botica La Palma (Molino De Rosas),MX-000003,SO-2026-00050,Centro,2026-11-09,Done
+IMPL-247,Go-live Taquería Del Centro (San Francisco),MX-000092,SO-2026-00169,Norte,2026-10-25,Done
+IMPL-253,Go-live Tlapalería El Olivo (Paseo De San Isidro),MX-000102,SO-2026-00172,Norte,2026-11-09,Done
+IMPL-259,Go-live Ferretería La Ermita (Guayabitos),MX-000061,SO-2026-00106,Occidente,2026-11-10,Done
+IMPL-265,Go-live Miscelánea La Gloria (Los Abedules),MX-000074,SO-2026-00123,Occidente,2026-11-03,Blocked
+IMPL-271,Go-live Tlapalería El Pozo (Centro De Galeana),MX-000104,SO-2026-00167,Norte,2026-11-04,Blocked
+IMPL-277,Go-live Taquería El Puente (Libertad),MX-000131,SO-2026-00224,Sur,2026-10-25,Blocked
+IMPL-283,Go-live Farmacia El Olivo (San Bartolo Atepehuacan),MX-000006,SO-2026-00058,Centro,2026-11-06,Blocked
+IMPL-289,Go-live Abarrotes La Huerta (Cerro De Las Mitras),MX-000107,SO-2026-00170,Norte,2026-11-11,Done
+IMPL-295,Go-live Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),MX-000112,SO-2026-00175,Norte,2026-11-07,Blocked
+IMPL-301,Go-live Taquería La Luna (Ciudad Caucel),MX-000134,SO-2026-00230,Sur,2026-10-31,Blocked
+IMPL-307,Go-live Tienda Los Álamos (Mariano Otero),MX-000071,SO-2026-00114,Occidente,2026-11-08,Done
+IMPL-313,Go-live Taquería Santa Ana (Real Anáhuac),MX-000094,SO-2026-00163,Norte,2026-10-28,Done
+IMPL-319,Go-live Abarrotes La Palma (Guadalupana),MX-000145,SO-2026-00221,Sur,2026-11-22,In Progress
+IMPL-325,Go-live Materiales La Nueva (Las Juntas),MX-000063,SO-2026-00108,Occidente,2026-11-18,In Progress
+IMPL-331,Go-live Antojitos El Roble (San Jerónimo Lídice),MX-000022,SO-2026-00043,Centro,2026-11-20,In Progress
+IMPL-337,Go-live Farmacia La Esperanza (San Jose Tecoh),MX-000122,SO-2026-00231,Sur,2026-11-09,Blocked
+IMPL-343,Go-live Ferretería La Esperanza (Centro),MX-000030,SO-2026-00055,Centro,2026-11-16,In Progress
+IMPL-349,Go-live Farmacia La Ceiba (Zona Residencial Chipinque),MX-000080,SO-2026-00176,Norte,2026-11-07,Done
+IMPL-355,Go-live Abarrotes Santa Rosa (Valle De Luces),MX-000037,SO-2026-00046,Centro,2026-11-28,In Progress
+IMPL-361,Go-live Ferretería Los Álamos (Ajusco),MX-000028,SO-2026-00064,Centro,2026-11-21,In Progress
+IMPL-367,Go-live Tienda La Nueva (Buena Vista),MX-000113,SO-2026-00174,Norte,2026-11-21,In Progress
+IMPL-373,Go-live Farmacia El Ahorro (Contry),MX-000087,SO-2026-00178,Norte,2026-11-12,Done
+IMPL-379,Go-live Taquería Del Parque (Insurgentes Mixcoac),MX-000018,SO-2026-00047,Centro,2026-11-29,In Progress
+IMPL-385,Go-live Botica La Fuente (Santa Cecilia),MX-000007,SO-2026-00048,Centro,2026-11-12,Done
+IMPL-391,Go-live Tlapalería Del Centro (Benito Juárez),MX-000141,SO-2026-00228,Sur,2026-12-01,In Progress
+IMPL-397,Go-live Antojitos La Gloria (Leandro Valle),MX-000132,SO-2026-00234,Sur,2026-10-09,Done
+IMPL-403,Go-live Ferretería El Faro (Nuevo Fuerte),MX-000064,SO-2026-00113,Occidente,2026-11-28,In Progress
+IMPL-409,Go-live Tienda La Ermita (Talpita),MX-000073,SO-2026-00118,Occidente,2026-11-30,In Progress
+IMPL-415,Go-live Miscelánea El Jardín (Tierra Unida),MX-000040,SO-2026-00065,Centro,2026-11-26,In Progress
+IMPL-421,Go-live Tienda La Joya (Valle Del Roble Sector Olmo),MX-000111,SO-2026-00181,Norte,2026-12-08,In Progress
+IMPL-427,Go-live Farmacia La Palma (Ciudad Caucel),MX-000129,SO-2026-00238,Sur,2026-12-02,In Progress
+IMPL-433,Go-live Tienda La Nueva (Pedregal De Santo Domingo),MX-000033,SO-2026-00061,Centro,2026-11-24,In Progress
+IMPL-439,Go-live Fonda El Ahorro (Centro),MX-000056,SO-2026-00122,Occidente,2026-12-09,In Progress
+IMPL-445,Go-live Cocina La Nueva (San Marcos),MX-000054,SO-2026-00125,Occidente,2026-11-22,In Progress
+IMPL-451,Go-live Farmacia El Jardín (Chapultepec),MX-000050,SO-2026-00121,Occidente,2026-11-27,In Progress
+IMPL-457,Go-live Restaurante Del Centro (El Lechugal),MX-000088,SO-2026-00173,Norte,2026-12-01,In Progress
+IMPL-463,Go-live Farmacia La Esperanza (Lomas De Polanco),MX-000048,SO-2026-00115,Occidente,2026-11-28,In Progress
+IMPL-469,Go-live Fonda La Huerta (San Angel),MX-000016,SO-2026-00054,Centro,2026-12-11,In Progress
+IMPL-475,Go-live Botica San Marcos (Cuauhtémoc),MX-000009,SO-2026-00062,Centro,2026-12-10,In Progress
+IMPL-481,Go-live Farmacia La Ceiba (Analco),MX-000051,SO-2026-00109,Occidente,2026-12-10,In Progress
+IMPL-487,Go-live Tlapalería La Esperanza (San Andres),MX-000068,SO-2026-00112,Occidente,2026-12-17,To Do
+IMPL-493,Go-live Taquería La Esperanza (Pro Hogar),MX-000011,SO-2026-00063,Centro,2026-12-06,In Progress
+IMPL-499,Go-live Botica El Jardín (Palmiras Residencial),MX-000079,SO-2026-00165,Norte,2026-12-04,In Progress
+IMPL-505,Go-live Botica La Cruz (Pedregal De San Nicolás Tercera Sección),MX-000004,SO-2026-00053,Centro,2026-12-10,In Progress
+IMPL-511,Go-live Botica El Mirador (Leandro Valle),MX-000124,SO-2026-00233,Sur,2026-11-29,In Progress
+IMPL-517,Go-live Botica La Loma (Moderna),MX-000001,SO-2026-00060,Centro,2026-12-18,To Do
+IMPL-523,Go-live Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),MX-000083,SO-2026-00182,Norte,2026-12-12,In Progress

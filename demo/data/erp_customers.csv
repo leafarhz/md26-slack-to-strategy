@@ -1,0 +1,151 @@
+CUSTOMER_ID,DISPLAY_NAME,ACTIVITY_CODE,ACTIVITY_CLASS,STRATUM,STATE_CODE,STATE_NAME,MUNICIPALITY,LATITUDE,LONGITUDE,SEGMENT,REGION,CUSTOMER_SINCE
+MX-000001,Botica La Loma (Moderna),464111,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Benito Juárez,19.395949,-99.13274,SMB,Centro,2025-05-31
+MX-000002,Farmacia El Zapote (Progreso Nacional),464111,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Gustavo A. Madero,19.518873,-99.160432,SMB,Centro,2024-05-07
+MX-000003,Botica La Palma (Molino De Rosas),464111,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Álvaro Obregón,19.373427,-99.197417,SMB,Centro,2025-12-16
+MX-000004,Botica La Cruz (Pedregal De San Nicolás Tercera Sección),464111,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Tlalpan,19.282061,-99.231132,SMB,Centro,2026-08-23
+MX-000005,Botica El Ahorro (Los Reyes),464111,Farmacias sin minisúper,6 a 10 personas,09,Ciudad de México,Azcapotzalco,19.48797,-99.185558,SMB,Centro,2024-04-02
+MX-000006,Farmacia El Olivo (San Bartolo Atepehuacan),464111,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Gustavo A. Madero,19.489129,-99.142666,SMB,Centro,2024-11-04
+MX-000007,Botica La Fuente (Santa Cecilia),464111,Farmacias sin minisúper,11 a 30 personas,09,Ciudad de México,Tláhuac,19.280708,-99.006177,MidMarket,Centro,2025-08-28
+MX-000008,Botica El Faro (Central De Abasto),464113,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Iztapalapa,19.381149,-99.095291,SMB,Centro,2025-05-01
+MX-000009,Botica San Marcos (Cuauhtémoc),464111,Farmacias sin minisúper,6 a 10 personas,09,Ciudad de México,Cuauhtémoc,19.432919,-99.165752,SMB,Centro,2025-06-08
+MX-000010,Farmacia Santa Ana (Nueva Santa María),464111,Farmacias sin minisúper,0 a 5 personas,09,Ciudad de México,Azcapotzalco,19.464418,-99.164135,SMB,Centro,2025-09-20
+MX-000011,Taquería La Esperanza (Pro Hogar),722518,Restaurantes que preparan otro tipo de alimentos para llevar,0 a 5 personas,09,Ciudad de México,Azcapotzalco,19.478654,-99.153807,SMB,Centro,2025-12-01
+MX-000012,Cocina Santa Ana (Juárez),722110,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,31 a 50 personas,09,Ciudad de México,Cuauhtémoc,19.425137,-99.164449,MidMarket,Centro,2024-09-05
+MX-000013,Cocina La Pitaya (Santa Apolonia),722511,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,31 a 50 personas,09,Ciudad de México,Azcapotzalco,19.474595,-99.190729,MidMarket,Centro,2025-07-26
+MX-000014,Fonda La Loma (Exhacienda De Coyoacan),722211,Restaurantes de autoservicio,11 a 30 personas,09,Ciudad de México,Coyoacán,19.30312,-99.109895,MidMarket,Centro,2025-07-29
+MX-000015,Restaurante El Nogal (Juárez),722516,Restaurantes de autoservicio,11 a 30 personas,09,Ciudad de México,Cuauhtémoc,19.430902,-99.162731,MidMarket,Centro,2024-08-09
+MX-000016,Fonda La Huerta (San Angel),722516,Restaurantes de autoservicio,11 a 30 personas,09,Ciudad de México,Álvaro Obregón,19.338939,-99.191819,MidMarket,Centro,2026-07-06
+MX-000017,Restaurante La Pitaya (Belisario Domínguez Sección Xvi),461110,Restaurantes con servicio de preparación de tacos y tortas,0 a 5 personas,09,Ciudad de México,Tlalpan,19.296757,-99.152302,SMB,Centro,2025-01-17
+MX-000018,Taquería Del Parque (Insurgentes Mixcoac),722511,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,31 a 50 personas,09,Ciudad de México,Benito Juárez,19.369635,-99.181046,MidMarket,Centro,2026-03-10
+MX-000019,Antojitos Santa Ana (San Lorenzo Tezonco),722516,Restaurantes de autoservicio,11 a 30 personas,09,Ciudad de México,Iztapalapa,19.306349,-99.061058,MidMarket,Centro,2026-05-15
+MX-000020,Fonda La Cruz (Miguel Hidalgo),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,09,Ciudad de México,Tláhuac,19.293205,-99.04472,SMB,Centro,2025-04-07
+MX-000021,Restaurante Del Parque (Industrial),722516,Restaurantes que preparan otro tipo de alimentos para llevar,0 a 5 personas,09,Ciudad de México,Gustavo A. Madero,19.470774,-99.126668,SMB,Centro,2025-03-25
+MX-000022,Antojitos El Roble (San Jerónimo Lídice),722110,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,31 a 50 personas,09,Ciudad de México,La Magdalena Contreras,19.331439,-99.210212,MidMarket,Centro,2025-01-28
+MX-000023,Materiales La Luna (San Miguel Topilejo),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Tlalpan,19.198543,-99.141813,SMB,Centro,2026-02-22
+MX-000024,Materiales La Huerta (Presidentes Ejidales Segunda Sección),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Coyoacán,19.330166,-99.123945,SMB,Centro,2024-06-21
+MX-000025,Ferretería La Cruz (San Nicolas Ii),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Tlalpan,19.266512,-99.239,SMB,Centro,2026-08-20
+MX-000026,Tlapalería El Mirador (Carlos Hank González),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Iztapalapa,19.329638,-99.051739,SMB,Centro,2024-05-28
+MX-000027,Materiales El Pozo (San Salvador Cuauhtenco),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Milpa Alta,19.189936,-99.086072,SMB,Centro,2024-06-26
+MX-000028,Ferretería Los Álamos (Ajusco),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Coyoacán,19.312853,-99.163026,SMB,Centro,2024-06-15
+MX-000029,Materiales La Luna (San Francisco Tlaltenco),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Tláhuac,19.291143,-99.013588,SMB,Centro,2025-02-16
+MX-000030,Ferretería La Esperanza (Centro),467111,Comercio al por menor en ferreterías y tlapalerías,11 a 30 personas,09,Ciudad de México,Cuauhtémoc,19.432775,-99.126036,MidMarket,Centro,2026-08-28
+MX-000031,Ferretería El Faro (Doctores),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Cuauhtémoc,19.414449,-99.148144,SMB,Centro,2024-11-20
+MX-000032,Tlapalería La Cruz (Ajusco),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,09,Ciudad de México,Coyoacán,19.321381,-99.159195,SMB,Centro,2025-05-06
+MX-000033,Tienda La Nueva (Pedregal De Santo Domingo),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Coyoacán,19.32414,-99.165887,SMB,Centro,2024-07-10
+MX-000034,Abarrotes El Puente (Santa Cruz Atoyac),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Benito Juárez,19.368911,-99.16316,SMB,Centro,2026-06-21
+MX-000035,Tienda La Luna (Aquiles Serdán),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Venustiano Carranza,19.449353,-99.091889,SMB,Centro,2024-02-04
+MX-000036,Abarrotes Las Torres (Santiago Acahualtepec),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Iztapalapa,19.349051,-99.001736,SMB,Centro,2026-07-19
+MX-000037,Abarrotes Santa Rosa (Valle De Luces),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Iztapalapa,19.341826,-99.101991,SMB,Centro,2024-10-20
+MX-000038,Miscelánea El Puente (Prado Churubusco),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Coyoacán,19.353338,-99.128718,SMB,Centro,2024-11-22
+MX-000039,Abarrotes Del Centro (San Felipe De Jesús),722518,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Gustavo A. Madero,19.497531,-99.072273,SMB,Centro,2026-03-23
+MX-000040,Miscelánea El Jardín (Tierra Unida),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,La Magdalena Contreras,19.303224,-99.268992,SMB,Centro,2025-05-22
+MX-000041,Miscelánea Las Flores (Hipódromo),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Cuauhtémoc,19.414414,-99.16984,SMB,Centro,2024-10-21
+MX-000042,Abarrotes Los Arcos (Cuchilla Pantitlán),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,09,Ciudad de México,Venustiano Carranza,19.421247,-99.058597,SMB,Centro,2026-07-02
+MX-000043,Farmacia El Sol (Insurgentes),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Guadalajara,20.657767,-103.285245,SMB,Occidente,2024-06-23
+MX-000044,Botica La Loma (Arboledas Ii),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Zapopan,20.631494,-103.42043,SMB,Occidente,2024-08-23
+MX-000045,Farmacia La Huerta (Centro),464113,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,La Barca,20.278725,-102.547894,SMB,Occidente,2024-08-21
+MX-000046,Farmacia El Jardín (Centro),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Ameca,20.550036,-104.046313,SMB,Occidente,2024-05-29
+MX-000047,Farmacia Del Parque (Centro),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Puerto Vallarta,20.605178,-105.236212,SMB,Occidente,2024-05-02
+MX-000048,Farmacia La Esperanza (Lomas De Polanco),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Guadalajara,20.629925,-103.375525,SMB,Occidente,2024-07-22
+MX-000049,Farmacia La Palma (San Juan De Dios),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Guadalajara,20.67401,-103.331405,SMB,Occidente,2026-05-21
+MX-000050,Farmacia El Jardín (Chapultepec),464111,Farmacias sin minisúper,0 a 5 personas,14,Jalisco,Guadalajara,20.674225,-103.370734,SMB,Occidente,2024-10-03
+MX-000051,Farmacia La Ceiba (Analco),464111,Farmacias sin minisúper,11 a 30 personas,14,Jalisco,Guadalajara,20.665622,-103.343084,MidMarket,Occidente,2026-03-20
+MX-000052,Cocina La Loma (Americana),722219,Restaurantes con servicio de preparación de tacos y tortas,6 a 10 personas,14,Jalisco,Guadalajara,20.668741,-103.360754,SMB,Occidente,2025-01-07
+MX-000053,Fonda La Pitaya (Centro),722211,Restaurantes de autoservicio,11 a 30 personas,14,Jalisco,Puerto Vallarta,20.608841,-105.234484,MidMarket,Occidente,2025-10-05
+MX-000054,Cocina La Nueva (San Marcos),722514,Restaurantes con servicio de preparación de tacos y tortas,0 a 5 personas,14,Jalisco,Guadalajara,20.697034,-103.31757,SMB,Occidente,2025-05-02
+MX-000055,Antojitos Las Flores (Pitillal),722518,Restaurantes que preparan otro tipo de alimentos para llevar,6 a 10 personas,14,Jalisco,Puerto Vallarta,20.652937,-105.214491,SMB,Occidente,2025-12-12
+MX-000056,Fonda El Ahorro (Centro),722511,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,0 a 5 personas,14,Jalisco,San Juan de los Lagos,21.241015,-102.327814,SMB,Occidente,2024-03-14
+MX-000057,Antojitos El Faro (La Tuna),722212,Restaurantes con servicio de preparación de tacos y tortas,0 a 5 personas,14,Jalisco,Ayotlán,20.52827,-102.330975,SMB,Occidente,2026-01-28
+MX-000058,Cocina Los Álamos (Los Fresnos),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,14,Jalisco,Tala,20.657441,-103.712576,SMB,Occidente,2026-07-27
+MX-000059,Cocina El Puente (Oblatos),722516,Restaurantes de autoservicio,11 a 30 personas,14,Jalisco,Guadalajara,20.69153,-103.298108,MidMarket,Occidente,2024-03-12
+MX-000060,Cocina Santa Rosa (La 27 De Septiembre),722512,Restaurantes con servicio de preparación de pescados y mariscos,0 a 5 personas,14,Jalisco,Sayula,19.885564,-103.593281,SMB,Occidente,2024-05-22
+MX-000061,Ferretería La Ermita (Guayabitos),467111,Comercio al por menor en ferreterías y tlapalerías,6 a 10 personas,14,Jalisco,San Pedro Tlaquepaque,20.601565,-103.377234,SMB,Occidente,2024-07-20
+MX-000062,Materiales El Faro (Mirador),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Tala,20.517723,-103.60882,SMB,Occidente,2025-12-15
+MX-000063,Materiales La Nueva (Las Juntas),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,San Pedro Tlaquepaque,20.609246,-103.337774,SMB,Occidente,2024-09-04
+MX-000064,Ferretería El Faro (Nuevo Fuerte),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Ocotlán,20.332579,-102.77466,SMB,Occidente,2024-10-11
+MX-000065,Tlapalería El Mirador (Centro),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Chapala,20.297346,-103.19053,SMB,Occidente,2026-05-23
+MX-000066,Ferretería La Loma (Centro),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Atotonilco el Alto,20.547361,-102.502788,SMB,Occidente,2026-05-07
+MX-000067,Materiales Del Parque (San Sebastian El Grande),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Tlajomulco de Zúñiga,20.52815,-103.43093,SMB,Occidente,2026-02-13
+MX-000068,Tlapalería La Esperanza (San Andres),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Guadalajara,20.655841,-103.307992,SMB,Occidente,2024-09-19
+MX-000069,Tlapalería La Esperanza (Tabachines),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,14,Jalisco,Zapopan,20.743939,-103.364469,SMB,Occidente,2026-06-15
+MX-000070,Miscelánea La Pitaya (Lomas De Tlaquepaque),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,14,Jalisco,San Pedro Tlaquepaque,20.630706,-103.307036,SMB,Occidente,2025-05-14
+MX-000071,Tienda Los Álamos (Mariano Otero),431110,Comercio al por mayor de abarrotes,0 a 5 personas,14,Jalisco,Zapopan,20.627084,-103.443789,SMB,Occidente,2024-06-20
+MX-000072,Miscelánea La Ceiba (El Pitillal Centro),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,14,Jalisco,Puerto Vallarta,20.653717,-105.213744,SMB,Occidente,2026-05-19
+MX-000073,Tienda La Ermita (Talpita),431110,Comercio al por mayor de abarrotes,0 a 5 personas,14,Jalisco,Guadalajara,20.695786,-103.304245,SMB,Occidente,2024-04-10
+MX-000074,Miscelánea La Gloria (Los Abedules),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,14,Jalisco,Tlajomulco de Zúñiga,20.520944,-103.453906,SMB,Occidente,2026-01-15
+MX-000075,Tienda La Palma (Lomas De San Agustin),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,14,Jalisco,Tlajomulco de Zúñiga,20.525024,-103.470419,SMB,Occidente,2024-08-24
+MX-000076,Tienda Los Álamos (Altamira),461110,Comercio al por mayor de abarrotes,6 a 10 personas,14,Jalisco,Tonalá,20.656769,-103.258805,SMB,Occidente,2025-02-07
+MX-000077,Tienda Las Torres (Alvarez Del Castillo),431110,Comercio al por mayor de abarrotes,11 a 30 personas,14,Jalisco,El Salto,20.515158,-103.184804,MidMarket,Occidente,2025-06-18
+MX-000078,Abarrotes San Marcos (Centro),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,14,Jalisco,Yahualica de González Gallo,21.175902,-102.886172,SMB,Occidente,2025-07-28
+MX-000079,Botica El Jardín (Palmiras Residencial),464111,Farmacias sin minisúper,11 a 30 personas,19,Nuevo León,General Escobedo,25.843097,-100.425694,MidMarket,Norte,2025-02-15
+MX-000080,Farmacia La Ceiba (Zona Residencial Chipinque),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,San Pedro Garza García,25.637064,-100.362426,SMB,Norte,2026-09-02
+MX-000081,Botica Del Centro (Centro),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,Monterrey,25.681262,-100.328843,SMB,Norte,2026-07-01
+MX-000082,Farmacia Santa Rosa (Independencia),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,Monterrey,25.662255,-100.31994,SMB,Norte,2024-12-02
+MX-000083,Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,San Nicolás de los Garza,25.70114,-100.260786,SMB,Norte,2025-06-25
+MX-000084,Farmacia La Ceiba (Zambrano),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,Montemorelos,25.196938,-99.842757,SMB,Norte,2024-11-19
+MX-000085,Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),621113,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,Monterrey,25.714856,-100.383241,SMB,Norte,2024-05-23
+MX-000086,Farmacia La Cruz (Bosques De Castilla),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,Salinas Victoria,25.916031,-100.25056,SMB,Norte,2026-01-28
+MX-000087,Farmacia El Ahorro (Contry),464111,Farmacias sin minisúper,0 a 5 personas,19,Nuevo León,Monterrey,25.639428,-100.282153,SMB,Norte,2024-05-14
+MX-000088,Restaurante Del Centro (El Lechugal),722110,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,0 a 5 personas,19,Nuevo León,Santa Catarina,25.666037,-100.442747,SMB,Norte,2024-04-13
+MX-000089,Antojitos Los Álamos (Centro De Salinas Victoria),722516,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",6 a 10 personas,19,Nuevo León,Salinas Victoria,25.9618,-100.288231,SMB,Norte,2024-07-05
+MX-000090,Fonda Santa Ana (Valle Del Infonavit),722518,Restaurantes que preparan otro tipo de alimentos para llevar,0 a 5 personas,19,Nuevo León,Monterrey,25.729851,-100.379805,SMB,Norte,2026-07-31
+MX-000091,Antojitos La Nueva (Centro),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,19,Nuevo León,Monterrey,25.672832,-100.320231,SMB,Norte,2025-05-03
+MX-000092,Taquería Del Centro (San Francisco),722511,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,0 a 5 personas,19,Nuevo León,Juárez,25.620037,-100.133368,SMB,Norte,2026-05-15
+MX-000093,Restaurante El Ahorro (Ignacio Altamirano),722516,Restaurantes de autoservicio,0 a 5 personas,19,Nuevo León,Monterrey,25.579652,-100.234681,SMB,Norte,2025-08-17
+MX-000094,Taquería Santa Ana (Real Anáhuac),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,19,Nuevo León,San Nicolás de los Garza,25.73505,-100.258149,SMB,Norte,2024-12-07
+MX-000095,Fonda El Zapote (Los Girasoles Segundo Sector),722211,Restaurantes de autoservicio,11 a 30 personas,19,Nuevo León,General Escobedo,25.789991,-100.323256,MidMarket,Norte,2024-10-15
+MX-000096,Taquería El Olivo (Nuevas Colonias),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,19,Nuevo León,Monterrey,25.667184,-100.331668,SMB,Norte,2024-05-20
+MX-000097,Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Monterrey,25.745515,-100.349051,SMB,Norte,2026-05-25
+MX-000098,Materiales El Puente (Mirasol Segundo Sector),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Monterrey,25.771497,-100.382487,SMB,Norte,2025-11-08
+MX-000099,Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Apodaca,25.791546,-100.265442,SMB,Norte,2024-01-25
+MX-000100,Tlapalería La Loma (Metroplex Primer Sector),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Apodaca,25.785932,-100.257303,SMB,Norte,2025-08-29
+MX-000101,Materiales La Ermita (Loma Linda),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Monterrey,25.749315,-100.358871,SMB,Norte,2026-06-04
+MX-000102,Tlapalería El Olivo (Paseo De San Isidro),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Salinas Victoria,25.961723,-100.308114,SMB,Norte,2025-10-27
+MX-000103,Ferretería La Huerta (Revolución),461110,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Anáhuac,27.244885,-100.135972,SMB,Norte,2026-04-03
+MX-000104,Tlapalería El Pozo (Centro De Galeana),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Galeana,24.822315,-100.079004,SMB,Norte,2024-04-04
+MX-000105,Materiales La Luna (San Gilberto),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,19,Nuevo León,Santa Catarina,25.70061,-100.46588,SMB,Norte,2024-04-21
+MX-000106,Miscelánea Las Torres (General Emiliano Zapata (irregular)),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,General Escobedo,25.81094,-100.289653,SMB,Norte,2024-05-04
+MX-000107,Abarrotes La Huerta (Cerro De Las Mitras),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,Santa Catarina,25.694413,-100.429685,SMB,Norte,2025-07-31
+MX-000108,Tienda El Pozo (Hacienda La Providencia),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,General Escobedo,25.841771,-100.37556,SMB,Norte,2026-08-04
+MX-000109,Miscelánea El Olivo (La Ermita),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,Santa Catarina,25.693845,-100.429345,SMB,Norte,2025-05-20
+MX-000110,Miscelánea La Joya (Privada La Castaña),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,Apodaca,25.749457,-100.195138,SMB,Norte,2024-02-21
+MX-000111,Tienda La Joya (Valle Del Roble Sector Olmo),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,Cadereyta Jiménez,25.606138,-100.071934,SMB,Norte,2025-01-23
+MX-000112,Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),465311,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,Apodaca,25.819255,-100.230303,SMB,Norte,2026-05-26
+MX-000113,Tienda La Nueva (Buena Vista),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,El Carmen,25.855587,-100.377891,SMB,Norte,2026-04-28
+MX-000114,Miscelánea El Roble (El Obispo),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,San Pedro Garza García,25.681199,-100.402596,SMB,Norte,2025-06-19
+MX-000115,Farmacia Las Torres (Diamante Paseos De Opichén),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.939622,-89.688985,SMB,Sur,2026-08-19
+MX-000116,Farmacia Los Arcos (Leandro Valle),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.993485,-89.572945,SMB,Sur,2025-03-29
+MX-000117,Farmacia Las Torres (Gran San Pedro Cholul),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,21.024538,-89.56284,SMB,Sur,2026-06-14
+MX-000118,Botica La Joya (Las Americas Vi),464111,Farmacias sin minisúper,11 a 30 personas,31,Yucatán,Mérida,21.08732,-89.66728,MidMarket,Sur,2026-06-10
+MX-000119,Botica La Gloria (Santa María),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,21.001788,-89.566709,SMB,Sur,2025-10-06
+MX-000120,Farmacia El Puente (Los Heroes),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.989311,-89.537644,SMB,Sur,2026-01-05
+MX-000121,Farmacia La Fuente (Los Almendros),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.994306,-89.700688,SMB,Sur,2025-11-17
+MX-000122,Farmacia La Esperanza (San Jose Tecoh),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.925279,-89.618632,SMB,Sur,2024-10-28
+MX-000123,Botica El Sol (Bojorquez),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.980427,-89.64943,SMB,Sur,2025-12-24
+MX-000124,Botica El Mirador (Leandro Valle),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.992841,-89.573258,SMB,Sur,2024-03-09
+MX-000125,Farmacia La Fuente (Centro),464111,Farmacias sin minisúper,11 a 30 personas,31,Yucatán,Mérida,20.979332,-89.638951,MidMarket,Sur,2026-08-06
+MX-000126,Farmacia El Faro (Brisas),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,20.983287,-89.589566,SMB,Sur,2026-07-12
+MX-000127,Farmacia San Marcos (Zona Industrial),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.046734,-89.637645,SMB,Sur,2024-06-21
+MX-000128,Botica La Fuente (Fidel Velazquez),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.968714,-89.574647,SMB,Sur,2024-01-22
+MX-000129,Farmacia La Palma (Ciudad Caucel),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.004355,-89.693815,SMB,Sur,2025-12-30
+MX-000130,Botica El Olivo (Montecristo),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.0159,-89.594852,SMB,Sur,2024-07-28
+MX-000131,Taquería El Puente (Libertad),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,31,Yucatán,Mérida,20.950685,-89.659894,SMB,Sur,2025-03-23
+MX-000132,Antojitos La Gloria (Leandro Valle),722514,Restaurantes con servicio de preparación de tacos y tortas,0 a 5 personas,31,Yucatán,Mérida,20.993975,-89.568561,SMB,Sur,2025-10-20
+MX-000133,Antojitos La Loma (Santa María),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,31,Yucatán,Mérida,20.999427,-89.568826,SMB,Sur,2026-07-21
+MX-000134,Taquería La Luna (Ciudad Caucel),722516,Restaurantes de autoservicio,6 a 10 personas,31,Yucatán,Mérida,20.995152,-89.70649,SMB,Sur,2026-01-15
+MX-000135,Restaurante Santa Rosa (Residencial Los Pinos),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,31,Yucatán,Mérida,21.002784,-89.583246,SMB,Sur,2025-04-02
+MX-000136,Taquería Santa Ana (Las Americas),722518,Restaurantes que preparan otro tipo de alimentos para llevar,0 a 5 personas,31,Yucatán,Mérida,21.066576,-89.645646,SMB,Sur,2025-11-08
+MX-000137,Fonda El Jardín (Mexico),722219,Restaurantes con servicio de preparación de tacos y tortas,11 a 30 personas,31,Yucatán,Mérida,21.002875,-89.606366,MidMarket,Sur,2025-05-17
+MX-000138,Restaurante La Pitaya (Emiliano Zapata Oriente),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,31,Yucatán,Mérida,20.985325,-89.57832,SMB,Sur,2025-05-28
+MX-000139,Taquería La Palma (Cholul),722516,Restaurantes de autoservicio,0 a 5 personas,31,Yucatán,Mérida,21.045133,-89.557547,SMB,Sur,2025-01-16
+MX-000140,Antojitos El Ahorro (Gran Santa Fe),722516,Restaurantes de autoservicio,11 a 30 personas,31,Yucatán,Mérida,21.002001,-89.681467,MidMarket,Sur,2026-08-25
+MX-000141,Tlapalería Del Centro (Benito Juárez),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Chemax,20.656033,-87.931111,SMB,Sur,2026-05-04
+MX-000142,Materiales La Palma (Centro),467111,Comercio al por menor en ferreterías y tlapalerías,6 a 10 personas,31,Yucatán,Cenotillo,20.968125,-88.603379,SMB,Sur,2024-04-06
+MX-000143,Materiales Los Laureles (Kancab),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Tekax,20.192424,-89.339714,SMB,Sur,2025-08-14
+MX-000144,Ferretería El Ahorro (Quintana Roo),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Quintana Roo,20.869886,-88.628909,SMB,Sur,2025-04-26
+MX-000145,Abarrotes La Palma (Guadalupana),462112,Comercio al por menor en minisupers,11 a 30 personas,31,Yucatán,Mérida,20.896024,-89.642571,MidMarket,Sur,2026-06-14
+MX-000146,Miscelánea El Faro (Santa Rosa),462112,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Mérida,20.948894,-89.617405,SMB,Sur,2024-03-27
+MX-000147,Tienda Las Torres (Sascab),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,31,Yucatán,Kaua,20.619436,-88.416735,SMB,Sur,2026-07-29
+MX-000148,Miscelánea La Fuente (San Roman),461110,Comercio al por menor en minisupers,11 a 30 personas,31,Yucatán,Ticul,20.393592,-89.536424,MidMarket,Sur,2024-12-09
+MX-000149,Tienda La Pitaya (Centro),461110,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Kinchil,20.914537,-89.949448,SMB,Sur,2025-06-24
+MX-000150,Miscelánea La Ermita (Mexico Oriente),461110,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Mérida,20.999442,-89.601262,SMB,Sur,2024-07-21
