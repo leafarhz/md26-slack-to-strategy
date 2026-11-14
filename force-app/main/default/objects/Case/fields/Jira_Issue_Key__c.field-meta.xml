@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jira_Issue_Key__c</fullName>
+    <label>Jira Issue Key</label>
+    <description>Blocking Jira issue, set by the agent when it escalates (e.g. PLAT-7).</description>
+    <type>Text</type>
+    <length>20</length>
+    <externalId>false</externalId>
+    <unique>false</unique>
+    
+    <required>false</required>
+</CustomField>

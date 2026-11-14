@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Customer_Id__c</fullName>
+    <label>ERP Customer Id</label>
+    <description>Customer id in the ERP (Snowflake MD26_DB.ERP.CUSTOMERS). Shared key across ERP, Jira and Salesforce.</description>
+    <type>Text</type>
+    <length>20</length>
+    <externalId>true</externalId>
+    <unique>true</unique>
+    <caseSensitive>false</caseSensitive>
+    <required>false</required>
+</CustomField>

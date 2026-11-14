@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MD26_Key__c</fullName>
+    <label>MD26 Key</label>
+    <description>Idempotent load key for demo data (CASE-0001).</description>
+    <type>Text</type>
+    <length>20</length>
+    <externalId>true</externalId>
+    <unique>true</unique>
+    <caseSensitive>false</caseSensitive>
+    <required>false</required>
+</CustomField>

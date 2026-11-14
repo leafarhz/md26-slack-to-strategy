@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DENUE_Id__c</fullName>
+    <label>DENUE Id</label>
+    <description>INEGI DENUE establishment id. Prevents the agent from creating the same prospect twice.</description>
+    <type>Text</type>
+    <length>20</length>
+    <externalId>true</externalId>
+    <unique>true</unique>
+    <caseSensitive>false</caseSensitive>
+    <required>false</required>
+</CustomField>
