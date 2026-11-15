@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>MD26 Mostrador Ops</label>
     <description>What an operations user needs for the Mostrador agent: demo fields and the agent's Apex actions.</description>
+    <classAccesses>
+        <apexClass>CreateProspectLeadsAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EscalateBlockedCustomersAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FindProspectsAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GetQuarterHealthAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GetRegionRiskAction</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MostradorDataCloud</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MostradorOpsService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <hasActivationRequired>false</hasActivationRequired>
+    <label>MD26 Mostrador Ops</label>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ERP_Customer_Id__c</field>
