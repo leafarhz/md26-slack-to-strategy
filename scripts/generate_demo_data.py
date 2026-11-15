@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the Mostrador demo data (see docs/story.md).
+"""Generate the Changarro demo data (see docs/story.md).
 
 Input : an export of MD26_DB.MARKET.ESTABLISHMENTS (real INEGI DENUE data) as JSON
 Output: CSVs in demo/data/ for Snowflake (ERP, Jira) and Salesforce (Accounts, Cases)
@@ -154,7 +154,7 @@ def build(establishments):
     def new_order(c, order_date, promised, status, delivered=None, cfdi=True):
         nonlocal order_n
         order_n += 1
-        product = "Mostrador POS + Facturación CFDI" if cfdi else "Mostrador POS"
+        product = "Terminal Changarro + Facturación CFDI" if cfdi else "Terminal Changarro"
         per_store = rng.uniform(26000, 42000) + (6000 if cfdi else 0)
         o = {
             "ORDER_ID": f"SO-2026-{order_n:05d}",
@@ -414,7 +414,7 @@ def build(establishments):
 
     cfdi_subjects = [
         ("Ya pagué la implementación y la tienda no arranca", "High"),
-        ("No puedo facturar desde Mostrador", "High"),
+        ("No puedo facturar desde Changarro", "High"),
         ("Error de timbrado CFDI al cerrar la venta", "High"),
         ("¿Cuándo queda lista la facturación?", "Medium"),
         ("La factura de prueba sale con error del PAC", "Medium"),

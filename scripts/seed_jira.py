@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Seed a Jira Cloud site with the Mostrador demo backlog (demo/data/jira_*.csv).
+"""Seed a Jira Cloud site with the Changarro demo backlog (demo/data/jira_*.csv).
 
 One-time setup, not an integration: after this, Jira is the system of record and
 MuleSoft syncs it to Snowflake.

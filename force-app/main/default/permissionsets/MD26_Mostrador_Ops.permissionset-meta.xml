@@ -4,7 +4,7 @@
         <agentName>Mostrador_Ops</agentName>
         <enabled>true</enabled>
     </agentAccesses>
-    <description>What an operations user needs for the Mostrador agent: demo fields and the agent's Apex actions.</description>
+    <description>What an operations user needs for the Changarro agent: demo fields and the agent's Apex actions.</description>
     <classAccesses>
         <apexClass>CreateProspectLeadsAction</apexClass>
         <enabled>true</enabled>
@@ -34,7 +34,7 @@
         <enabled>true</enabled>
     </classAccesses>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>MD26 Mostrador Ops</label>
+    <label>MD26 Changarro Ops</label>
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>

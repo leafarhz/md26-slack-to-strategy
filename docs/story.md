@@ -5,10 +5,10 @@
 
 ## The company
 
-**Mostrador** sells point-of-sale software to small businesses across Mexico:
+**Changarro** sells point-of-sale software to small businesses across Mexico:
 pharmacies, restaurants, hardware stores and corner shops.
 
-Mostrador **invoices a customer only when their store goes live.** So revenue
+Changarro **invoices a customer only when their store goes live.** So revenue
 depends on implementations (Jira), and implementations depend on support.
 
 ## The person

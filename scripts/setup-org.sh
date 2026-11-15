@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# From Slack to Strategy: set up a Salesforce org for the Mostrador Ops demo.
+# From Slack to Strategy: set up a Salesforce org for the Changarro Ops demo.
 #
 # Usage: scripts/setup-org.sh <org-alias>
 #

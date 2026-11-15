@@ -1,5 +1,5 @@
 /**
- * Business logic behind the Mostrador operations agent (see docs/story.md).
+ * Business logic behind the Changarro operations agent (see docs/story.md).
  *
  * Reads:  ERP, Jira and market data through Data Cloud SQL (Zero Copy over Snowflake),
  *         support cases through SOQL. All CRM access runs in USER_MODE.
@@ -50,7 +50,7 @@ public with sharing class MostradorOpsService {
         return result;
     }
 
-    /** Regions the running user may see: the regions of the Mostrador Accounts visible to them. */
+    /** Regions the running user may see: the regions of the Changarro Accounts visible to them. */
     public static List<String> visibleRegions() {
         Set<String> seen = new Set<String>();
         try {
@@ -64,8 +64,8 @@ public with sharing class MostradorOpsService {
             }
         } catch (QueryException e) {
             // USER_MODE enforces field-level security: no access to the fields, no federated data
-            throw new OpsException('No tienes permiso para consultar las cuentas de clientes de Mostrador. '
-                + 'Pide a tu administrador el acceso de operaciones (permiso "MD26 Mostrador Ops").');
+            throw new OpsException('No tienes permiso para consultar las cuentas de clientes de Changarro. '
+                + 'Pide a tu administrador el acceso de operaciones (permiso "MD26 Changarro Ops").');
         }
         List<String> ordered = new List<String>();
         for (String r : REGIONS) {
@@ -97,7 +97,7 @@ public with sharing class MostradorOpsService {
             return regions[0];
         }
         throw new OpsException(regions.isEmpty()
-            ? 'No tienes acceso a cuentas de clientes de Mostrador.'
+            ? 'No tienes acceso a cuentas de clientes de Changarro.'
             : '¿De qué región? Puedes ver: ' + String.join(regions, ', ') + '.');
     }
 
@@ -396,7 +396,7 @@ public with sharing class MostradorOpsService {
                 Origin = 'Web',
                 Jira_Issue_Key__c = blockerKey,
                 ERP_Order_Id__c = o.orderId,
-                Description = 'Escalado por el agente de operaciones de Mostrador.\n'
+                Description = 'Escalado por el agente de operaciones de Changarro.\n'
                     + 'Cliente: ' + o.customerName + ' (' + o.customerId + ')\n'
                     + 'Orden ERP: ' + o.orderId + ' · ' + mxn(o.amount) + ' MXN · prometida ' + iso(o.promised) + '\n'
                     + 'Jira: ' + o.epicKey + ' bloqueado por ' + blockerKey + ' (' + o.blockerSummary + ')\n'
@@ -593,7 +593,7 @@ public with sharing class MostradorOpsService {
                 City = p.municipality,
                 PostalCode = p.postalCode,
                 Description = 'Prospecto de INEGI DENUE: ' + p.activityClass + ' · ' + p.stratum
-                    + ' · colonia ' + p.neighborhood + ' · a ' + p.km + ' km de un cliente de Mostrador.'
+                    + ' · colonia ' + p.neighborhood + ' · a ' + p.km + ' km de un cliente de Changarro.'
             ));
         }
         for (Integer i = 0; i < leads.size(); i++) {

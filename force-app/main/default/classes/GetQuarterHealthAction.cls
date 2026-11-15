@@ -33,7 +33,7 @@ public with sharing class GetQuarterHealthAction {
     @TestVisible
     private static String summarize(List<String> regions, MostradorOpsService.Quarter q) {
         if (regions.isEmpty()) {
-            return 'No tienes acceso a cuentas de clientes de Mostrador, así que no puedo mostrar el avance de ninguna región.';
+            return 'No tienes acceso a cuentas de clientes de Changarro, así que no puedo mostrar el avance de ninguna región.';
         }
         List<MostradorOpsService.RegionHealth> health = MostradorOpsService.quarterHealth(regions, q);
         // Worst first: that's what an ops leader needs to see
@@ -51,7 +51,7 @@ public with sharing class GetQuarterHealthAction {
         }
         List<String> lines = new List<String>{
             'Trimestre ' + q.label + ' (' + MostradorOpsService.iso(q.startDate) + ' a ' + MostradorOpsService.iso(q.endDate) + '), datos al ' + MostradorOpsService.iso(q.asOf)
-            + '. Fuente: ERP de Mostrador en Snowflake, consultado en vivo vía Data Cloud Zero Copy.'
+            + '. Fuente: ERP de Changarro en Snowflake, consultado en vivo vía Data Cloud Zero Copy.'
         };
         for (MostradorOpsService.RegionHealth h : sorted) {
             String status = h.forecastPct() >= 95 ? 'en camino' : (h.forecastPct() >= 85 ? 'en riesgo leve' : 'EN RIESGO');
@@ -61,7 +61,7 @@ public with sharing class GetQuarterHealthAction {
                 + MostradorOpsService.mxn(h.delayed) + ' MXN en ' + h.delayedOrders + ' órdenes. Go-lives: '
                 + h.goLives + ' de ' + h.goLivesTarget + '.');
         }
-        lines.add('Notas: Mostrador factura cuando la tienda sale a producción (go-live). Reconocido = go-lives hechos; '
+        lines.add('Notas: Changarro factura cuando la tienda sale a producción (go-live). Reconocido = go-lives hechos; '
             + 'agendado = go-lives programados en tiempo; retrasado = órdenes que ya pasaron su fecha prometida.');
         return String.join(lines, '\n');
     }

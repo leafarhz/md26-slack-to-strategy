@@ -1,6 +1,6 @@
 MD26_Key__c,Account.ERP_Customer_Id__c,Subject,Priority,Status,Origin,Type,CreatedDate,ClosedDate,Description
 CASE-0001,MX-000120,Ya pagué la implementación y la tienda no arranca,High,Working,Phone,Problem,2026-11-08T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
-CASE-0002,MX-000140,No puedo facturar desde Mostrador,High,Working,Email,Problem,2026-10-24T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
+CASE-0002,MX-000140,No puedo facturar desde Changarro,High,Working,Email,Problem,2026-10-24T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
 CASE-0003,MX-000131,Error de timbrado CFDI al cerrar la venta,High,Working,Email,Problem,2026-10-31T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
 CASE-0004,MX-000123,¿Cuándo queda lista la facturación?,Medium,Working,Email,Problem,2026-10-27T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
 CASE-0005,MX-000126,La factura de prueba sale con error del PAC,Medium,Working,Web,Problem,2026-10-29T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.

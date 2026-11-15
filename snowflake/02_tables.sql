@@ -1,5 +1,5 @@
 -- From Slack to Strategy — systems of record
--- Fictional company: "Mostrador", a point-of-sale software vendor selling to
+-- Fictional company: "Changarro", a point-of-sale software vendor selling to
 -- Mexican small businesses. Customer profiles are shaped from INEGI DENUE
 -- (industry, size, location); business names are fictional.
 --
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS MD26_DB.ERP.SALES_ORDERS (
   CUSTOMER_ID      VARCHAR(20)   NOT NULL,
   ORDER_DATE       DATE          NOT NULL,
   FISCAL_QUARTER   VARCHAR(7)    NOT NULL,              -- FY26-Q4
-  PRODUCT          VARCHAR(100),                        -- Mostrador POS, Inventario, Facturación CFDI…
+  PRODUCT          VARCHAR(100),                        -- Changarro POS, Inventario, Facturación CFDI…
   AMOUNT_MXN       NUMBER(14,2)  NOT NULL,
   STATUS           VARCHAR(20)   NOT NULL,              -- Booked | Fulfilled | Delayed | Cancelled
   PROMISED_DATE    DATE,
