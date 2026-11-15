@@ -591,17 +591,36 @@ public with sharing class MostradorOpsService {
                 Industry = family == 'Farmacias' ? 'Healthcare' : (family == 'Restaurantes' ? 'Hospitality' : 'Retail'),
                 Street = p.street,
                 City = p.municipality,
-                State = p.stateName,
                 PostalCode = p.postalCode,
-                Country = 'Mexico',
                 Description = 'Prospecto de INEGI DENUE: ' + p.activityClass + ' · ' + p.stratum
                     + ' · colonia ' + p.neighborhood + ' · a ' + p.km + ' km de un cliente de Mostrador.'
             ));
+        }
+        for (Integer i = 0; i < leads.size(); i++) {
+            setStateAndCountry(leads[i], prospects[i].stateName);
         }
         if (!leads.isEmpty()) {
             Database.upsert(leads, Lead.DENUE_Id__c, true, AccessLevel.USER_MODE);
         }
         return leads;
+    }
+
+    /** Salesforce state codes for Mexico (Mexico City is still "DF", Distrito Federal). */
+    private static final Map<String, String> MX_STATE_CODES = new Map<String, String>{
+        'Ciudad de México' => 'DF', 'Jalisco' => 'JA', 'Nuevo León' => 'NL', 'Yucatán' => 'YU'
+    };
+
+    /** Works with and without State and Country Picklists enabled in the org. */
+    private static void setStateAndCountry(Lead l, String stateName) {
+        if (Schema.SObjectType.Lead.fields.getMap().containsKey('countrycode')) {
+            l.put('CountryCode', 'MX');
+            if (MX_STATE_CODES.containsKey(stateName)) {
+                l.put('StateCode', MX_STATE_CODES.get(stateName));
+            }
+        } else {
+            l.State = stateName;
+            l.Country = 'Mexico';
+        }
     }
 
     // ───────────────────────────── Formatting ─────────────────────────────

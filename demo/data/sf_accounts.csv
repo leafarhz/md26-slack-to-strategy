@@ -1,151 +1,151 @@
-Name,ERP_Customer_Id__c,Region__c,Industry,Type,NumberOfEmployees,BillingCity,BillingState,BillingCountry,Description
-Botica La Loma (Moderna),MX-000001,Centro,Healthcare,Customer,3,Benito Juárez,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Zapote (Progreso Nacional),MX-000002,Centro,Healthcare,Customer,3,Gustavo A. Madero,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Palma (Molino De Rosas),MX-000003,Centro,Healthcare,Customer,3,Álvaro Obregón,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Cruz (Pedregal De San Nicolás Tercera Sección),MX-000004,Centro,Healthcare,Customer,3,Tlalpan,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Botica El Ahorro (Los Reyes),MX-000005,Centro,Healthcare,Customer,8,Azcapotzalco,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Olivo (San Bartolo Atepehuacan),MX-000006,Centro,Healthcare,Customer,3,Gustavo A. Madero,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Fuente (Santa Cecilia),MX-000007,Centro,Healthcare,Customer,20,Tláhuac,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Botica El Faro (Central De Abasto),MX-000008,Centro,Healthcare,Customer,3,Iztapalapa,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Botica San Marcos (Cuauhtémoc),MX-000009,Centro,Healthcare,Customer,8,Cuauhtémoc,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia Santa Ana (Nueva Santa María),MX-000010,Centro,Healthcare,Customer,3,Azcapotzalco,Ciudad de México,Mexico,Farmacia · Farmacias sin minisúper
-Taquería La Esperanza (Pro Hogar),MX-000011,Centro,Hospitality,Customer,3,Azcapotzalco,Ciudad de México,Mexico,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
-Cocina Santa Ana (Juárez),MX-000012,Centro,Hospitality,Customer,40,Cuauhtémoc,Ciudad de México,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Cocina La Pitaya (Santa Apolonia),MX-000013,Centro,Hospitality,Customer,40,Azcapotzalco,Ciudad de México,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Fonda La Loma (Exhacienda De Coyoacan),MX-000014,Centro,Hospitality,Customer,20,Coyoacán,Ciudad de México,Mexico,Restaurante · Restaurantes de autoservicio
-Restaurante El Nogal (Juárez),MX-000015,Centro,Hospitality,Customer,20,Cuauhtémoc,Ciudad de México,Mexico,Restaurante · Restaurantes de autoservicio
-Fonda La Huerta (San Angel),MX-000016,Centro,Hospitality,Customer,20,Álvaro Obregón,Ciudad de México,Mexico,Restaurante · Restaurantes de autoservicio
-Restaurante La Pitaya (Belisario Domínguez Sección Xvi),MX-000017,Centro,Hospitality,Customer,3,Tlalpan,Ciudad de México,Mexico,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
-Taquería Del Parque (Insurgentes Mixcoac),MX-000018,Centro,Hospitality,Customer,40,Benito Juárez,Ciudad de México,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Antojitos Santa Ana (San Lorenzo Tezonco),MX-000019,Centro,Hospitality,Customer,20,Iztapalapa,Ciudad de México,Mexico,Restaurante · Restaurantes de autoservicio
-Fonda La Cruz (Miguel Hidalgo),MX-000020,Centro,Hospitality,Customer,3,Tláhuac,Ciudad de México,Mexico,Restaurante · Restaurantes con servicio de preparación de antojitos
-Restaurante Del Parque (Industrial),MX-000021,Centro,Hospitality,Customer,3,Gustavo A. Madero,Ciudad de México,Mexico,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
-Antojitos El Roble (San Jerónimo Lídice),MX-000022,Centro,Hospitality,Customer,40,La Magdalena Contreras,Ciudad de México,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Materiales La Luna (San Miguel Topilejo),MX-000023,Centro,Retail,Customer,3,Tlalpan,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales La Huerta (Presidentes Ejidales Segunda Sección),MX-000024,Centro,Retail,Customer,3,Coyoacán,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería La Cruz (San Nicolas Ii),MX-000025,Centro,Retail,Customer,3,Tlalpan,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería El Mirador (Carlos Hank González),MX-000026,Centro,Retail,Customer,3,Iztapalapa,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales El Pozo (San Salvador Cuauhtenco),MX-000027,Centro,Retail,Customer,3,Milpa Alta,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería Los Álamos (Ajusco),MX-000028,Centro,Retail,Customer,3,Coyoacán,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales La Luna (San Francisco Tlaltenco),MX-000029,Centro,Retail,Customer,3,Tláhuac,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería La Esperanza (Centro),MX-000030,Centro,Retail,Customer,20,Cuauhtémoc,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería El Faro (Doctores),MX-000031,Centro,Retail,Customer,3,Cuauhtémoc,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería La Cruz (Ajusco),MX-000032,Centro,Retail,Customer,3,Coyoacán,Ciudad de México,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tienda La Nueva (Pedregal De Santo Domingo),MX-000033,Centro,Retail,Customer,3,Coyoacán,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Abarrotes El Puente (Santa Cruz Atoyac),MX-000034,Centro,Retail,Customer,3,Benito Juárez,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda La Luna (Aquiles Serdán),MX-000035,Centro,Retail,Customer,3,Venustiano Carranza,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Abarrotes Las Torres (Santiago Acahualtepec),MX-000036,Centro,Retail,Customer,3,Iztapalapa,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Abarrotes Santa Rosa (Valle De Luces),MX-000037,Centro,Retail,Customer,3,Iztapalapa,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea El Puente (Prado Churubusco),MX-000038,Centro,Retail,Customer,3,Coyoacán,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Abarrotes Del Centro (San Felipe De Jesús),MX-000039,Centro,Retail,Customer,3,Gustavo A. Madero,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea El Jardín (Tierra Unida),MX-000040,Centro,Retail,Customer,3,La Magdalena Contreras,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea Las Flores (Hipódromo),MX-000041,Centro,Retail,Customer,3,Cuauhtémoc,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Abarrotes Los Arcos (Cuchilla Pantitlán),MX-000042,Centro,Retail,Customer,3,Venustiano Carranza,Ciudad de México,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Farmacia El Sol (Insurgentes),MX-000043,Occidente,Healthcare,Customer,3,Guadalajara,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Loma (Arboledas Ii),MX-000044,Occidente,Healthcare,Customer,3,Zapopan,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Huerta (Centro),MX-000045,Occidente,Healthcare,Customer,3,La Barca,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Jardín (Centro),MX-000046,Occidente,Healthcare,Customer,3,Ameca,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia Del Parque (Centro),MX-000047,Occidente,Healthcare,Customer,3,Puerto Vallarta,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Esperanza (Lomas De Polanco),MX-000048,Occidente,Healthcare,Customer,3,Guadalajara,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Palma (San Juan De Dios),MX-000049,Occidente,Healthcare,Customer,3,Guadalajara,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Jardín (Chapultepec),MX-000050,Occidente,Healthcare,Customer,3,Guadalajara,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Ceiba (Analco),MX-000051,Occidente,Healthcare,Customer,20,Guadalajara,Jalisco,Mexico,Farmacia · Farmacias sin minisúper
-Cocina La Loma (Americana),MX-000052,Occidente,Hospitality,Customer,8,Guadalajara,Jalisco,Mexico,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
-Fonda La Pitaya (Centro),MX-000053,Occidente,Hospitality,Customer,20,Puerto Vallarta,Jalisco,Mexico,Restaurante · Restaurantes de autoservicio
-Cocina La Nueva (San Marcos),MX-000054,Occidente,Hospitality,Customer,3,Guadalajara,Jalisco,Mexico,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
-Antojitos Las Flores (Pitillal),MX-000055,Occidente,Hospitality,Customer,8,Puerto Vallarta,Jalisco,Mexico,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
-Fonda El Ahorro (Centro),MX-000056,Occidente,Hospitality,Customer,3,San Juan de los Lagos,Jalisco,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Antojitos El Faro (La Tuna),MX-000057,Occidente,Hospitality,Customer,3,Ayotlán,Jalisco,Mexico,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
-Cocina Los Álamos (Los Fresnos),MX-000058,Occidente,Hospitality,Customer,3,Tala,Jalisco,Mexico,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
-Cocina El Puente (Oblatos),MX-000059,Occidente,Hospitality,Customer,20,Guadalajara,Jalisco,Mexico,Restaurante · Restaurantes de autoservicio
-Cocina Santa Rosa (La 27 De Septiembre),MX-000060,Occidente,Hospitality,Customer,3,Sayula,Jalisco,Mexico,Restaurante · Restaurantes con servicio de preparación de pescados y mariscos
-Ferretería La Ermita (Guayabitos),MX-000061,Occidente,Retail,Customer,8,San Pedro Tlaquepaque,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales El Faro (Mirador),MX-000062,Occidente,Retail,Customer,3,Tala,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales La Nueva (Las Juntas),MX-000063,Occidente,Retail,Customer,3,San Pedro Tlaquepaque,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería El Faro (Nuevo Fuerte),MX-000064,Occidente,Retail,Customer,3,Ocotlán,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería El Mirador (Centro),MX-000065,Occidente,Retail,Customer,3,Chapala,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería La Loma (Centro),MX-000066,Occidente,Retail,Customer,3,Atotonilco el Alto,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales Del Parque (San Sebastian El Grande),MX-000067,Occidente,Retail,Customer,3,Tlajomulco de Zúñiga,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería La Esperanza (San Andres),MX-000068,Occidente,Retail,Customer,3,Guadalajara,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería La Esperanza (Tabachines),MX-000069,Occidente,Retail,Customer,3,Zapopan,Jalisco,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Miscelánea La Pitaya (Lomas De Tlaquepaque),MX-000070,Occidente,Retail,Customer,3,San Pedro Tlaquepaque,Jalisco,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda Los Álamos (Mariano Otero),MX-000071,Occidente,Retail,Customer,3,Zapopan,Jalisco,Mexico,Abarrotes · Comercio al por mayor de abarrotes
-Miscelánea La Ceiba (El Pitillal Centro),MX-000072,Occidente,Retail,Customer,3,Puerto Vallarta,Jalisco,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda La Ermita (Talpita),MX-000073,Occidente,Retail,Customer,3,Guadalajara,Jalisco,Mexico,Abarrotes · Comercio al por mayor de abarrotes
-Miscelánea La Gloria (Los Abedules),MX-000074,Occidente,Retail,Customer,3,Tlajomulco de Zúñiga,Jalisco,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda La Palma (Lomas De San Agustin),MX-000075,Occidente,Retail,Customer,3,Tlajomulco de Zúñiga,Jalisco,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda Los Álamos (Altamira),MX-000076,Occidente,Retail,Customer,8,Tonalá,Jalisco,Mexico,Abarrotes · Comercio al por mayor de abarrotes
-Tienda Las Torres (Alvarez Del Castillo),MX-000077,Occidente,Retail,Customer,20,El Salto,Jalisco,Mexico,Abarrotes · Comercio al por mayor de abarrotes
-Abarrotes San Marcos (Centro),MX-000078,Occidente,Retail,Customer,3,Yahualica de González Gallo,Jalisco,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Botica El Jardín (Palmiras Residencial),MX-000079,Norte,Healthcare,Customer,20,General Escobedo,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Ceiba (Zona Residencial Chipinque),MX-000080,Norte,Healthcare,Customer,3,San Pedro Garza García,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Botica Del Centro (Centro),MX-000081,Norte,Healthcare,Customer,3,Monterrey,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia Santa Rosa (Independencia),MX-000082,Norte,Healthcare,Customer,3,Monterrey,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),MX-000083,Norte,Healthcare,Customer,3,San Nicolás de los Garza,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Ceiba (Zambrano),MX-000084,Norte,Healthcare,Customer,3,Montemorelos,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),MX-000085,Norte,Healthcare,Customer,3,Monterrey,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Cruz (Bosques De Castilla),MX-000086,Norte,Healthcare,Customer,3,Salinas Victoria,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Ahorro (Contry),MX-000087,Norte,Healthcare,Customer,3,Monterrey,Nuevo León,Mexico,Farmacia · Farmacias sin minisúper
-Restaurante Del Centro (El Lechugal),MX-000088,Norte,Hospitality,Customer,3,Santa Catarina,Nuevo León,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Antojitos Los Álamos (Centro De Salinas Victoria),MX-000089,Norte,Hospitality,Customer,8,Salinas Victoria,Nuevo León,Mexico,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
-Fonda Santa Ana (Valle Del Infonavit),MX-000090,Norte,Hospitality,Customer,3,Monterrey,Nuevo León,Mexico,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
-Antojitos La Nueva (Centro),MX-000091,Norte,Hospitality,Customer,3,Monterrey,Nuevo León,Mexico,Restaurante · Restaurantes con servicio de preparación de antojitos
-Taquería Del Centro (San Francisco),MX-000092,Norte,Hospitality,Customer,3,Juárez,Nuevo León,Mexico,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
-Restaurante El Ahorro (Ignacio Altamirano),MX-000093,Norte,Hospitality,Customer,3,Monterrey,Nuevo León,Mexico,Restaurante · Restaurantes de autoservicio
-Taquería Santa Ana (Real Anáhuac),MX-000094,Norte,Hospitality,Customer,3,San Nicolás de los Garza,Nuevo León,Mexico,Restaurante · Restaurantes con servicio de preparación de antojitos
-Fonda El Zapote (Los Girasoles Segundo Sector),MX-000095,Norte,Hospitality,Customer,20,General Escobedo,Nuevo León,Mexico,Restaurante · Restaurantes de autoservicio
-Taquería El Olivo (Nuevas Colonias),MX-000096,Norte,Hospitality,Customer,3,Monterrey,Nuevo León,Mexico,Restaurante · Restaurantes con servicio de preparación de antojitos
-Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),MX-000097,Norte,Retail,Customer,3,Monterrey,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales El Puente (Mirasol Segundo Sector),MX-000098,Norte,Retail,Customer,3,Monterrey,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),MX-000099,Norte,Retail,Customer,3,Apodaca,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería La Loma (Metroplex Primer Sector),MX-000100,Norte,Retail,Customer,3,Apodaca,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales La Ermita (Loma Linda),MX-000101,Norte,Retail,Customer,3,Monterrey,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería El Olivo (Paseo De San Isidro),MX-000102,Norte,Retail,Customer,3,Salinas Victoria,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería La Huerta (Revolución),MX-000103,Norte,Retail,Customer,3,Anáhuac,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Tlapalería El Pozo (Centro De Galeana),MX-000104,Norte,Retail,Customer,3,Galeana,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales La Luna (San Gilberto),MX-000105,Norte,Retail,Customer,3,Santa Catarina,Nuevo León,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Miscelánea Las Torres (General Emiliano Zapata (irregular)),MX-000106,Norte,Retail,Customer,3,General Escobedo,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Abarrotes La Huerta (Cerro De Las Mitras),MX-000107,Norte,Retail,Customer,3,Santa Catarina,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda El Pozo (Hacienda La Providencia),MX-000108,Norte,Retail,Customer,3,General Escobedo,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea El Olivo (La Ermita),MX-000109,Norte,Retail,Customer,3,Santa Catarina,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea La Joya (Privada La Castaña),MX-000110,Norte,Retail,Customer,3,Apodaca,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda La Joya (Valle Del Roble Sector Olmo),MX-000111,Norte,Retail,Customer,3,Cadereyta Jiménez,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),MX-000112,Norte,Retail,Customer,3,Apodaca,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Tienda La Nueva (Buena Vista),MX-000113,Norte,Retail,Customer,3,El Carmen,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea El Roble (El Obispo),MX-000114,Norte,Retail,Customer,3,San Pedro Garza García,Nuevo León,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Farmacia Las Torres (Diamante Paseos De Opichén),MX-000115,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia Los Arcos (Leandro Valle),MX-000116,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia Las Torres (Gran San Pedro Cholul),MX-000117,Sur,Healthcare,Customer,8,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Joya (Las Americas Vi),MX-000118,Sur,Healthcare,Customer,20,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Gloria (Santa María),MX-000119,Sur,Healthcare,Customer,8,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Puente (Los Heroes),MX-000120,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Fuente (Los Almendros),MX-000121,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Esperanza (San Jose Tecoh),MX-000122,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Botica El Sol (Bojorquez),MX-000123,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Botica El Mirador (Leandro Valle),MX-000124,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Fuente (Centro),MX-000125,Sur,Healthcare,Customer,20,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia El Faro (Brisas),MX-000126,Sur,Healthcare,Customer,8,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia San Marcos (Zona Industrial),MX-000127,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Botica La Fuente (Fidel Velazquez),MX-000128,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Farmacia La Palma (Ciudad Caucel),MX-000129,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Botica El Olivo (Montecristo),MX-000130,Sur,Healthcare,Customer,3,Mérida,Yucatán,Mexico,Farmacia · Farmacias sin minisúper
-Taquería El Puente (Libertad),MX-000131,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,Restaurante · Restaurantes con servicio de preparación de antojitos
-Antojitos La Gloria (Leandro Valle),MX-000132,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
-Antojitos La Loma (Santa María),MX-000133,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
-Taquería La Luna (Ciudad Caucel),MX-000134,Sur,Hospitality,Customer,8,Mérida,Yucatán,Mexico,Restaurante · Restaurantes de autoservicio
-Restaurante Santa Rosa (Residencial Los Pinos),MX-000135,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
-Taquería Santa Ana (Las Americas),MX-000136,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
-Fonda El Jardín (Mexico),MX-000137,Sur,Hospitality,Customer,20,Mérida,Yucatán,Mexico,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
-Restaurante La Pitaya (Emiliano Zapata Oriente),MX-000138,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,Restaurante · Restaurantes con servicio de preparación de antojitos
-Taquería La Palma (Cholul),MX-000139,Sur,Hospitality,Customer,3,Mérida,Yucatán,Mexico,Restaurante · Restaurantes de autoservicio
-Antojitos El Ahorro (Gran Santa Fe),MX-000140,Sur,Hospitality,Customer,20,Mérida,Yucatán,Mexico,Restaurante · Restaurantes de autoservicio
-Tlapalería Del Centro (Benito Juárez),MX-000141,Sur,Retail,Customer,3,Chemax,Yucatán,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales La Palma (Centro),MX-000142,Sur,Retail,Customer,8,Cenotillo,Yucatán,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Materiales Los Laureles (Kancab),MX-000143,Sur,Retail,Customer,3,Tekax,Yucatán,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Ferretería El Ahorro (Quintana Roo),MX-000144,Sur,Retail,Customer,3,Quintana Roo,Yucatán,Mexico,Ferretería · Comercio al por menor en ferreterías y tlapalerías
-Abarrotes La Palma (Guadalupana),MX-000145,Sur,Retail,Customer,20,Mérida,Yucatán,Mexico,Abarrotes · Comercio al por menor en minisupers
-Miscelánea El Faro (Santa Rosa),MX-000146,Sur,Retail,Customer,8,Mérida,Yucatán,Mexico,Abarrotes · Comercio al por menor en minisupers
-Tienda Las Torres (Sascab),MX-000147,Sur,Retail,Customer,3,Kaua,Yucatán,Mexico,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
-Miscelánea La Fuente (San Roman),MX-000148,Sur,Retail,Customer,20,Ticul,Yucatán,Mexico,Abarrotes · Comercio al por menor en minisupers
-Tienda La Pitaya (Centro),MX-000149,Sur,Retail,Customer,8,Kinchil,Yucatán,Mexico,Abarrotes · Comercio al por menor en minisupers
-Miscelánea La Ermita (Mexico Oriente),MX-000150,Sur,Retail,Customer,8,Mérida,Yucatán,Mexico,Abarrotes · Comercio al por menor en minisupers
+Name,ERP_Customer_Id__c,Region__c,Industry,Type,NumberOfEmployees,BillingCity,BillingStateCode,BillingCountryCode,Description
+Botica La Loma (Moderna),MX-000001,Centro,Healthcare,Customer,3,Benito Juárez,DF,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Zapote (Progreso Nacional),MX-000002,Centro,Healthcare,Customer,3,Gustavo A. Madero,DF,MX,Farmacia · Farmacias sin minisúper
+Botica La Palma (Molino De Rosas),MX-000003,Centro,Healthcare,Customer,3,Álvaro Obregón,DF,MX,Farmacia · Farmacias sin minisúper
+Botica La Cruz (Pedregal De San Nicolás Tercera Sección),MX-000004,Centro,Healthcare,Customer,3,Tlalpan,DF,MX,Farmacia · Farmacias sin minisúper
+Botica El Ahorro (Los Reyes),MX-000005,Centro,Healthcare,Customer,8,Azcapotzalco,DF,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Olivo (San Bartolo Atepehuacan),MX-000006,Centro,Healthcare,Customer,3,Gustavo A. Madero,DF,MX,Farmacia · Farmacias sin minisúper
+Botica La Fuente (Santa Cecilia),MX-000007,Centro,Healthcare,Customer,20,Tláhuac,DF,MX,Farmacia · Farmacias sin minisúper
+Botica El Faro (Central De Abasto),MX-000008,Centro,Healthcare,Customer,3,Iztapalapa,DF,MX,Farmacia · Farmacias sin minisúper
+Botica San Marcos (Cuauhtémoc),MX-000009,Centro,Healthcare,Customer,8,Cuauhtémoc,DF,MX,Farmacia · Farmacias sin minisúper
+Farmacia Santa Ana (Nueva Santa María),MX-000010,Centro,Healthcare,Customer,3,Azcapotzalco,DF,MX,Farmacia · Farmacias sin minisúper
+Taquería La Esperanza (Pro Hogar),MX-000011,Centro,Hospitality,Customer,3,Azcapotzalco,DF,MX,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
+Cocina Santa Ana (Juárez),MX-000012,Centro,Hospitality,Customer,40,Cuauhtémoc,DF,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Cocina La Pitaya (Santa Apolonia),MX-000013,Centro,Hospitality,Customer,40,Azcapotzalco,DF,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Fonda La Loma (Exhacienda De Coyoacan),MX-000014,Centro,Hospitality,Customer,20,Coyoacán,DF,MX,Restaurante · Restaurantes de autoservicio
+Restaurante El Nogal (Juárez),MX-000015,Centro,Hospitality,Customer,20,Cuauhtémoc,DF,MX,Restaurante · Restaurantes de autoservicio
+Fonda La Huerta (San Angel),MX-000016,Centro,Hospitality,Customer,20,Álvaro Obregón,DF,MX,Restaurante · Restaurantes de autoservicio
+Restaurante La Pitaya (Belisario Domínguez Sección Xvi),MX-000017,Centro,Hospitality,Customer,3,Tlalpan,DF,MX,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
+Taquería Del Parque (Insurgentes Mixcoac),MX-000018,Centro,Hospitality,Customer,40,Benito Juárez,DF,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Antojitos Santa Ana (San Lorenzo Tezonco),MX-000019,Centro,Hospitality,Customer,20,Iztapalapa,DF,MX,Restaurante · Restaurantes de autoservicio
+Fonda La Cruz (Miguel Hidalgo),MX-000020,Centro,Hospitality,Customer,3,Tláhuac,DF,MX,Restaurante · Restaurantes con servicio de preparación de antojitos
+Restaurante Del Parque (Industrial),MX-000021,Centro,Hospitality,Customer,3,Gustavo A. Madero,DF,MX,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
+Antojitos El Roble (San Jerónimo Lídice),MX-000022,Centro,Hospitality,Customer,40,La Magdalena Contreras,DF,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Materiales La Luna (San Miguel Topilejo),MX-000023,Centro,Retail,Customer,3,Tlalpan,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales La Huerta (Presidentes Ejidales Segunda Sección),MX-000024,Centro,Retail,Customer,3,Coyoacán,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería La Cruz (San Nicolas Ii),MX-000025,Centro,Retail,Customer,3,Tlalpan,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería El Mirador (Carlos Hank González),MX-000026,Centro,Retail,Customer,3,Iztapalapa,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales El Pozo (San Salvador Cuauhtenco),MX-000027,Centro,Retail,Customer,3,Milpa Alta,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería Los Álamos (Ajusco),MX-000028,Centro,Retail,Customer,3,Coyoacán,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales La Luna (San Francisco Tlaltenco),MX-000029,Centro,Retail,Customer,3,Tláhuac,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería La Esperanza (Centro),MX-000030,Centro,Retail,Customer,20,Cuauhtémoc,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería El Faro (Doctores),MX-000031,Centro,Retail,Customer,3,Cuauhtémoc,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería La Cruz (Ajusco),MX-000032,Centro,Retail,Customer,3,Coyoacán,DF,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tienda La Nueva (Pedregal De Santo Domingo),MX-000033,Centro,Retail,Customer,3,Coyoacán,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Abarrotes El Puente (Santa Cruz Atoyac),MX-000034,Centro,Retail,Customer,3,Benito Juárez,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda La Luna (Aquiles Serdán),MX-000035,Centro,Retail,Customer,3,Venustiano Carranza,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Abarrotes Las Torres (Santiago Acahualtepec),MX-000036,Centro,Retail,Customer,3,Iztapalapa,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Abarrotes Santa Rosa (Valle De Luces),MX-000037,Centro,Retail,Customer,3,Iztapalapa,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea El Puente (Prado Churubusco),MX-000038,Centro,Retail,Customer,3,Coyoacán,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Abarrotes Del Centro (San Felipe De Jesús),MX-000039,Centro,Retail,Customer,3,Gustavo A. Madero,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea El Jardín (Tierra Unida),MX-000040,Centro,Retail,Customer,3,La Magdalena Contreras,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea Las Flores (Hipódromo),MX-000041,Centro,Retail,Customer,3,Cuauhtémoc,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Abarrotes Los Arcos (Cuchilla Pantitlán),MX-000042,Centro,Retail,Customer,3,Venustiano Carranza,DF,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Farmacia El Sol (Insurgentes),MX-000043,Occidente,Healthcare,Customer,3,Guadalajara,JA,MX,Farmacia · Farmacias sin minisúper
+Botica La Loma (Arboledas Ii),MX-000044,Occidente,Healthcare,Customer,3,Zapopan,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Huerta (Centro),MX-000045,Occidente,Healthcare,Customer,3,La Barca,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Jardín (Centro),MX-000046,Occidente,Healthcare,Customer,3,Ameca,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia Del Parque (Centro),MX-000047,Occidente,Healthcare,Customer,3,Puerto Vallarta,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Esperanza (Lomas De Polanco),MX-000048,Occidente,Healthcare,Customer,3,Guadalajara,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Palma (San Juan De Dios),MX-000049,Occidente,Healthcare,Customer,3,Guadalajara,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Jardín (Chapultepec),MX-000050,Occidente,Healthcare,Customer,3,Guadalajara,JA,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Ceiba (Analco),MX-000051,Occidente,Healthcare,Customer,20,Guadalajara,JA,MX,Farmacia · Farmacias sin minisúper
+Cocina La Loma (Americana),MX-000052,Occidente,Hospitality,Customer,8,Guadalajara,JA,MX,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
+Fonda La Pitaya (Centro),MX-000053,Occidente,Hospitality,Customer,20,Puerto Vallarta,JA,MX,Restaurante · Restaurantes de autoservicio
+Cocina La Nueva (San Marcos),MX-000054,Occidente,Hospitality,Customer,3,Guadalajara,JA,MX,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
+Antojitos Las Flores (Pitillal),MX-000055,Occidente,Hospitality,Customer,8,Puerto Vallarta,JA,MX,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
+Fonda El Ahorro (Centro),MX-000056,Occidente,Hospitality,Customer,3,San Juan de los Lagos,JA,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Antojitos El Faro (La Tuna),MX-000057,Occidente,Hospitality,Customer,3,Ayotlán,JA,MX,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
+Cocina Los Álamos (Los Fresnos),MX-000058,Occidente,Hospitality,Customer,3,Tala,JA,MX,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
+Cocina El Puente (Oblatos),MX-000059,Occidente,Hospitality,Customer,20,Guadalajara,JA,MX,Restaurante · Restaurantes de autoservicio
+Cocina Santa Rosa (La 27 De Septiembre),MX-000060,Occidente,Hospitality,Customer,3,Sayula,JA,MX,Restaurante · Restaurantes con servicio de preparación de pescados y mariscos
+Ferretería La Ermita (Guayabitos),MX-000061,Occidente,Retail,Customer,8,San Pedro Tlaquepaque,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales El Faro (Mirador),MX-000062,Occidente,Retail,Customer,3,Tala,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales La Nueva (Las Juntas),MX-000063,Occidente,Retail,Customer,3,San Pedro Tlaquepaque,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería El Faro (Nuevo Fuerte),MX-000064,Occidente,Retail,Customer,3,Ocotlán,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería El Mirador (Centro),MX-000065,Occidente,Retail,Customer,3,Chapala,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería La Loma (Centro),MX-000066,Occidente,Retail,Customer,3,Atotonilco el Alto,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales Del Parque (San Sebastian El Grande),MX-000067,Occidente,Retail,Customer,3,Tlajomulco de Zúñiga,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería La Esperanza (San Andres),MX-000068,Occidente,Retail,Customer,3,Guadalajara,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería La Esperanza (Tabachines),MX-000069,Occidente,Retail,Customer,3,Zapopan,JA,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Miscelánea La Pitaya (Lomas De Tlaquepaque),MX-000070,Occidente,Retail,Customer,3,San Pedro Tlaquepaque,JA,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda Los Álamos (Mariano Otero),MX-000071,Occidente,Retail,Customer,3,Zapopan,JA,MX,Abarrotes · Comercio al por mayor de abarrotes
+Miscelánea La Ceiba (El Pitillal Centro),MX-000072,Occidente,Retail,Customer,3,Puerto Vallarta,JA,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda La Ermita (Talpita),MX-000073,Occidente,Retail,Customer,3,Guadalajara,JA,MX,Abarrotes · Comercio al por mayor de abarrotes
+Miscelánea La Gloria (Los Abedules),MX-000074,Occidente,Retail,Customer,3,Tlajomulco de Zúñiga,JA,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda La Palma (Lomas De San Agustin),MX-000075,Occidente,Retail,Customer,3,Tlajomulco de Zúñiga,JA,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda Los Álamos (Altamira),MX-000076,Occidente,Retail,Customer,8,Tonalá,JA,MX,Abarrotes · Comercio al por mayor de abarrotes
+Tienda Las Torres (Alvarez Del Castillo),MX-000077,Occidente,Retail,Customer,20,El Salto,JA,MX,Abarrotes · Comercio al por mayor de abarrotes
+Abarrotes San Marcos (Centro),MX-000078,Occidente,Retail,Customer,3,Yahualica de González Gallo,JA,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Botica El Jardín (Palmiras Residencial),MX-000079,Norte,Healthcare,Customer,20,General Escobedo,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Ceiba (Zona Residencial Chipinque),MX-000080,Norte,Healthcare,Customer,3,San Pedro Garza García,NL,MX,Farmacia · Farmacias sin minisúper
+Botica Del Centro (Centro),MX-000081,Norte,Healthcare,Customer,3,Monterrey,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia Santa Rosa (Independencia),MX-000082,Norte,Healthcare,Customer,3,Monterrey,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Fuente (Industrias Del Vidrio Ampliación Norte Primer Sector),MX-000083,Norte,Healthcare,Customer,3,San Nicolás de los Garza,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Ceiba (Zambrano),MX-000084,Norte,Healthcare,Customer,3,Montemorelos,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Puente (Las Cumbres Tercer Sector Sección 3-4),MX-000085,Norte,Healthcare,Customer,3,Monterrey,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Cruz (Bosques De Castilla),MX-000086,Norte,Healthcare,Customer,3,Salinas Victoria,NL,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Ahorro (Contry),MX-000087,Norte,Healthcare,Customer,3,Monterrey,NL,MX,Farmacia · Farmacias sin minisúper
+Restaurante Del Centro (El Lechugal),MX-000088,Norte,Hospitality,Customer,3,Santa Catarina,NL,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Antojitos Los Álamos (Centro De Salinas Victoria),MX-000089,Norte,Hospitality,Customer,8,Salinas Victoria,NL,MX,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
+Fonda Santa Ana (Valle Del Infonavit),MX-000090,Norte,Hospitality,Customer,3,Monterrey,NL,MX,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
+Antojitos La Nueva (Centro),MX-000091,Norte,Hospitality,Customer,3,Monterrey,NL,MX,Restaurante · Restaurantes con servicio de preparación de antojitos
+Taquería Del Centro (San Francisco),MX-000092,Norte,Hospitality,Customer,3,Juárez,NL,MX,Restaurante · Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida
+Restaurante El Ahorro (Ignacio Altamirano),MX-000093,Norte,Hospitality,Customer,3,Monterrey,NL,MX,Restaurante · Restaurantes de autoservicio
+Taquería Santa Ana (Real Anáhuac),MX-000094,Norte,Hospitality,Customer,3,San Nicolás de los Garza,NL,MX,Restaurante · Restaurantes con servicio de preparación de antojitos
+Fonda El Zapote (Los Girasoles Segundo Sector),MX-000095,Norte,Hospitality,Customer,20,General Escobedo,NL,MX,Restaurante · Restaurantes de autoservicio
+Taquería El Olivo (Nuevas Colonias),MX-000096,Norte,Hospitality,Customer,3,Monterrey,NL,MX,Restaurante · Restaurantes con servicio de preparación de antojitos
+Ferretería La Joya (Valle De Santa Lucía (granja Sanitaria)),MX-000097,Norte,Retail,Customer,3,Monterrey,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales El Puente (Mirasol Segundo Sector),MX-000098,Norte,Retail,Customer,3,Monterrey,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería La Esperanza (Valle De Las Palmas Tercer Sector),MX-000099,Norte,Retail,Customer,3,Apodaca,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería La Loma (Metroplex Primer Sector),MX-000100,Norte,Retail,Customer,3,Apodaca,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales La Ermita (Loma Linda),MX-000101,Norte,Retail,Customer,3,Monterrey,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería El Olivo (Paseo De San Isidro),MX-000102,Norte,Retail,Customer,3,Salinas Victoria,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería La Huerta (Revolución),MX-000103,Norte,Retail,Customer,3,Anáhuac,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Tlapalería El Pozo (Centro De Galeana),MX-000104,Norte,Retail,Customer,3,Galeana,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales La Luna (San Gilberto),MX-000105,Norte,Retail,Customer,3,Santa Catarina,NL,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Miscelánea Las Torres (General Emiliano Zapata (irregular)),MX-000106,Norte,Retail,Customer,3,General Escobedo,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Abarrotes La Huerta (Cerro De Las Mitras),MX-000107,Norte,Retail,Customer,3,Santa Catarina,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda El Pozo (Hacienda La Providencia),MX-000108,Norte,Retail,Customer,3,General Escobedo,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea El Olivo (La Ermita),MX-000109,Norte,Retail,Customer,3,Santa Catarina,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea La Joya (Privada La Castaña),MX-000110,Norte,Retail,Customer,3,Apodaca,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda La Joya (Valle Del Roble Sector Olmo),MX-000111,Norte,Retail,Customer,3,Cadereyta Jiménez,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),MX-000112,Norte,Retail,Customer,3,Apodaca,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Tienda La Nueva (Buena Vista),MX-000113,Norte,Retail,Customer,3,El Carmen,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea El Roble (El Obispo),MX-000114,Norte,Retail,Customer,3,San Pedro Garza García,NL,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Farmacia Las Torres (Diamante Paseos De Opichén),MX-000115,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia Los Arcos (Leandro Valle),MX-000116,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia Las Torres (Gran San Pedro Cholul),MX-000117,Sur,Healthcare,Customer,8,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Botica La Joya (Las Americas Vi),MX-000118,Sur,Healthcare,Customer,20,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Botica La Gloria (Santa María),MX-000119,Sur,Healthcare,Customer,8,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Puente (Los Heroes),MX-000120,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Fuente (Los Almendros),MX-000121,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Esperanza (San Jose Tecoh),MX-000122,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Botica El Sol (Bojorquez),MX-000123,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Botica El Mirador (Leandro Valle),MX-000124,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Fuente (Centro),MX-000125,Sur,Healthcare,Customer,20,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia El Faro (Brisas),MX-000126,Sur,Healthcare,Customer,8,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia San Marcos (Zona Industrial),MX-000127,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Botica La Fuente (Fidel Velazquez),MX-000128,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Farmacia La Palma (Ciudad Caucel),MX-000129,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Botica El Olivo (Montecristo),MX-000130,Sur,Healthcare,Customer,3,Mérida,YU,MX,Farmacia · Farmacias sin minisúper
+Taquería El Puente (Libertad),MX-000131,Sur,Hospitality,Customer,3,Mérida,YU,MX,Restaurante · Restaurantes con servicio de preparación de antojitos
+Antojitos La Gloria (Leandro Valle),MX-000132,Sur,Hospitality,Customer,3,Mérida,YU,MX,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
+Antojitos La Loma (Santa María),MX-000133,Sur,Hospitality,Customer,3,Mérida,YU,MX,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
+Taquería La Luna (Ciudad Caucel),MX-000134,Sur,Hospitality,Customer,8,Mérida,YU,MX,Restaurante · Restaurantes de autoservicio
+Restaurante Santa Rosa (Residencial Los Pinos),MX-000135,Sur,Hospitality,Customer,3,Mérida,YU,MX,"Restaurante · Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar"
+Taquería Santa Ana (Las Americas),MX-000136,Sur,Hospitality,Customer,3,Mérida,YU,MX,Restaurante · Restaurantes que preparan otro tipo de alimentos para llevar
+Fonda El Jardín (Mexico),MX-000137,Sur,Hospitality,Customer,20,Mérida,YU,MX,Restaurante · Restaurantes con servicio de preparación de tacos y tortas
+Restaurante La Pitaya (Emiliano Zapata Oriente),MX-000138,Sur,Hospitality,Customer,3,Mérida,YU,MX,Restaurante · Restaurantes con servicio de preparación de antojitos
+Taquería La Palma (Cholul),MX-000139,Sur,Hospitality,Customer,3,Mérida,YU,MX,Restaurante · Restaurantes de autoservicio
+Antojitos El Ahorro (Gran Santa Fe),MX-000140,Sur,Hospitality,Customer,20,Mérida,YU,MX,Restaurante · Restaurantes de autoservicio
+Tlapalería Del Centro (Benito Juárez),MX-000141,Sur,Retail,Customer,3,Chemax,YU,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales La Palma (Centro),MX-000142,Sur,Retail,Customer,8,Cenotillo,YU,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Materiales Los Laureles (Kancab),MX-000143,Sur,Retail,Customer,3,Tekax,YU,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Ferretería El Ahorro (Quintana Roo),MX-000144,Sur,Retail,Customer,3,Quintana Roo,YU,MX,Ferretería · Comercio al por menor en ferreterías y tlapalerías
+Abarrotes La Palma (Guadalupana),MX-000145,Sur,Retail,Customer,20,Mérida,YU,MX,Abarrotes · Comercio al por menor en minisupers
+Miscelánea El Faro (Santa Rosa),MX-000146,Sur,Retail,Customer,8,Mérida,YU,MX,Abarrotes · Comercio al por menor en minisupers
+Tienda Las Torres (Sascab),MX-000147,Sur,Retail,Customer,3,Kaua,YU,MX,"Abarrotes · Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas"
+Miscelánea La Fuente (San Roman),MX-000148,Sur,Retail,Customer,20,Ticul,YU,MX,Abarrotes · Comercio al por menor en minisupers
+Tienda La Pitaya (Centro),MX-000149,Sur,Retail,Customer,8,Kinchil,YU,MX,Abarrotes · Comercio al por menor en minisupers
+Miscelánea La Ermita (Mexico Oriente),MX-000150,Sur,Retail,Customer,8,Mérida,YU,MX,Abarrotes · Comercio al por menor en minisupers

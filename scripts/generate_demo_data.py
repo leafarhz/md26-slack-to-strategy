@@ -391,8 +391,9 @@ def build(establishments):
         "Type": "Customer",
         "NumberOfEmployees": STRATUM_EMPLOYEES.get(c["STRATUM"], 3),
         "BillingCity": c["MUNICIPALITY"],
-        "BillingState": c["STATE_NAME"],
-        "BillingCountry": "Mexico",
+        # Salesforce State/Country picklist codes (Mexico City is still "DF")
+        "BillingStateCode": {"09": "DF", "14": "JA", "19": "NL", "31": "YU"}[c["STATE_CODE"]],
+        "BillingCountryCode": "MX",
         "Description": f"{c['VERTICAL']} · {c['ACTIVITY_CLASS']}",
     } for c in customers]
 
