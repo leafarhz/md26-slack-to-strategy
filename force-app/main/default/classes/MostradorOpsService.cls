@@ -64,8 +64,8 @@ public with sharing class MostradorOpsService {
             }
         } catch (QueryException e) {
             // USER_MODE enforces field-level security: no access to the fields, no federated data
-            throw new OpsException('No tienes permiso para consultar las cuentas de clientes de Mostrador '
-                + '(falta el permiso "MD26 Mostrador Ops"). Pide acceso a tu administrador.');
+            throw new OpsException('No tienes permiso para consultar las cuentas de clientes de Mostrador. '
+                + 'Pide a tu administrador el acceso de operaciones (permiso "MD26 Mostrador Ops").');
         }
         List<String> ordered = new List<String>();
         for (String r : REGIONS) {
