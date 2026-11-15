@@ -1,0 +1,15 @@
+TICKET_ID,ORGANIZATION_EXTERNAL_ID,ORGANIZATION_NAME,SUBJECT,PRIORITY,STATUS,CHANNEL,CREATED_AT,SOLVED_AT
+4101,MX-000120,FARM PUENTE,Ya pagué la implementación y la tienda no arranca,urgent,open,voice,2026-11-08 15:00:00,
+4102,MX-000131,TAQ PUENTE,Error de timbrado CFDI al cerrar la venta,urgent,open,email,2026-10-31 15:00:00,
+4103,MX-000123,BOT SOL,¿Cuándo queda lista la facturación?,normal,open,email,2026-10-27 15:00:00,
+4104,MX-000128,BOT FUENTE,Seguimos vendiendo con notas a mano,normal,open,email,2026-10-27 15:00:00,
+4105,MX-000145,ABTS PALMA,Cambio de contraseña del cajero,low,solved,email,2026-10-17 15:00:00,2026-10-23 18:00:00
+4106,MX-000131,TAQ PUENTE,¿Cómo doy de alta un producto nuevo?,low,solved,chat,2026-10-11 15:00:00,2026-10-16 18:00:00
+4107,MX-000142,MAT PALMA,La impresora de tickets no imprime,normal,solved,chat,2026-10-31 15:00:00,2026-11-01 18:00:00
+4108,MX-000122,FARM ESPERANZA,Cambio de contraseña del cajero,low,solved,chat,2026-10-01 15:00:00,2026-10-02 18:00:00
+4109,MX-000121,FARM FUENTE,La impresora de tickets no imprime,normal,solved,voice,2026-09-04 15:00:00,2026-09-09 18:00:00
+4110,MX-000120,FARM PUENTE,La impresora de tickets no imprime,normal,solved,chat,2026-09-17 15:00:00,2026-09-20 18:00:00
+4111,MX-000148,MISC FUENTE,La impresora de tickets no imprime,normal,solved,email,2026-11-06 15:00:00,2026-11-08 18:00:00
+4112,MX-000128,BOT FUENTE,¿Cómo doy de alta un producto nuevo?,low,solved,voice,2026-10-20 15:00:00,2026-10-21 18:00:00
+4113,MX-000117,FARM TORRES,El lector de código de barras no responde,normal,solved,voice,2026-10-26 15:00:00,2026-10-28 18:00:00
+4114,MX-000148,MISC FUENTE,Reporte de ventas del día no cuadra,normal,solved,voice,2026-10-19 15:00:00,2026-10-21 18:00:00

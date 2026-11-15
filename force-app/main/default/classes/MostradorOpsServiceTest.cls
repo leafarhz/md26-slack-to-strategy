@@ -17,6 +17,11 @@ private class MostradorOpsServiceTest {
                     new List<Object>{ 'MX-000002', 'Taquería Dos', 'Mérida', 'SO-2', '41800.00', '2026-10-31', 'IMPL-7', 'IMPL-8', null, null, 'Marcado como impedimento en Jira' }
                 };
             }
+            if (sql.contains('FROM Zendesk_Tickets__dll')) {
+                return new List<List<Object>>{
+                    new List<Object>{ 'MX-000002', 'No puedo facturar', 'urgent' }
+                };
+            }
             if (sql.contains('o.status__c = \'Fulfilled\'')) {
                 return new List<List<Object>>{
                     new List<Object>{ 'Restaurantes con servicio de preparación de tacos y tortas', '2026-08-01', '2026-08-25' },
@@ -69,7 +74,8 @@ private class MostradorOpsServiceTest {
         req.region = 'sur';
         String summary = GetRegionRiskAction.run(new List<GetRegionRiskAction.Request>{ req })[0].summary;
         Assert.isTrue(summary.contains('CAUSA RAÍZ PLAT-7'), summary);
-        Assert.isTrue(summary.contains('1 de esos clientes tienen casos de soporte abiertos (1 de prioridad alta)'), summary);
+        Assert.isTrue(summary.contains('1 de esos clientes tienen casos de soporte abiertos (1 en Salesforce, 0 en Zendesk; 1 urgentes)'), summary);
+        Assert.isTrue(summary.contains('Casos abiertos: 1 (Salesforce 0, Zendesk 1)'), 'Zendesk ticket joined by ERP id: ' + summary);
         Assert.isTrue(summary.indexOf('CAUSA RAÍZ') < summary.indexOf('Otros retrasos'), 'root cause listed first');
     }
 

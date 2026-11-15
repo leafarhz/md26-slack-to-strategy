@@ -414,7 +414,7 @@ def build(establishments):
 
     cfdi_subjects = [
         ("Ya pagué la implementación y la tienda no arranca", "High"),
-        ("No puedo facturar desde Changarro", "High"),
+        ("No puedo facturar desde Cobra 360", "High"),
         ("Error de timbrado CFDI al cerrar la venta", "High"),
         ("¿Cuándo queda lista la facturación?", "Medium"),
         ("La factura de prueba sale con error del PAC", "Medium"),
@@ -446,6 +446,51 @@ def build(establishments):
     return customers, orders, invoices, targets, epics, issues, accounts, cases
 
 
+# Support is mid-migration: region Sur still works in Zendesk. Of the 7 CFDI cases,
+# 3 stay in Salesforce (CASE-0002/5/7) and 4 live in Zendesk, plus Sur's routine tickets.
+ZENDESK_CFDI_KEYS = {"CASE-0001", "CASE-0003", "CASE-0004", "CASE-0006"}
+ZD_PRIORITY = {"High": "urgent", "Medium": "normal", "Low": "low"}
+ZD_STATUS = {"Working": "open", "New": "new", "Closed": "solved"}
+ZD_CHANNEL = {"Phone": "voice", "Email": "email", "Web": "web", "Chat": "chat"}
+ZD_ABBREV = {"Farmacia": "FARM", "Botica": "BOT", "Taquería": "TAQ", "Antojitos": "ANTOJ",
+             "Restaurante": "REST", "Cocina": "COC", "Fonda": "FONDA", "Ferretería": "FERR",
+             "Tlapalería": "TLAP", "Materiales": "MAT", "Abarrotes": "ABTS", "Miscelánea": "MISC", "Tienda": "TDA"}
+
+
+def zendesk_name(display):
+    """Zendesk spells the organization its own way: abbreviated, upper case, no accents or neighbourhood."""
+    base = display.split(" (")[0]
+    first, _, rest = base.partition(" ")
+    name = f"{ZD_ABBREV.get(first, first)} {rest}".upper()
+    for a, b in zip("ÁÉÍÓÚÜÑ", "AEIOUUN"):
+        name = name.replace(a, b)
+    return name.replace("EL ", "").replace("LA ", "").replace("LOS ", "").replace("LAS ", "").strip()
+
+
+def split_support(cases, customers):
+    region = {c["CUSTOMER_ID"]: c["REGION"] for c in customers}
+    names = {c["CUSTOMER_ID"]: c["DISPLAY_NAME"] for c in customers}
+    salesforce, zendesk = [], []
+    for case in cases:
+        cid = case["Account.ERP_Customer_Id__c"]
+        cfdi = case["MD26_Key__c"] <= "CASE-0007"
+        if region[cid] == "Sur" and (not cfdi or case["MD26_Key__c"] in ZENDESK_CFDI_KEYS):
+            zendesk.append({
+                "TICKET_ID": 4100 + len(zendesk) + 1,
+                "ORGANIZATION_EXTERNAL_ID": cid,
+                "ORGANIZATION_NAME": zendesk_name(names[cid]),
+                "SUBJECT": case["Subject"],
+                "PRIORITY": ZD_PRIORITY[case["Priority"]],
+                "STATUS": ZD_STATUS[case["Status"]],
+                "CHANNEL": ZD_CHANNEL[case["Origin"]],
+                "CREATED_AT": case["CreatedDate"][:10] + " 15:00:00",
+                "SOLVED_AT": (case["ClosedDate"][:10] + " 18:00:00") if case["ClosedDate"] else "",
+            })
+        else:
+            salesforce.append(case)
+    return salesforce, zendesk
+
+
 def write(name, rows, fields=None):
     fields = fields or [k for k in rows[0] if not k.startswith("_")]
     with open(OUT / name, "w", newline="", encoding="utf-8") as f:
@@ -470,7 +515,9 @@ def main():
     write("jira_epics.csv", epics)
     write("jira_issues.csv", issues)
     write("sf_accounts.csv", accounts)
+    cases, tickets = split_support(cases, customers)
     write("sf_cases.csv", cases)
+    write("zendesk_tickets.csv", tickets)
 
     print(f"\nStory check ({QUARTER}, as of {TODAY}):")
     for t in targets:
@@ -489,8 +536,12 @@ def main():
                  and o["STATUS"] in ("Fulfilled", "Booked"))
     print(f"  Sur if only the CFDI blocker clears: "
           f"{(sur_fc + sum(o['AMOUNT_MXN'] for o in blocked)) / sur['BOOKINGS_TARGET_MXN']:.1%}")
+    blocked_ids = {o["CUSTOMER_ID"] for o in blocked}
+    sf_open = {c["Account.ERP_Customer_Id__c"] for c in cases if c["Status"] == "Working" and c["Account.ERP_Customer_Id__c"] in blocked_ids}
+    zd_open = {t["ORGANIZATION_EXTERNAL_ID"] for t in tickets if t["STATUS"] == "open" and t["ORGANIZATION_EXTERNAL_ID"] in blocked_ids}
+    print(f"  Blocked customers with open cases: {len(sf_open | zd_open)} (Salesforce {len(sf_open)}, Zendesk {len(zd_open)})")
     print(f"  CFDI-blocked go-lives: {len(blocked)} · MXN {sum(o['AMOUNT_MXN'] for o in blocked):,.0f}"
-          f" · with open cases: {sum(1 for c in cases if c['Status'] == 'Working')}")
+          )
 
 
 if __name__ == "__main__":

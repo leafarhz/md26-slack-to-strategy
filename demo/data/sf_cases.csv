@@ -1,25 +1,15 @@
 MD26_Key__c,Account.ERP_Customer_Id__c,Subject,Priority,Status,Origin,Type,CreatedDate,ClosedDate,Description
-CASE-0001,MX-000120,Ya pagué la implementación y la tienda no arranca,High,Working,Phone,Problem,2026-11-08T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
-CASE-0002,MX-000140,No puedo facturar desde Changarro,High,Working,Email,Problem,2026-10-24T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
-CASE-0003,MX-000131,Error de timbrado CFDI al cerrar la venta,High,Working,Email,Problem,2026-10-31T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
-CASE-0004,MX-000123,¿Cuándo queda lista la facturación?,Medium,Working,Email,Problem,2026-10-27T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
+CASE-0002,MX-000140,No puedo facturar desde Cobra 360,High,Working,Email,Problem,2026-10-24T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
 CASE-0005,MX-000126,La factura de prueba sale con error del PAC,Medium,Working,Web,Problem,2026-10-29T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
-CASE-0006,MX-000128,Seguimos vendiendo con notas a mano,Medium,Working,Email,Problem,2026-10-27T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
 CASE-0007,MX-000134,Llevamos semanas esperando el go-live,Medium,Working,Email,Problem,2026-10-29T15:00:00.000Z,,El cliente reporta que no puede emitir facturas CFDI 4.0 y la tienda no puede salir a producción.
 CASE-0008,MX-000069,Cambio de contraseña del cajero,Low,Closed,Phone,Question,2026-10-15T15:00:00.000Z,2026-10-20T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0009,MX-000145,Cambio de contraseña del cajero,Low,Closed,Email,Question,2026-10-17T15:00:00.000Z,2026-10-23T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0010,MX-000043,Agregar una segunda caja,Low,Closed,Phone,Question,2026-11-09T15:00:00.000Z,2026-11-15T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0011,MX-000050,El lector de código de barras no responde,Medium,Closed,Phone,Problem,2026-10-23T15:00:00.000Z,2026-10-29T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0012,MX-000049,El lector de código de barras no responde,Medium,Closed,Phone,Problem,2026-11-11T15:00:00.000Z,2026-11-17T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0013,MX-000064,Reporte de ventas del día no cuadra,Medium,Closed,Email,Problem,2026-10-17T15:00:00.000Z,2026-10-21T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0014,MX-000131,¿Cómo doy de alta un producto nuevo?,Low,Closed,Chat,Question,2026-10-11T15:00:00.000Z,2026-10-16T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0015,MX-000105,¿Cómo doy de alta un producto nuevo?,Low,Closed,Phone,Question,2026-10-12T15:00:00.000Z,2026-10-18T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0016,MX-000142,La impresora de tickets no imprime,Medium,Closed,Chat,Problem,2026-10-31T15:00:00.000Z,2026-11-01T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0017,MX-000038,Cambio de contraseña del cajero,Low,Closed,Email,Question,2026-10-01T15:00:00.000Z,2026-10-04T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0018,MX-000122,Cambio de contraseña del cajero,Low,Closed,Chat,Question,2026-10-01T15:00:00.000Z,2026-10-02T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0019,MX-000121,La impresora de tickets no imprime,Medium,Closed,Phone,Problem,2026-09-04T15:00:00.000Z,2026-09-09T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0020,MX-000013,Agregar una segunda caja,Low,Closed,Email,Question,2026-10-20T15:00:00.000Z,2026-10-24T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0021,MX-000120,La impresora de tickets no imprime,Medium,Closed,Chat,Problem,2026-09-17T15:00:00.000Z,2026-09-20T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0022,MX-000072,Cambio de contraseña del cajero,Low,Closed,Chat,Question,2026-09-21T15:00:00.000Z,2026-09-24T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0023,MX-000058,Reporte de ventas del día no cuadra,Medium,New,Web,Problem,2026-11-10T15:00:00.000Z,,Solicitud de soporte de rutina.
 CASE-0024,MX-000053,¿Cómo doy de alta un producto nuevo?,Low,Closed,Web,Question,2026-09-06T15:00:00.000Z,2026-09-12T18:00:00.000Z,Solicitud de soporte de rutina.
@@ -29,14 +19,10 @@ CASE-0027,MX-000027,Cambio de contraseña del cajero,Low,Closed,Phone,Question,2
 CASE-0028,MX-000087,Reporte de ventas del día no cuadra,Medium,Closed,Chat,Problem,2026-10-22T15:00:00.000Z,2026-10-28T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0029,MX-000092,El lector de código de barras no responde,Medium,Closed,Chat,Problem,2026-09-20T15:00:00.000Z,2026-09-21T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0030,MX-000094,Agregar una segunda caja,Low,Closed,Web,Question,2026-09-12T15:00:00.000Z,2026-09-17T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0031,MX-000148,La impresora de tickets no imprime,Medium,Closed,Email,Problem,2026-11-06T15:00:00.000Z,2026-11-08T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0032,MX-000008,Reporte de ventas del día no cuadra,Medium,Closed,Phone,Problem,2026-10-31T15:00:00.000Z,2026-11-05T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0033,MX-000025,La impresora de tickets no imprime,Medium,Closed,Chat,Problem,2026-09-12T15:00:00.000Z,2026-09-15T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0034,MX-000128,¿Cómo doy de alta un producto nuevo?,Low,Closed,Phone,Question,2026-10-20T15:00:00.000Z,2026-10-21T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0035,MX-000102,Agregar una segunda caja,Low,Closed,Chat,Question,2026-10-19T15:00:00.000Z,2026-10-23T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0036,MX-000078,Cambio de contraseña del cajero,Low,Closed,Chat,Question,2026-10-28T15:00:00.000Z,2026-11-02T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0037,MX-000062,Reporte de ventas del día no cuadra,Medium,Closed,Phone,Problem,2026-10-26T15:00:00.000Z,2026-10-30T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0038,MX-000117,El lector de código de barras no responde,Medium,Closed,Phone,Problem,2026-10-26T15:00:00.000Z,2026-10-28T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0039,MX-000075,La impresora de tickets no imprime,Medium,Closed,Chat,Problem,2026-09-25T15:00:00.000Z,2026-09-28T18:00:00.000Z,Solicitud de soporte de rutina.
-CASE-0040,MX-000148,Reporte de ventas del día no cuadra,Medium,Closed,Phone,Problem,2026-10-19T15:00:00.000Z,2026-10-21T18:00:00.000Z,Solicitud de soporte de rutina.
 CASE-0041,MX-000112,El lector de código de barras no responde,Medium,Closed,Chat,Problem,2026-11-10T15:00:00.000Z,2026-11-13T18:00:00.000Z,Solicitud de soporte de rutina.

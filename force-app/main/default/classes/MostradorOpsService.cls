@@ -197,6 +197,8 @@ public with sharing class MostradorOpsService {
         public Id accountId;
         public Id accountOwnerId;
         public Integer openCases = 0;
+        public Integer casesSalesforce = 0;
+        public Integer casesZendesk = 0;
         public String topCasePriority;
         public String topCaseSubject;
     }
@@ -207,8 +209,13 @@ public with sharing class MostradorOpsService {
         public Integer customers = 0;
         public Decimal amount = 0;
         public Integer withOpenCases = 0;
+        public Integer withSalesforceCases = 0;
+        public Integer withZendeskCases = 0;
         public Integer highPriorityCases = 0;
     }
+
+    /** False when the Zendesk object could not be queried in this transaction (e.g. stream not mapped yet). */
+    public static Boolean zendeskAvailable = true;
 
     /** Delayed orders in a region this quarter, joined live to Jira blockers (Zero Copy) and CRM cases (SOQL). */
     public static List<AtRiskOrder> atRiskOrders(String region, Quarter q) {
@@ -246,7 +253,12 @@ public with sharing class MostradorOpsService {
         return byOrder.values();
     }
 
-    /** Joins federated rows back to CRM. Customers the user cannot see in CRM are dropped. */
+    /**
+     * Joins federated rows back to CRM. Customers the user cannot see in CRM are dropped.
+     * Support is mid-migration: open cases come from Salesforce (SOQL, USER_MODE) and from Zendesk
+     * (Zero Copy). Zendesk knows nothing about Salesforce sharing, so it is only asked about
+     * customers the user can already see.
+     */
     private static void attachCrm(List<AtRiskOrder> orders) {
         Set<String> customerIds = new Set<String>();
         for (AtRiskOrder o : orders) {
@@ -272,6 +284,7 @@ public with sharing class MostradorOpsService {
             }
             casesByCustomer.get(key).add(c);
         }
+        Map<String, List<List<Object>>> tickets = zendeskTickets(accounts.keySet());
         for (Integer i = orders.size() - 1; i >= 0; i--) {
             AtRiskOrder o = orders[i];
             Account a = accounts.get(o.customerId);
@@ -283,7 +296,7 @@ public with sharing class MostradorOpsService {
             o.accountOwnerId = a.OwnerId;
             List<Case> cases = casesByCustomer.get(o.customerId);
             if (cases != null) {
-                o.openCases = cases.size();
+                o.casesSalesforce = cases.size();
                 for (Case c : cases) {
                     if (o.topCasePriority == null || c.Priority == 'High') {
                         o.topCasePriority = c.Priority;
@@ -291,7 +304,44 @@ public with sharing class MostradorOpsService {
                     }
                 }
             }
+            List<List<Object>> zd = tickets.get(o.customerId);
+            if (zd != null) {
+                o.casesZendesk = zd.size();
+                for (List<Object> t : zd) {
+                    Boolean urgent = MostradorDataCloud.str(t[2]) == 'urgent';
+                    if (o.topCasePriority == null || urgent) {
+                        o.topCasePriority = urgent ? 'High' : 'Medium';
+                        o.topCaseSubject = MostradorDataCloud.str(t[1]) + ' (Zendesk)';
+                    }
+                }
+            }
+            o.openCases = o.casesSalesforce + o.casesZendesk;
         }
+    }
+
+    /** Open Zendesk tickets per ERP customer id, read through Data Cloud Zero Copy. */
+    private static Map<String, List<List<Object>>> zendeskTickets(Set<String> customerIds) {
+        Map<String, List<List<Object>>> result = new Map<String, List<List<Object>>>();
+        if (customerIds.isEmpty()) {
+            return result;
+        }
+        List<String> ids = new List<String>(customerIds);
+        String sql =
+            'SELECT organization_external_id__c, subject__c, priority__c FROM Zendesk_Tickets__dll '
+            + 'WHERE status__c IN (\'new\', \'open\', \'pending\') '
+            + 'AND organization_external_id__c IN ' + inList(ids);
+        try {
+            for (List<Object> row : MostradorDataCloud.query(sql)) {
+                String key = MostradorDataCloud.str(row[0]);
+                if (!result.containsKey(key)) {
+                    result.put(key, new List<List<Object>>());
+                }
+                result.get(key).add(row);
+            }
+        } catch (Exception e) {
+            zendeskAvailable = false;
+        }
+        return result;
     }
 
     public static List<Blocker> groupByBlocker(List<AtRiskOrder> orders) {
@@ -309,6 +359,12 @@ public with sharing class MostradorOpsService {
             b.amount += o.amount;
             if (o.openCases > 0) {
                 b.withOpenCases++;
+            }
+            if (o.casesSalesforce > 0) {
+                b.withSalesforceCases++;
+            }
+            if (o.casesZendesk > 0) {
+                b.withZendeskCases++;
             }
             if (o.topCasePriority == 'High') {
                 b.highPriorityCases++;
