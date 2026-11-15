@@ -5,7 +5,7 @@
 
 ## The company
 
-**Changarro** sells point-of-sale software to small businesses across Mexico:
+**Changarro** sells **Cobra 360**, a point-of-sale terminal (checkout, inventory and CFDI e-invoicing), to small businesses across Mexico:
 pharmacies, restaurants, hardware stores and corner shops.
 
 Changarro **invoices a customer only when their store goes live.** So revenue

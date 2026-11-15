@@ -154,7 +154,7 @@ def build(establishments):
     def new_order(c, order_date, promised, status, delivered=None, cfdi=True):
         nonlocal order_n
         order_n += 1
-        product = "Terminal Changarro + Facturación CFDI" if cfdi else "Terminal Changarro"
+        product = "Cobra 360 + Facturación CFDI" if cfdi else "Cobra 360"
         per_store = rng.uniform(26000, 42000) + (6000 if cfdi else 0)
         o = {
             "ORDER_ID": f"SO-2026-{order_n:05d}",

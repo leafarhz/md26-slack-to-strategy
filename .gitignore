@@ -55,3 +55,7 @@ $RECYCLE.BIN/
 *token*
 *.env
 jirafile.txt
+
+# Compiled by `sf agent publish`; the source of truth is aiAuthoringBundles/
+force-app/main/default/bots/
+force-app/main/default/genAiPlannerBundles/
