@@ -13,8 +13,8 @@ depends on implementations (Jira), and implementations depend on support.
 
 ## The person
 
-**Daniela, Directora de Operaciones.** Monday, 8:40 AM. The leadership meeting
-starts at 9:00 and the CEO will ask:
+**María Fernández, Directora de Operaciones.** Monday, 8:55 AM. The CEO pings her on Slack: the meeting
+starts at 9:00 and she has five minutes to answer:
 
 > **"¿Vamos bien este trimestre?"**
 
@@ -37,21 +37,21 @@ is **one problem**. That join is what Data Cloud Zero Copy makes cheap.
 
 ## The demo: four messages in Slack
 
-| # | Daniela asks | The agent | Systems |
+| # | María asks | The agent | Systems |
 |---|---|---|---|
 | 1 | **¿Vamos bien este trimestre?** | Centro, Norte, Occidente on track. **Sur at ~62% of target.** | ERP |
 | 2 | **¿Por qué Sur?** | 9 Yucatán go-lives blocked by the same Jira issue (CFDI). $X MXN that can't be invoiced. 7 of the 9 customers have open cases, 3 high priority. | ERP + Jira + CRM |
-| 3 | **Escala esos clientes y avísale al equipo.** | Shows the 9, asks for confirmation, then creates an escalation **Case** per customer (with Jira key and ERP order) and a **Task** for each owner. Runs as Daniela. | Writes to Salesforce |
+| 3 | **Escala esos clientes y avísale al equipo.** | Shows the 9, asks for confirmation, then creates an escalation **Case** per customer (with Jira key and ERP order) and a **Task** for each owner. Runs as María. | Writes to Salesforce |
 | 4 | **Aunque lo arreglemos, ¿nos alcanza? ¿Dónde está la oportunidad?** | Clearing PLAT-7 takes Sur to 85%; even if every delayed order went live it ends at 91%, $61,900 short. The data says Sur's fastest go-lives are **restaurants** (~28 days order to go-live). Finds real restaurants and taquerías in Mérida (DENUE) within 2 km of current customers; on confirmation creates them as **Leads**. | Market + writes to Salesforce |
 
-**Close:** *"Prepárame 3 bullets para la junta."* Daniela walks into the 9:00
+**Close:** *"Prepárame 3 bullets para la junta."* María walks into the 9:00
 meeting with a diagnosis, actions taken and a plan, in minutes instead of hours.
 
 The question started as **operations** and ended as **strategy**, without leaving Slack.
 
 ## Optional: the permission chain, live
 
-A Sur sales rep asks the same *"¿Vamos bien?"* and sees only their own region.
+**José Pech**, the Sur sales rep in Mérida, asks the same *"¿Vamos bien?"* and sees only their own region.
 Same agent, same question, different answer.
 
 ## What the data is built to show
