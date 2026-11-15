@@ -1,12 +1,12 @@
 /**
- * Agent action 2 · "¿Por qué Sur?"
+ * Agent action 2 · "¿Por qué Península?"
  * The cross-system answer: delayed ERP orders, joined live to their Jira blockers
  * (both via Data Cloud Zero Copy) and to open support cases in Salesforce.
  */
 public with sharing class GetRegionRiskAction {
 
     public class Request {
-        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Sur.')
+        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Península.')
         public String region;
     }
 
@@ -15,7 +15,7 @@ public with sharing class GetRegionRiskAction {
         public String summary;
     }
 
-    @InvocableMethod(label='Explicar riesgo de una región' description='Explica por qué una región va atrasada: cruza órdenes retrasadas del ERP con bloqueos en Jira y casos de soporte abiertos, y agrupa por causa raíz. Úsala para "¿por qué Sur?", "¿qué está bloqueando?" o "¿qué clientes están en riesgo?".')
+    @InvocableMethod(label='Explicar riesgo de una región' description='Explica por qué una región va atrasada: cruza órdenes retrasadas del ERP con bloqueos en Jira y casos de soporte abiertos, y agrupa por causa raíz. Úsala para "¿por qué Península?", "¿qué está bloqueando?" o "¿qué clientes están en riesgo?".')
     public static List<Response> run(List<Request> requests) {
         List<Response> responses = new List<Response>();
         for (Request req : requests) {

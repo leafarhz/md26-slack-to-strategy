@@ -113,39 +113,39 @@ MX-000111,Tienda La Joya (Valle Del Roble Sector Olmo),461110,"Comercio al por m
 MX-000112,Miscelánea La Pitaya (Paseo Santa Rosa Primer Sector),465311,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,Apodaca,25.819255,-100.230303,SMB,Norte,2026-05-26
 MX-000113,Tienda La Nueva (Buena Vista),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,El Carmen,25.855587,-100.377891,SMB,Norte,2026-04-28
 MX-000114,Miscelánea El Roble (El Obispo),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,19,Nuevo León,San Pedro Garza García,25.681199,-100.402596,SMB,Norte,2025-06-19
-MX-000115,Farmacia Las Torres (Diamante Paseos De Opichén),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.939622,-89.688985,SMB,Sur,2026-08-19
-MX-000116,Farmacia Los Arcos (Leandro Valle),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.993485,-89.572945,SMB,Sur,2025-03-29
-MX-000117,Farmacia Las Torres (Gran San Pedro Cholul),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,21.024538,-89.56284,SMB,Sur,2026-06-14
-MX-000118,Botica La Joya (Las Americas Vi),464111,Farmacias sin minisúper,11 a 30 personas,31,Yucatán,Mérida,21.08732,-89.66728,MidMarket,Sur,2026-06-10
-MX-000119,Botica La Gloria (Santa María),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,21.001788,-89.566709,SMB,Sur,2025-10-06
-MX-000120,Farmacia El Puente (Los Heroes),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.989311,-89.537644,SMB,Sur,2026-01-05
-MX-000121,Farmacia La Fuente (Los Almendros),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.994306,-89.700688,SMB,Sur,2025-11-17
-MX-000122,Farmacia La Esperanza (San Jose Tecoh),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.925279,-89.618632,SMB,Sur,2024-10-28
-MX-000123,Botica El Sol (Bojorquez),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.980427,-89.64943,SMB,Sur,2025-12-24
-MX-000124,Botica El Mirador (Leandro Valle),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.992841,-89.573258,SMB,Sur,2024-03-09
-MX-000125,Farmacia La Fuente (Centro),464111,Farmacias sin minisúper,11 a 30 personas,31,Yucatán,Mérida,20.979332,-89.638951,MidMarket,Sur,2026-08-06
-MX-000126,Farmacia El Faro (Brisas),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,20.983287,-89.589566,SMB,Sur,2026-07-12
-MX-000127,Farmacia San Marcos (Zona Industrial),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.046734,-89.637645,SMB,Sur,2024-06-21
-MX-000128,Botica La Fuente (Fidel Velazquez),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.968714,-89.574647,SMB,Sur,2024-01-22
-MX-000129,Farmacia La Palma (Ciudad Caucel),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.004355,-89.693815,SMB,Sur,2025-12-30
-MX-000130,Botica El Olivo (Montecristo),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.0159,-89.594852,SMB,Sur,2024-07-28
-MX-000131,Taquería El Puente (Libertad),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,31,Yucatán,Mérida,20.950685,-89.659894,SMB,Sur,2025-03-23
-MX-000132,Antojitos La Gloria (Leandro Valle),722514,Restaurantes con servicio de preparación de tacos y tortas,0 a 5 personas,31,Yucatán,Mérida,20.993975,-89.568561,SMB,Sur,2025-10-20
-MX-000133,Antojitos La Loma (Santa María),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,31,Yucatán,Mérida,20.999427,-89.568826,SMB,Sur,2026-07-21
-MX-000134,Taquería La Luna (Ciudad Caucel),722516,Restaurantes de autoservicio,6 a 10 personas,31,Yucatán,Mérida,20.995152,-89.70649,SMB,Sur,2026-01-15
-MX-000135,Restaurante Santa Rosa (Residencial Los Pinos),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,31,Yucatán,Mérida,21.002784,-89.583246,SMB,Sur,2025-04-02
-MX-000136,Taquería Santa Ana (Las Americas),722518,Restaurantes que preparan otro tipo de alimentos para llevar,0 a 5 personas,31,Yucatán,Mérida,21.066576,-89.645646,SMB,Sur,2025-11-08
-MX-000137,Fonda El Jardín (Mexico),722219,Restaurantes con servicio de preparación de tacos y tortas,11 a 30 personas,31,Yucatán,Mérida,21.002875,-89.606366,MidMarket,Sur,2025-05-17
-MX-000138,Restaurante La Pitaya (Emiliano Zapata Oriente),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,31,Yucatán,Mérida,20.985325,-89.57832,SMB,Sur,2025-05-28
-MX-000139,Taquería La Palma (Cholul),722516,Restaurantes de autoservicio,0 a 5 personas,31,Yucatán,Mérida,21.045133,-89.557547,SMB,Sur,2025-01-16
-MX-000140,Antojitos El Ahorro (Gran Santa Fe),722516,Restaurantes de autoservicio,11 a 30 personas,31,Yucatán,Mérida,21.002001,-89.681467,MidMarket,Sur,2026-08-25
-MX-000141,Tlapalería Del Centro (Benito Juárez),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Chemax,20.656033,-87.931111,SMB,Sur,2026-05-04
-MX-000142,Materiales La Palma (Centro),467111,Comercio al por menor en ferreterías y tlapalerías,6 a 10 personas,31,Yucatán,Cenotillo,20.968125,-88.603379,SMB,Sur,2024-04-06
-MX-000143,Materiales Los Laureles (Kancab),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Tekax,20.192424,-89.339714,SMB,Sur,2025-08-14
-MX-000144,Ferretería El Ahorro (Quintana Roo),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Quintana Roo,20.869886,-88.628909,SMB,Sur,2025-04-26
-MX-000145,Abarrotes La Palma (Guadalupana),462112,Comercio al por menor en minisupers,11 a 30 personas,31,Yucatán,Mérida,20.896024,-89.642571,MidMarket,Sur,2026-06-14
-MX-000146,Miscelánea El Faro (Santa Rosa),462112,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Mérida,20.948894,-89.617405,SMB,Sur,2024-03-27
-MX-000147,Tienda Las Torres (Sascab),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,31,Yucatán,Kaua,20.619436,-88.416735,SMB,Sur,2026-07-29
-MX-000148,Miscelánea La Fuente (San Roman),461110,Comercio al por menor en minisupers,11 a 30 personas,31,Yucatán,Ticul,20.393592,-89.536424,MidMarket,Sur,2024-12-09
-MX-000149,Tienda La Pitaya (Centro),461110,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Kinchil,20.914537,-89.949448,SMB,Sur,2025-06-24
-MX-000150,Miscelánea La Ermita (Mexico Oriente),461110,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Mérida,20.999442,-89.601262,SMB,Sur,2024-07-21
+MX-000115,Farmacia Las Torres (Diamante Paseos De Opichén),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.939622,-89.688985,SMB,Península,2026-08-19
+MX-000116,Farmacia Los Arcos (Leandro Valle),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.993485,-89.572945,SMB,Península,2025-03-29
+MX-000117,Farmacia Las Torres (Gran San Pedro Cholul),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,21.024538,-89.56284,SMB,Península,2026-06-14
+MX-000118,Botica La Joya (Las Americas Vi),464111,Farmacias sin minisúper,11 a 30 personas,31,Yucatán,Mérida,21.08732,-89.66728,MidMarket,Península,2026-06-10
+MX-000119,Botica La Gloria (Santa María),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,21.001788,-89.566709,SMB,Península,2025-10-06
+MX-000120,Farmacia El Puente (Los Heroes),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.989311,-89.537644,SMB,Península,2026-01-05
+MX-000121,Farmacia La Fuente (Los Almendros),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.994306,-89.700688,SMB,Península,2025-11-17
+MX-000122,Farmacia La Esperanza (San Jose Tecoh),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.925279,-89.618632,SMB,Península,2024-10-28
+MX-000123,Botica El Sol (Bojorquez),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.980427,-89.64943,SMB,Península,2025-12-24
+MX-000124,Botica El Mirador (Leandro Valle),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.992841,-89.573258,SMB,Península,2024-03-09
+MX-000125,Farmacia La Fuente (Centro),464111,Farmacias sin minisúper,11 a 30 personas,31,Yucatán,Mérida,20.979332,-89.638951,MidMarket,Península,2026-08-06
+MX-000126,Farmacia El Faro (Brisas),464111,Farmacias sin minisúper,6 a 10 personas,31,Yucatán,Mérida,20.983287,-89.589566,SMB,Península,2026-07-12
+MX-000127,Farmacia San Marcos (Zona Industrial),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.046734,-89.637645,SMB,Península,2024-06-21
+MX-000128,Botica La Fuente (Fidel Velazquez),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,20.968714,-89.574647,SMB,Península,2024-01-22
+MX-000129,Farmacia La Palma (Ciudad Caucel),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.004355,-89.693815,SMB,Península,2025-12-30
+MX-000130,Botica El Olivo (Montecristo),464111,Farmacias sin minisúper,0 a 5 personas,31,Yucatán,Mérida,21.0159,-89.594852,SMB,Península,2024-07-28
+MX-000131,Taquería El Puente (Libertad),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,31,Yucatán,Mérida,20.950685,-89.659894,SMB,Península,2025-03-23
+MX-000132,Antojitos La Gloria (Leandro Valle),722514,Restaurantes con servicio de preparación de tacos y tortas,0 a 5 personas,31,Yucatán,Mérida,20.993975,-89.568561,SMB,Península,2025-10-20
+MX-000133,Antojitos La Loma (Santa María),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,31,Yucatán,Mérida,20.999427,-89.568826,SMB,Península,2026-07-21
+MX-000134,Taquería La Luna (Ciudad Caucel),722516,Restaurantes de autoservicio,6 a 10 personas,31,Yucatán,Mérida,20.995152,-89.70649,SMB,Península,2026-01-15
+MX-000135,Restaurante Santa Rosa (Residencial Los Pinos),722517,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",0 a 5 personas,31,Yucatán,Mérida,21.002784,-89.583246,SMB,Península,2025-04-02
+MX-000136,Taquería Santa Ana (Las Americas),722518,Restaurantes que preparan otro tipo de alimentos para llevar,0 a 5 personas,31,Yucatán,Mérida,21.066576,-89.645646,SMB,Península,2025-11-08
+MX-000137,Fonda El Jardín (Mexico),722219,Restaurantes con servicio de preparación de tacos y tortas,11 a 30 personas,31,Yucatán,Mérida,21.002875,-89.606366,MidMarket,Península,2025-05-17
+MX-000138,Restaurante La Pitaya (Emiliano Zapata Oriente),722513,Restaurantes con servicio de preparación de antojitos,0 a 5 personas,31,Yucatán,Mérida,20.985325,-89.57832,SMB,Península,2025-05-28
+MX-000139,Taquería La Palma (Cholul),722516,Restaurantes de autoservicio,0 a 5 personas,31,Yucatán,Mérida,21.045133,-89.557547,SMB,Península,2025-01-16
+MX-000140,Antojitos El Ahorro (Gran Santa Fe),722516,Restaurantes de autoservicio,11 a 30 personas,31,Yucatán,Mérida,21.002001,-89.681467,MidMarket,Península,2026-08-25
+MX-000141,Tlapalería Del Centro (Benito Juárez),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Chemax,20.656033,-87.931111,SMB,Península,2026-05-04
+MX-000142,Materiales La Palma (Centro),467111,Comercio al por menor en ferreterías y tlapalerías,6 a 10 personas,31,Yucatán,Cenotillo,20.968125,-88.603379,SMB,Península,2024-04-06
+MX-000143,Materiales Los Laureles (Kancab),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Tekax,20.192424,-89.339714,SMB,Península,2025-08-14
+MX-000144,Ferretería El Ahorro (Quintana Roo),467111,Comercio al por menor en ferreterías y tlapalerías,0 a 5 personas,31,Yucatán,Quintana Roo,20.869886,-88.628909,SMB,Península,2025-04-26
+MX-000145,Abarrotes La Palma (Guadalupana),462112,Comercio al por menor en minisupers,11 a 30 personas,31,Yucatán,Mérida,20.896024,-89.642571,MidMarket,Península,2026-06-14
+MX-000146,Miscelánea El Faro (Santa Rosa),462112,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Mérida,20.948894,-89.617405,SMB,Península,2024-03-27
+MX-000147,Tienda Las Torres (Sascab),461110,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",0 a 5 personas,31,Yucatán,Kaua,20.619436,-88.416735,SMB,Península,2026-07-29
+MX-000148,Miscelánea La Fuente (San Roman),461110,Comercio al por menor en minisupers,11 a 30 personas,31,Yucatán,Ticul,20.393592,-89.536424,MidMarket,Península,2024-12-09
+MX-000149,Tienda La Pitaya (Centro),461110,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Kinchil,20.914537,-89.949448,SMB,Península,2025-06-24
+MX-000150,Miscelánea La Ermita (Mexico Oriente),461110,Comercio al por menor en minisupers,6 a 10 personas,31,Yucatán,Mérida,20.999442,-89.601262,SMB,Península,2024-07-21

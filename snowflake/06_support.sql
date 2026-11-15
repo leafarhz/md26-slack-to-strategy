@@ -1,5 +1,5 @@
 -- From Slack to Strategy — support tickets still in Zendesk (migration to Salesforce half done)
--- Region Sur still works in Zendesk; everyone else is already in Salesforce Service Cloud.
+-- Region Península still works in Zendesk; everyone else is already in Salesforce Service Cloud.
 -- Demo: synthetic tickets in Zendesk's export shape. Production: a Zendesk → warehouse pipeline
 -- (MuleSoft, Fivetran…) and the same Zero Copy read. Adding this source was a connector decision.
 

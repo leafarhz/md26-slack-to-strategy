@@ -7,7 +7,7 @@
 public with sharing class FindProspectsAction {
 
     public class Request {
-        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Sur.')
+        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Península.')
         public String region;
         @InvocableVariable(label='Giro' description='Opcional: Farmacias, Restaurantes, Ferreterías o Abarrotes. Vacío = el giro con go-lives más rápidos en la región.')
         public String family;

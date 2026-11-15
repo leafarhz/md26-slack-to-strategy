@@ -11,7 +11,7 @@
 public with sharing class EscalateBlockedCustomersAction {
 
     public class Request {
-        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Sur.')
+        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Península.')
         public String region;
         @InvocableVariable(label='Clave del bloqueo en Jira' description='La causa raíz a escalar, por ejemplo PLAT-7.')
         public String blockerKey;

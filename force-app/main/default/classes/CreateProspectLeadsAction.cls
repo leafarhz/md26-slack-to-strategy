@@ -7,7 +7,7 @@
 public with sharing class CreateProspectLeadsAction {
 
     public class Request {
-        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Sur.')
+        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Península.')
         public String region;
         @InvocableVariable(label='Giro' description='Opcional: Farmacias, Restaurantes, Ferreterías o Abarrotes. Usa el mismo que en la búsqueda.')
         public String family;

@@ -8,11 +8,11 @@
  * The permission chain:
  *   Data Cloud does not know the Salesforce sharing model. So the scope of every federated
  *   answer is derived from what the running user can see in CRM: the regions of the
- *   Accounts visible to them. A rep who can only see Sur accounts only gets Sur numbers.
+ *   Accounts visible to them. A rep who can only see Península accounts only gets Península numbers.
  */
 public with sharing class MostradorOpsService {
 
-    public static final List<String> REGIONS = new List<String>{ 'Centro', 'Occidente', 'Norte', 'Sur' };
+    public static final List<String> REGIONS = new List<String>{ 'Centro', 'Occidente', 'Norte', 'Península' };
 
     /** Activity families the agent may ask about, mapped to DENUE activity-class patterns. */
     public static final Map<String, String> FAMILIES = new Map<String, String>{
@@ -101,10 +101,21 @@ public with sharing class MostradorOpsService {
             : '¿De qué región? Puedes ver: ' + String.join(regions, ', ') + '.');
     }
 
+    /** Lower case without accents, so "peninsula" matches "Península". */
+    private static String fold(String value) {
+        String s = value.trim().toLowerCase();
+        List<String> accented = new List<String>{ 'á', 'é', 'í', 'ó', 'ú', 'ü' };
+        List<String> plain = new List<String>{ 'a', 'e', 'i', 'o', 'u', 'u' };
+        for (Integer i = 0; i < accented.size(); i++) {
+            s = s.replace(accented[i], plain[i]);
+        }
+        return s;
+    }
+
     public static String normalizeRegion(String requested) {
-        String wanted = requested.trim().toLowerCase();
+        String wanted = fold(requested);
         for (String r : REGIONS) {
-            if (r.toLowerCase() == wanted) {
+            if (fold(r) == wanted) {
                 return r;
             }
         }
@@ -180,7 +191,7 @@ public with sharing class MostradorOpsService {
         return result;
     }
 
-    // ─────────────────────── 2. ¿Por qué Sur? ───────────────────────
+    // ─────────────────────── 2. ¿Por qué Península? ───────────────────────
 
     public class AtRiskOrder {
         public String customerId;

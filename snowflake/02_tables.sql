@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS MD26_DB.ERP.CUSTOMERS (
   LATITUDE         NUMBER(9,6),
   LONGITUDE        NUMBER(9,6),
   SEGMENT          VARCHAR(20),                         -- SMB | MidMarket
-  REGION           VARCHAR(20),                         -- Centro | Norte | Occidente | Sur
+  REGION           VARCHAR(20),                         -- Centro | Norte | Occidente | Península
   CUSTOMER_SINCE   DATE,
   SOURCE_SYSTEM    VARCHAR(30)   DEFAULT 'MULESOFT_DENUE',
   LAST_MODIFIED    TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()

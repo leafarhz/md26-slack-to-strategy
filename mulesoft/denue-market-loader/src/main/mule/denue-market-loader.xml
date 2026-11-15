@@ -41,7 +41,7 @@
     </db:config>
 
     <!-- One region per state, so the agent can talk about regions. -->
-    <global-property name="states" value='[{"code":"09","name":"Ciudad de México","region":"Centro"},{"code":"14","name":"Jalisco","region":"Occidente"},{"code":"19","name":"Nuevo León","region":"Norte"},{"code":"31","name":"Yucatán","region":"Sur"}]'/>
+    <global-property name="states" value='[{"code":"09","name":"Ciudad de México","region":"Centro"},{"code":"14","name":"Jalisco","region":"Occidente"},{"code":"19","name":"Nuevo León","region":"Norte"},{"code":"31","name":"Yucatán","region":"Península"}]'/>
     <global-property name="searchTerms" value='["farmacia","restaurante","ferreteria","abarrotes"]'/>
 
     <!-- POST /load → full refresh of the market data -->

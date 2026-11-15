@@ -8,7 +8,7 @@ private class MostradorOpsServiceTest {
             seen.add(sql);
             if (sql.contains('FROM ERP_Quarterly_Targets__dll')) {
                 return new List<List<Object>>{
-                    new List<Object>{ 'Sur', '690000.00', 21, '257300.00', '170300.00', '200500.00', 10, 7 }
+                    new List<Object>{ 'Península', '690000.00', 21, '257300.00', '170300.00', '200500.00', 10, 7 }
                 };
             }
             if (sql.contains('LEFT JOIN Jira_Issues__dll')) {
@@ -43,8 +43,8 @@ private class MostradorOpsServiceTest {
     @TestSetup
     static void setup() {
         insert new List<Account>{
-            new Account(Name = 'Farmacia Uno', ERP_Customer_Id__c = 'MX-000001', Region__c = 'Sur'),
-            new Account(Name = 'Taquería Dos', ERP_Customer_Id__c = 'MX-000002', Region__c = 'Sur')
+            new Account(Name = 'Farmacia Uno', ERP_Customer_Id__c = 'MX-000001', Region__c = 'Península'),
+            new Account(Name = 'Taquería Dos', ERP_Customer_Id__c = 'MX-000002', Region__c = 'Península')
         };
         Account uno = [SELECT Id FROM Account WHERE ERP_Customer_Id__c = 'MX-000001'];
         insert new Case(AccountId = uno.Id, Subject = 'No puedo facturar', Priority = 'High', Status = 'New');
@@ -63,7 +63,7 @@ private class MostradorOpsServiceTest {
         GetQuarterHealthAction.Request req = new GetQuarterHealthAction.Request();
         String summary = GetQuarterHealthAction.run(new List<GetQuarterHealthAction.Request>{ req })[0].summary;
         Test.stopTest();
-        Assert.isTrue(summary.contains('Sur: EN RIESGO'), summary);
+        Assert.isTrue(summary.contains('Península: EN RIESGO'), summary);
         Assert.isTrue(summary.contains('62.0%'), summary);
     }
 
@@ -71,7 +71,7 @@ private class MostradorOpsServiceTest {
     static void regionRiskGroupsByJiraRootCauseAndJoinsCases() {
         fake();
         GetRegionRiskAction.Request req = new GetRegionRiskAction.Request();
-        req.region = 'sur';
+        req.region = 'peninsula';
         String summary = GetRegionRiskAction.run(new List<GetRegionRiskAction.Request>{ req })[0].summary;
         Assert.isTrue(summary.contains('CAUSA RAÍZ PLAT-7'), summary);
         Assert.isTrue(summary.contains('1 de esos clientes tienen casos de soporte abiertos (1 en Salesforce, 0 en Zendesk; 1 urgentes)'), summary);
@@ -129,7 +129,7 @@ private class MostradorOpsServiceTest {
     static void escalationCreatesCasesAndTasksOnceForTheBlocker() {
         fake();
         EscalateBlockedCustomersAction.Request req = new EscalateBlockedCustomersAction.Request();
-        req.region = 'Sur';
+        req.region = 'Península';
         req.blockerKey = 'plat-7';
         String preview = EscalateBlockedCustomersAction.run(new List<EscalateBlockedCustomersAction.Request>{ req })[0].summary;
         Assert.isTrue(preview.startsWith('VISTA PREVIA'), preview);
@@ -150,7 +150,7 @@ private class MostradorOpsServiceTest {
     static void escalationRejectsMalformedIssueKey() {
         fake();
         EscalateBlockedCustomersAction.Request req = new EscalateBlockedCustomersAction.Request();
-        req.region = 'Sur';
+        req.region = 'Península';
         req.blockerKey = 'PLAT-7; DROP';
         String summary = EscalateBlockedCustomersAction.run(new List<EscalateBlockedCustomersAction.Request>{ req })[0].summary;
         Assert.isTrue(summary.startsWith('Clave de Jira inválida'), summary);
@@ -161,13 +161,13 @@ private class MostradorOpsServiceTest {
     static void prospectsUseFastestFamilyAndLeadsAreNotDuplicated() {
         fake();
         FindProspectsAction.Request find = new FindProspectsAction.Request();
-        find.region = 'Sur';
+        find.region = 'Península';
         String found = FindProspectsAction.run(new List<FindProspectsAction.Request>{ find })[0].summary;
         Assert.isTrue(found.contains('Giro: Restaurantes'), found);
         Assert.isTrue(found.contains('TAQUERIA REAL'), found);
 
         CreateProspectLeadsAction.Request create = new CreateProspectLeadsAction.Request();
-        create.region = 'Sur';
+        create.region = 'Península';
         String preview = CreateProspectLeadsAction.run(new List<CreateProspectLeadsAction.Request>{ create })[0].summary;
         Assert.isTrue(preview.startsWith('VISTA PREVIA'), preview);
         Assert.areEqual(0, [SELECT COUNT() FROM Lead WHERE DENUE_Id__c != NULL], 'preview must not write');

@@ -11,7 +11,7 @@ POST /load → DENUE BuscarEntidad (4 states × 4 search terms × 300)
            → MERGE (dedupe) into ESTABLISHMENTS
 ```
 
-States: Ciudad de México (Centro), Jalisco (Occidente), Nuevo León (Norte), Yucatán (Sur).
+States: Ciudad de México (Centro), Jalisco (Occidente), Nuevo León (Norte), Yucatán (Península).
 Search terms: farmacia, restaurante, ferreteria, abarrotes.
 
 ## Run it

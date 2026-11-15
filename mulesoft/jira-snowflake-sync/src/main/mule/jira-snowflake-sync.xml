@@ -108,7 +108,9 @@ output application/json
 output application/java
 import trim from dw::core::Strings
 
-var regions = ["Centro", "Occidente", "Norte", "Sur"]
+var regions = ["Centro", "Occidente", "Norte", "Peninsula"]
+// Jira labels cannot carry accents reliably; map the label to the CRM region name
+var regionName = { "Peninsula": "Península" }
 
 fun statusOf(f) = f.status.statusCategory.key match {
     case "done" -> "Done"
@@ -130,7 +132,11 @@ fun blocksOthers(f) = blockLinks(f) filter ((l) -> l.outwardIssue != null)
 fun hasBlockedByLink(f) = !isEmpty(blockLinks(f) filter ((l) -> l.inwardIssue != null))
 fun isFlagged(f) = !isEmpty(f.customfield_10021 default [])
 fun customer(f) = ((f.labels default []) filter ($ startsWith "MX-"))[0]
-fun region(f) = ((f.labels default []) filter (regions contains $))[0]
+fun region(f) = do {
+    var r = ((f.labels default []) filter (regions contains $))[0]
+    ---
+    if (r == null) null else (regionName[r] default r)
+}
 fun ts(s) = if (isEmpty(s)) null
             else (((s as DateTime {format: "yyyy-MM-dd'T'HH:mm:ss.SSSZ"}) >> "UTC") as String {format: "yyyy-MM-dd HH:mm:ss"})
 

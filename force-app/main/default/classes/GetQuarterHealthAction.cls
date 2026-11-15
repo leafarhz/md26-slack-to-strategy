@@ -6,7 +6,7 @@
 public with sharing class GetQuarterHealthAction {
 
     public class Request {
-        @InvocableVariable(label='Región' description='Opcional. Centro, Occidente, Norte o Sur. Vacío = todas las regiones que el usuario puede ver.')
+        @InvocableVariable(label='Región' description='Opcional. Centro, Occidente, Norte o Península. Vacío = todas las regiones que el usuario puede ver.')
         public String region;
     }
 
@@ -15,7 +15,7 @@ public with sharing class GetQuarterHealthAction {
         public String summary;
     }
 
-    @InvocableMethod(label='Revisar avance del trimestre' description='Responde si vamos bien este trimestre: compara ingreso reconocido y agendado contra la meta de cada región, con datos en vivo del ERP. Úsala para preguntas como "¿vamos bien?", "¿cómo va el trimestre?" o "¿cómo va Sur?".')
+    @InvocableMethod(label='Revisar avance del trimestre' description='Responde si vamos bien este trimestre: compara ingreso reconocido y agendado contra la meta de cada región, con datos en vivo del ERP. Úsala para preguntas como "¿vamos bien?", "¿cómo va el trimestre?" o "¿cómo va la Península?".')
     public static List<Response> run(List<Request> requests) {
         List<Response> responses = new List<Response>();
         for (Request req : requests) {

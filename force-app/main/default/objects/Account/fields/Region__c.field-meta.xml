@@ -12,7 +12,7 @@
             <value><fullName>Centro</fullName><default>false</default><label>Centro</label></value>
             <value><fullName>Occidente</fullName><default>false</default><label>Occidente</label></value>
             <value><fullName>Norte</fullName><default>false</default><label>Norte</label></value>
-            <value><fullName>Sur</fullName><default>false</default><label>Sur</label></value>
+            <value><fullName>Península</fullName><default>false</default><label>Península</label></value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

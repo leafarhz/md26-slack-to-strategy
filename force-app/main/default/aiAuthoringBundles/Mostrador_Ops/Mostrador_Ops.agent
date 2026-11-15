@@ -46,7 +46,7 @@ start_agent agent_router:
         instructions: ->
             | Select the best tool to call based on conversation history and user's intent.
               Preguntas de operación del trimestre van a operaciones. El usuario escribe informal, con o sin acentos:
-                - vamos bien, como va, trimestre, meta, avance, pronostico, region, Centro, Occidente, Norte, Sur -> go_to_operaciones
+                - vamos bien, como va, trimestre, meta, avance, pronostico, region, Centro, Occidente, Norte, Peninsula, Yucatan, Merida -> go_to_operaciones
                 - por que, que bloquea, bloqueo, retraso, atrasado, en riesgo, clientes afectados, Jira -> go_to_operaciones
                 - escala, escalar, avisale al equipo, si, confirmo, adelante, hazlo (despues de una vista previa) -> go_to_operaciones
                 - oportunidad, nos alcanza, prospectos, a quien le vendemos, leads, crealos -> go_to_operaciones
@@ -1319,7 +1319,7 @@ subagent operaciones:
     reasoning:
         instructions: ->
             | AVANCE: para "¿vamos bien?", "¿cómo va el trimestre?" o una región, usa {!@actions.GetQuarterHealth}. Deja region vacía si no la mencionan. Resume primero la región en riesgo y luego las demás en una línea cada una.
-            | POR QUÉ: para "¿por qué Sur?", "¿qué está bloqueando?" o "¿qué clientes están en riesgo?", usa {!@actions.GetRegionRisk} con la región. Destaca la causa raíz compartida, cuántos clientes y cuánto dinero, cuántos tienen casos abiertos, y cuánto subiría la región si se resuelve. Lista los clientes de forma compacta.
+            | POR QUÉ: para "¿por qué la Península?", "¿qué está bloqueando?" o "¿qué clientes están en riesgo?", usa {!@actions.GetRegionRisk} con la región. Destaca la causa raíz compartida, cuántos clientes y cuánto dinero, cuántos tienen casos abiertos, y cuánto subiría la región si se resuelve. Lista los clientes de forma compacta.
             | ESCALAR, PASO 1: cuando pidan escalar, usa {!@actions.EscalateBlockedCustomers} con la región, la clave de Jira de la causa raíz (por ejemplo PLAT-7) y confirmar=False. Muestra la vista previa tal cual y pregunta si lo haces.
             | ESCALAR, PASO 2: solo si el usuario responde que sí a esa vista previa, llama {!@actions.EscalateBlockedCustomers} otra vez con los mismos valores y confirmar=True. Reporta los números de caso que devuelva. Si dice que no, no crees nada.
             | "AVÍSALE AL EQUIPO": el aviso al equipo son las tareas de seguimiento que crea la escalación para cada dueño de cuenta. Dilo así. Nunca digas que enviaste un mensaje, un correo o un aviso por Slack si no usaste una acción de Slack que lo haya enviado.
@@ -1366,7 +1366,7 @@ subagent operaciones:
             inputs:
                 region: string
                     label: "Región"
-                    description: "Opcional. Centro, Occidente, Norte o Sur. Vacío = todas las regiones que el usuario puede ver."
+                    description: "Opcional. Centro, Occidente, Norte o Península. Vacío = todas las regiones que el usuario puede ver."
                     is_required: False
                     is_user_input: True
                     filter_from_agent: False
@@ -1388,7 +1388,7 @@ subagent operaciones:
             inputs:
                 region: string
                     label: "Región"
-                    description: "Centro, Occidente, Norte o Sur. Por ejemplo 'Sur'."
+                    description: "Centro, Occidente, Norte o Península. Por ejemplo 'Península'."
                     is_required: False
                     is_user_input: True
                     filter_from_agent: False
@@ -1410,7 +1410,7 @@ subagent operaciones:
             inputs:
                 region: string
                     label: "Región"
-                    description: "Centro, Occidente, Norte o Sur. Por ejemplo 'Sur'."
+                    description: "Centro, Occidente, Norte o Península. Por ejemplo 'Península'."
                     is_required: False
                     is_user_input: True
                     filter_from_agent: False
@@ -1446,7 +1446,7 @@ subagent operaciones:
             inputs:
                 region: string
                     label: "Región"
-                    description: "Centro, Occidente, Norte o Sur. Por ejemplo 'Sur'."
+                    description: "Centro, Occidente, Norte o Península. Por ejemplo 'Península'."
                     is_required: False
                     is_user_input: True
                     filter_from_agent: False
@@ -1490,7 +1490,7 @@ subagent operaciones:
             inputs:
                 region: string
                     label: "Región"
-                    description: "La misma región de la búsqueda. Por ejemplo 'Sur'."
+                    description: "La misma región de la búsqueda. Por ejemplo 'Península'."
                     is_required: False
                     is_user_input: True
                     filter_from_agent: False

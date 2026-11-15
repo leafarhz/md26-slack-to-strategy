@@ -28,15 +28,15 @@ QUARTER = "FY26-Q4"
 
 OUT = Path(__file__).resolve().parent.parent / "demo" / "data"
 
-REGION_CUSTOMERS = {"Centro": 42, "Occidente": 36, "Norte": 36, "Sur": 36}
-# Sur leans on pharmacies and restaurants in Mérida: that's where the story lives.
+REGION_CUSTOMERS = {"Centro": 42, "Occidente": 36, "Norte": 36, "Península": 36}
+# Península leans on pharmacies and restaurants in Mérida: that's where the story lives.
 VERTICAL_MIX = {
     "Centro":    {"Farmacia": 10, "Restaurante": 12, "Ferretería": 10, "Abarrotes": 10},
     "Occidente": {"Farmacia": 9,  "Restaurante": 9,  "Ferretería": 9,  "Abarrotes": 9},
     "Norte":     {"Farmacia": 9,  "Restaurante": 9,  "Ferretería": 9,  "Abarrotes": 9},
-    "Sur":       {"Farmacia": 16, "Restaurante": 10, "Ferretería": 4,  "Abarrotes": 6},
+    "Península":       {"Farmacia": 16, "Restaurante": 10, "Ferretería": 4,  "Abarrotes": 6},
 }
-BLOCKED_GO_LIVES = 9               # Sur go-lives stuck behind the CFDI blocker
+BLOCKED_GO_LIVES = 9               # Península go-lives stuck behind the CFDI blocker
 SUR_FORECAST_PCT = 0.62            # what question 1 should reveal
 SUR_IF_UNBLOCKED_PCT = 0.85        # what question 4 should reveal
 OTHER_REGION_PCT = {"Centro": 1.03, "Occidente": 0.97, "Norte": 0.99}
@@ -117,7 +117,7 @@ def build(establishments):
     for region, total in REGION_CUSTOMERS.items():
         for vertical, count in VERTICAL_MIX[region].items():
             candidates = pool[(region, vertical)]
-            if region == "Sur" and vertical in ("Farmacia", "Restaurante"):
+            if region == "Península" and vertical in ("Farmacia", "Restaurante"):
                 candidates = [e for e in candidates if e["MUNICIPALITY"] == "Mérida"] or candidates
             for e in rng.sample(candidates, count):
                 n += 1
@@ -187,7 +187,7 @@ def build(establishments):
             new_order(c, since, go_live, "Fulfilled", go_live, cfdi=rng.random() < 0.7)
 
         q4 = cs[: int(len(cs) * 0.6)]   # expansions / new stores this quarter
-        if region == "Sur":
+        if region == "Península":
             merida_cfdi = [c for c in q4 if c["MUNICIPALITY"] == "Mérida"
                            and c["VERTICAL"] in ("Farmacia", "Restaurante")]
             blocked = set(c["CUSTOMER_ID"] for c in merida_cfdi[:BLOCKED_GO_LIVES])
@@ -196,7 +196,7 @@ def build(establishments):
         # Every region has a little ordinary friction: small, single-store delays.
         small = sorted(c["CUSTOMER_ID"] for c in q4
                        if c["CUSTOMER_ID"] not in blocked and c["_stores"] == 1)
-        noise = set(rng.sample(small, 1 if region == "Sur" else 2))
+        noise = set(rng.sample(small, 1 if region == "Península" else 2))
 
         for c in q4:
             cid = c["CUSTOMER_ID"]
@@ -212,15 +212,15 @@ def build(establishments):
                 promised = rand_date(rng, date(2026, 10, 3), date(2026, 12, 18))
                 ordered = promised - timedelta(days=rng.randint(25, 50))
                 if promised <= TODAY:
-                    # Sur's live go-lives this quarter happened before the PAC change (Oct 14)
-                    if region == "Sur":
+                    # Península's live go-lives this quarter happened before the PAC change (Oct 14)
+                    if region == "Península":
                         promised = rand_date(rng, date(2026, 10, 2), date(2026, 10, 13))
                     new_order(c, ordered, promised, "Fulfilled", promised,
                               cfdi=rng.random() < 0.6)
                 else:
-                    # Sur's upcoming go-lives don't need CFDI yet (POS-only phase)
+                    # Península's upcoming go-lives don't need CFDI yet (POS-only phase)
                     new_order(c, ordered, promised, "Booked",
-                              cfdi=(region != "Sur") and rng.random() < 0.6)
+                              cfdi=(region != "Península") and rng.random() < 0.6)
 
         # A cancelled order now and then
         c = rng.choice(cs)
@@ -237,7 +237,7 @@ def build(establishments):
 
     targets = []
     for region in REGION_CUSTOMERS:
-        if region == "Sur":
+        if region == "Península":
             target = money(forecast(region) / SUR_FORECAST_PCT / 10) * 10
             blocked_orders = [o for o in orders if o["_blocked_by_cfdi"]]
             need = target * (SUR_IF_UNBLOCKED_PCT - SUR_FORECAST_PCT)
@@ -253,7 +253,7 @@ def build(establishments):
             "FISCAL_QUARTER": QUARTER,
             "REGION": region,
             "BOOKINGS_TARGET_MXN": target,
-            "GO_LIVES_TARGET": go_lives if region != "Sur" else go_lives,
+            "GO_LIVES_TARGET": go_lives if region != "Península" else go_lives,
         })
 
     # ── Invoices: issued at go-live, net 30 ─────────────────────────────────
@@ -446,8 +446,8 @@ def build(establishments):
     return customers, orders, invoices, targets, epics, issues, accounts, cases
 
 
-# Support is mid-migration: region Sur still works in Zendesk. Of the 7 CFDI cases,
-# 3 stay in Salesforce (CASE-0002/5/7) and 4 live in Zendesk, plus Sur's routine tickets.
+# Support is mid-migration: region Península still works in Zendesk. Of the 7 CFDI cases,
+# 3 stay in Salesforce (CASE-0002/5/7) and 4 live in Zendesk, plus Península's routine tickets.
 ZENDESK_CFDI_KEYS = {"CASE-0001", "CASE-0003", "CASE-0004", "CASE-0006"}
 ZD_PRIORITY = {"High": "urgent", "Medium": "normal", "Low": "low"}
 ZD_STATUS = {"Working": "open", "New": "new", "Closed": "solved"}
@@ -474,7 +474,7 @@ def split_support(cases, customers):
     for case in cases:
         cid = case["Account.ERP_Customer_Id__c"]
         cfdi = case["MD26_Key__c"] <= "CASE-0007"
-        if region[cid] == "Sur" and (not cfdi or case["MD26_Key__c"] in ZENDESK_CFDI_KEYS):
+        if region[cid] == "Península" and (not cfdi or case["MD26_Key__c"] in ZENDESK_CFDI_KEYS):
             zendesk.append({
                 "TICKET_ID": 4100 + len(zendesk) + 1,
                 "ORGANIZATION_EXTERNAL_ID": cid,
@@ -530,11 +530,11 @@ def main():
         print(f"  {r:10s} target {t['BOOKINGS_TARGET_MXN']:>12,.0f}  recognized {rec:>12,.0f}"
               f"  forecast {fc / t['BOOKINGS_TARGET_MXN']:6.1%}  if delays clear {(fc + dl) / t['BOOKINGS_TARGET_MXN']:6.1%}")
     blocked = [o for o in orders if o["_blocked_by_cfdi"]]
-    sur = next(t for t in targets if t["REGION"] == "Sur")
-    sur_fc = sum(o["AMOUNT_MXN"] for o in orders if o["_customer"]["REGION"] == "Sur"
+    sur = next(t for t in targets if t["REGION"] == "Península")
+    sur_fc = sum(o["AMOUNT_MXN"] for o in orders if o["_customer"]["REGION"] == "Península"
                  and Q_START <= date.fromisoformat(o["PROMISED_DATE"]) <= Q_END
                  and o["STATUS"] in ("Fulfilled", "Booked"))
-    print(f"  Sur if only the CFDI blocker clears: "
+    print(f"  Península if only the CFDI blocker clears: "
           f"{(sur_fc + sum(o['AMOUNT_MXN'] for o in blocked)) / sur['BOOKINGS_TARGET_MXN']:.1%}")
     blocked_ids = {o["CUSTOMER_ID"] for o in blocked}
     sf_open = {c["Account.ERP_Customer_Id__c"] for c in cases if c["Status"] == "Working" and c["Account.ERP_Customer_Id__c"] in blocked_ids}
