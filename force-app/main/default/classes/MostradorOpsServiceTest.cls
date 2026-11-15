@@ -125,6 +125,10 @@ private class MostradorOpsServiceTest {
         EscalateBlockedCustomersAction.Request req = new EscalateBlockedCustomersAction.Request();
         req.region = 'Sur';
         req.blockerKey = 'plat-7';
+        String preview = EscalateBlockedCustomersAction.run(new List<EscalateBlockedCustomersAction.Request>{ req })[0].summary;
+        Assert.isTrue(preview.startsWith('VISTA PREVIA'), preview);
+        Assert.areEqual(0, [SELECT COUNT() FROM Case WHERE Status = 'Escalated'], 'preview must not write');
+        req.confirmar = true;
         String first = EscalateBlockedCustomersAction.run(new List<EscalateBlockedCustomersAction.Request>{ req })[0].summary;
         String second = EscalateBlockedCustomersAction.run(new List<EscalateBlockedCustomersAction.Request>{ req })[0].summary;
 
@@ -158,6 +162,10 @@ private class MostradorOpsServiceTest {
 
         CreateProspectLeadsAction.Request create = new CreateProspectLeadsAction.Request();
         create.region = 'Sur';
+        String preview = CreateProspectLeadsAction.run(new List<CreateProspectLeadsAction.Request>{ create })[0].summary;
+        Assert.isTrue(preview.startsWith('VISTA PREVIA'), preview);
+        Assert.areEqual(0, [SELECT COUNT() FROM Lead WHERE DENUE_Id__c != NULL], 'preview must not write');
+        create.confirmar = true;
         CreateProspectLeadsAction.run(new List<CreateProspectLeadsAction.Request>{ create });
         String again = CreateProspectLeadsAction.run(new List<CreateProspectLeadsAction.Request>{ create })[0].summary;
 

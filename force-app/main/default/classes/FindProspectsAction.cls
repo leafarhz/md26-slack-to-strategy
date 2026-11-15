@@ -7,7 +7,7 @@
 public with sharing class FindProspectsAction {
 
     public class Request {
-        @InvocableVariable(required=true label='Región' description='Centro, Occidente, Norte o Sur.')
+        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Sur.')
         public String region;
         @InvocableVariable(label='Giro' description='Opcional: Farmacias, Restaurantes, Ferreterías o Abarrotes. Vacío = el giro con go-lives más rápidos en la región.')
         public String family;
@@ -48,7 +48,7 @@ public with sharing class FindProspectsAction {
 
     public static Criteria criteria(String region, String family, Decimal radiusKm, Integer maxResults) {
         Criteria c = new Criteria();
-        c.region = MostradorOpsService.resolveRegions(region)[0];
+        c.region = MostradorOpsService.resolveOneRegion(region);
         c.radiusKm = radiusKm == null || radiusKm <= 0 ? 2 : Math.min(radiusKm, 10);
         c.maxResults = maxResults == null || maxResults <= 0 ? 40 : Math.min(maxResults, 100);
         List<MostradorOpsService.FamilySpeed> speeds = MostradorOpsService.goLiveSpeed(c.region);

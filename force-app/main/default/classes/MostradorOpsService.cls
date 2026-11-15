@@ -90,6 +90,17 @@ public with sharing class MostradorOpsService {
         return new List<String>{ region };
     }
 
+    /** One region for a drill-down. Blank is fine when the user can only see one; otherwise ask. */
+    public static String resolveOneRegion(String requested) {
+        List<String> regions = resolveRegions(requested);
+        if (regions.size() == 1) {
+            return regions[0];
+        }
+        throw new OpsException(regions.isEmpty()
+            ? 'No tienes acceso a cuentas de clientes de Mostrador.'
+            : '¿De qué región? Puedes ver: ' + String.join(regions, ', ') + '.');
+    }
+
     public static String normalizeRegion(String requested) {
         String wanted = requested.trim().toLowerCase();
         for (String r : REGIONS) {
@@ -328,6 +339,7 @@ public with sharing class MostradorOpsService {
     public class EscalationResult {
         public List<Case> created = new List<Case>();
         public List<String> alreadyEscalated = new List<String>();
+        public List<AtRiskOrder> pending = new List<AtRiskOrder>();
         public Integer tasks = 0;
     }
 
@@ -345,6 +357,11 @@ public with sharing class MostradorOpsService {
      * Idempotent: customers with an open escalation for the same issue are skipped.
      */
     public static EscalationResult escalate(String region, String blockerKey, Quarter q) {
+        return escalate(region, blockerKey, q, true);
+    }
+
+    /** commit=false: same selection, nothing written. That is the preview the user confirms. */
+    public static EscalationResult escalate(String region, String blockerKey, Quarter q, Boolean commitWrites) {
         List<AtRiskOrder> targets = new List<AtRiskOrder>();
         for (AtRiskOrder o : atRiskOrders(region, q)) {
             if (o.blockerKey == blockerKey) {
@@ -387,6 +404,10 @@ public with sharing class MostradorOpsService {
             ));
         }
         if (cases.isEmpty()) {
+            return result;
+        }
+        if (!commitWrites) {
+            result.pending = escalating;
             return result;
         }
         insert as user cases;

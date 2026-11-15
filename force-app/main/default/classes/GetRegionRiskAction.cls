@@ -6,7 +6,7 @@
 public with sharing class GetRegionRiskAction {
 
     public class Request {
-        @InvocableVariable(required=true label='Región' description='Centro, Occidente, Norte o Sur.')
+        @InvocableVariable(label='Región' description='Centro, Occidente, Norte o Sur.')
         public String region;
     }
 
@@ -21,7 +21,7 @@ public with sharing class GetRegionRiskAction {
         for (Request req : requests) {
             Response res = new Response();
             try {
-                String region = MostradorOpsService.resolveRegions(req.region)[0];
+                String region = MostradorOpsService.resolveOneRegion(req.region);
                 res.summary = summarize(region, MostradorOpsService.currentQuarter());
             } catch (MostradorOpsService.OpsException e) {
                 res.summary = e.getMessage();
