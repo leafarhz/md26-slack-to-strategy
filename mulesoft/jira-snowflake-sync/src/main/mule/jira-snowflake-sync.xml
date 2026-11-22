@@ -45,8 +45,9 @@
             url="jdbc:snowflake://${snowflake.account}.snowflakecomputing.com/?db=${snowflake.database}&amp;schema=${snowflake.schema}&amp;warehouse=${snowflake.warehouse}&amp;role=${snowflake.role}&amp;user=${snowflake.user}&amp;authenticator=SNOWFLAKE_JWT&amp;private_key_file=${snowflake.privateKeyFile}&amp;JDBC_QUERY_RESULT_FORMAT=JSON&amp;application=MD26_Jira_Sync"/>
     </db:config>
 
-    <!-- Every minute, so a change made on stage shows up while the audience watches -->
-    <flow name="scheduled-sync-flow" maxConcurrency="1">
+    <!-- Off by default: each run wakes the Snowflake warehouse, so a 60 s poll keeps it billing around the clock.
+         Set sync.scheduler=started only while presenting, or call POST /sync. -->
+    <flow name="scheduled-sync-flow" maxConcurrency="1" initialState="${sync.scheduler}">
         <scheduler doc:name="Every minute">
             <scheduling-strategy>
                 <fixed-frequency frequency="${sync.frequencySeconds}" timeUnit="SECONDS"/>
